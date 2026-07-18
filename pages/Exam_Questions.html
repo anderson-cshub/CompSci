@@ -90,6 +90,15 @@
     </div>
   </footer>
 
+  <script>
+  fetch("/CompSci/components/navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+
 
 
 
