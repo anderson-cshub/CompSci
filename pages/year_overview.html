@@ -137,7 +137,6 @@
   </footer>
 
 <script>
-  // Tell this page which navbar item should be active
   const currentPage = document.body.dataset.page;
 
   fetch("/CompSci/components/navbar.html")
@@ -145,7 +144,7 @@
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
 
-      // Apply highlight to the correct link
+      // Highlight active link
       document.querySelectorAll('#navbar a').forEach(link => {
         if (link.dataset.page === currentPage) {
           link.classList.add('border-emerald-500', 'text-emerald-600');
@@ -155,9 +154,18 @@
           link.classList.add('border-transparent', 'text-gray-700');
         }
       });
+
+      // FIX: Attach hamburger toggle AFTER navbar is injected
+      const burger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      if (burger) {
+        burger.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
     });
 </script>
-
 
 
 
