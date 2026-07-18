@@ -60,10 +60,7 @@
     </div>
   </footer>
 
-</body>
-</html>
-
-<script>
+  <script>
   const currentPage = document.body.dataset.page;
 
   fetch("/CompSci/components/navbar.html")
@@ -73,24 +70,44 @@
 
       // Highlight active link
       document.querySelectorAll('#navbar a').forEach(link => {
-        if (link.dataset.page === currentPage) {
-          link.classList.add('border-emerald-500', 'text-emerald-600');
+        const page = link.dataset.page;
+
+        if (page === currentPage) {
+          link.classList.add(
+            'border-emerald-500',
+            'text-emerald-600',
+            'font-semibold'
+          );
           link.classList.remove('border-transparent', 'text-gray-700');
+
+          // Optional: keep the emerald glow on the active page
+          link.style.boxShadow = '0 0 10px #34d399';
         } else {
-          link.classList.remove('border-emerald-500', 'text-emerald-600');
+          link.classList.remove(
+            'border-emerald-500',
+            'text-emerald-600',
+            'font-semibold'
+          );
           link.classList.add('border-transparent', 'text-gray-700');
+
+          // Remove glow from non-active links
+          link.style.boxShadow = 'none';
         }
       });
 
-      // FIX: Attach hamburger toggle AFTER navbar is injected
+      // Hamburger toggle (AFTER navbar injection)
       const burger = document.getElementById('hamburger');
       const mobileMenu = document.getElementById('mobileMenu');
 
-      if (burger) {
+      if (burger && mobileMenu) {
         burger.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
         });
       }
     });
 </script>
+
+
+</body>
+</html>
 
