@@ -127,6 +127,48 @@ html {
 body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
+/* ============================
+   Cyberpunk Enhancements
+   ============================ */
+
+/* Smooth theme transition (already present, but extend it) */
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ============================
+   Neon Cyberpunk Glow (Dark Mode)
+   ============================ */
+
+.dark .card-glow,
+.dark .nav-link-active,
+.dark .nav-link:hover {
+  box-shadow: 0 0 12px #7f5af0, 0 0 24px #2cb67d;
+  border-color: #2cb67d;
+}
+
+/* Neon text glow */
+.dark h1, .dark h2, .dark h3, .dark h4 {
+  text-shadow: 0 0 8px #7f5af0;
+}
+
+/* ============================
+   Pulsing Cards (Dark Mode)
+   ============================ */
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px #2cb67d; }
+  50% { box-shadow: 0 0 18px #7f5af0; }
+  100% { box-shadow: 0 0 10px #2cb67d; }
+}
+
+.dark .pulse-card {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
 
 
 
