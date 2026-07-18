@@ -66,3 +66,11 @@
   box-shadow: 0 0 10px #34d399;
 }
 
+.nav-link-active {
+  border-color: #10b981;        /* emerald-500 */
+  color: #059669;               /* emerald-600 */
+  font-weight: 600;
+  box-shadow: 0 0 6px #34d399;  /* softer emerald glow */
+}
+
+
