@@ -67,27 +67,19 @@
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
 
-      // Highlight active link
-      document.querySelectorAll('#navbar a').forEach(link => {
-        const page = link.dataset.page;
+    // Highlight active link
+document.querySelectorAll('#navbar a').forEach(link => {
+  const page = link.dataset.page;
 
-        if (page === currentPage) {
-          link.classList.add(
-            'border-emerald-500',
-            'text-emerald-600',
-            'font-semibold'
-          );
-          link.classList.remove('border-transparent', 'text-gray-700');
+  if (page === currentPage) {
+    link.classList.add('nav-link-active');
+    link.classList.remove('border-transparent', 'text-gray-700');
+  } else {
+    link.classList.remove('nav-link-active');
+    link.classList.add('border-transparent', 'text-gray-700');
+  }
+});
 
-          // Optional: keep the emerald glow on the active page
-          link.style.boxShadow = '0 0 10px #34d399';
-        } else {
-          link.classList.remove(
-            'border-emerald-500',
-            'text-emerald-600',
-            'font-semibold'
-          );
-          link.classList.add('border-transparent', 'text-gray-700');
 
           // Remove glow from non-active links
           link.style.boxShadow = 'none';
