@@ -2,59 +2,50 @@
   <div class="max-w-6xl mx-auto px-6 py-2 flex justify-between items-center">
 
     <!-- Logo -->
-    <img src="/CompSci/images/anderson-cs-hub.png" class="w-[220px] h-auto" />
+    <img src="/CompSci/images/anderson-cs-hub.png" class="w-[180px] h-auto" />
 
-    <div class="flex items-center space-x-4 text-lg">
-
-      <a href="/CompSci/index.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        Home
-      </a>
-
-      <a href="/CompSci/pages/upper6th.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        Upper 6th
-      </a>
-
-      <a href="/CompSci/pages/lower6th.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        Lower 6th
-      </a>
-
-      <a href="/CompSci/pages/algorithms.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        Algorithms
-      </a>
-
-      <a href="/CompSci/pages/programming/index.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        Programming
-      </a>
-
-      <a href="/CompSci/pages/exam_questions.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        Exam Practice
-      </a>
-
-      <a href="/CompSci/pages/about.html"
-         class="px-3 py-1 border border-transparent text-gray-700 rounded-md
-                hover:border-emerald-500 hover:text-emerald-600
-                hover:shadow-[0_0_10px_#34d399] transition">
-        About
-      </a>
-
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-4 text-lg">
+      <a href="/CompSci/index.html" data-page="home" class="nav-link">Home</a>
+      <a href="/CompSci/pages/upper6th.html" data-page="upper6th" class="nav-link">Upper 6th</a>
+      <a href="/CompSci/pages/lower6th.html" data-page="lower6th" class="nav-link">Lower 6th</a>
+      <a href="/CompSci/pages/algorithms.html" data-page="algorithms" class="nav-link">Algorithms</a>
+      <a href="/CompSci/pages/programming/index.html" data-page="programming" class="nav-link">Programming</a>
+      <a href="/CompSci/pages/exam_questions.html" data-page="exam" class="nav-link">Exam Practice</a>
+      <a href="/CompSci/pages/about.html" data-page="about" class="nav-link">About</a>
     </div>
+
+    <!-- Hamburger Button -->
+    <button id="hamburger" class="md:hidden text-3xl text-gray-700">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden flex-col bg-white shadow-md md:hidden px-6 py-4 space-y-3 text-lg">
+    <a href="/CompSci/index.html" data-page="home" class="nav-link">Home</a>
+    <a href="/CompSci/pages/upper6th.html" data-page="upper6th" class="nav-link">Upper 6th</a>
+    <a href="/CompSci/pages/lower6th.html" data-page="lower6th" class="nav-link">Lower 6th</a>
+    <a href="/CompSci/pages/algorithms.html" data-page="algorithms" class="nav-link">Algorithms</a>
+    <a href="/CompSci/pages/programming/index.html" data-page="programming" class="nav-link">Programming</a>
+    <a href="/CompSci/pages/exam_questions.html" data-page="exam" class="nav-link">Exam Practice</a>
+    <a href="/CompSci/pages/about.html" data-page="about" class="nav-link">About</a>
   </div>
 </nav>
+
+<style>
+  .nav-link {
+    @apply px-3 py-1 border border-transparent text-gray-700 rounded-md
+           hover:border-emerald-500 hover:text-emerald-600
+           hover:shadow-[0_0_10px_#34d399] transition;
+  }
+</style>
+
+<script>
+  // Mobile toggle
+  document.addEventListener('click', e => {
+    if (e.target.id === 'hamburger') {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+  });
+</script>
