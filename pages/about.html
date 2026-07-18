@@ -64,23 +64,26 @@
 </html>
 
 <script>
-fetch("/CompSci/components/navbar.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("navbar").innerHTML = data;
+  // Tell this page which navbar item should be active
+  const currentPage = document.body.dataset.page;
 
-    // Highlight active link
-    const current = window.location.pathname.toLowerCase();
+  fetch("/CompSci/components/navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
 
-    document.querySelectorAll('#navbar a').forEach(link => {
-      const href = link.getAttribute('href').toLowerCase();
-
-      if (current.endsWith(href.replace('/compsci', ''))) {
-        link.classList.add('border-emerald-500', 'text-emerald-600');
-        link.classList.remove('border-transparent', 'text-gray-700');
-      }
+      // Apply highlight to the correct link
+      document.querySelectorAll('#navbar a').forEach(link => {
+        if (link.dataset.page === currentPage) {
+          link.classList.add('border-emerald-500', 'text-emerald-600');
+          link.classList.remove('border-transparent', 'text-gray-700');
+        } else {
+          link.classList.remove('border-emerald-500', 'text-emerald-600');
+          link.classList.add('border-transparent', 'text-gray-700');
+        }
+      });
     });
-  });
 </script>
+
 
 
