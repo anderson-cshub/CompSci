@@ -95,21 +95,16 @@
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
 
-     // Highlight active link
-document.querySelectorAll('#navbar a').forEach(link => {
-  const page = link.dataset.page;
+      // Highlight active link
+      document.querySelectorAll('#navbar a').forEach(link => {
+        const page = link.dataset.page;
 
-  if (page === currentPage) {
-    link.classList.add('nav-link-active');
-    link.classList.remove('border-transparent', 'text-gray-700');
-  } else {
-    link.classList.remove('nav-link-active');
-    link.classList.add('border-transparent', 'text-gray-700');
-  }
-});
-
-          // Remove glow from non-active links
-          link.style.boxShadow = 'none';
+        if (page === currentPage) {
+          link.classList.add('nav-link-active');
+          link.classList.remove('border-transparent', 'text-gray-700');
+        } else {
+          link.classList.remove('nav-link-active');
+          link.classList.add('border-transparent', 'text-gray-700');
         }
       });
 
@@ -124,6 +119,7 @@ document.querySelectorAll('#navbar a').forEach(link => {
       }
     });
 </script>
+
 
 
 
