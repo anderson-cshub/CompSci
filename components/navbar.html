@@ -57,4 +57,19 @@
 
     </div>
   </div>
+
+  <script>
+  // Highlight the active link based on current page
+  const currentPath = window.location.pathname.toLowerCase();
+  document.querySelectorAll('nav a').forEach(link => {
+    if (currentPath.includes(link.getAttribute('href').toLowerCase())) {
+      link.classList.add('border-emerald-500', 'text-emerald-600');
+      link.classList.remove('border-transparent', 'text-gray-700');
+    } else {
+      link.classList.remove('border-emerald-500', 'text-emerald-600');
+      link.classList.add('border-transparent', 'text-gray-700');
+    }
+  });
+</script>
+
 </nav>
