@@ -166,8 +166,40 @@
           mobileMenu.classList.toggle('hidden');
         });
       }
+
+      // ⭐ DARK MODE LOGIC ⭐
+      const themeToggle = document.getElementById('themeToggle');
+
+      // Apply saved theme
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeToggle.textContent = '☀️';
+      }
+
+      // Auto-detect system theme if no saved preference
+      if (!localStorage.getItem('theme')) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.documentElement.classList.add('dark');
+          themeToggle.textContent = '☀️';
+        }
+      }
+
+      themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+
+        if (document.documentElement.classList.contains('dark')) {
+          localStorage.setItem('theme', 'dark');
+          themeToggle.textContent = '☀️';
+        } else {
+          localStorage.setItem('theme', 'light');
+          themeToggle.textContent = '🌙';
+        }
+      });
+
     });
 </script>
+
 
 
 
