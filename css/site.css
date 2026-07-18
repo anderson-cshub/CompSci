@@ -73,3 +73,52 @@
   box-shadow: 0 0 6px #34d399;  /* softer emerald glow */
 }
 
+/* ============================
+   Dark Mode
+   ============================ */
+
+.dark body {
+  background: #0f172a; /* slate-900 */
+  color: #e2e8f0;      /* slate-200 */
+}
+
+.dark nav {
+  background: #1e293b; /* slate-800 */
+  color: #e2e8f0;
+}
+
+.dark .nav-link {
+  color: #cbd5e1; /* slate-300 */
+}
+
+.dark .nav-link:hover {
+  border-color: #34d399;
+  color: #34d399;
+  box-shadow: 0 0 10px #34d399;
+}
+
+.dark .nav-link-active {
+  border-color: #34d399;
+  color: #34d399;
+  box-shadow: 0 0 6px #34d399;
+}
+
+.dark .bg-white {
+  background: #1e293b !important;
+}
+
+.dark .text-gray-900 {
+  color: #e2e8f0 !important;
+}
+
+.dark .text-gray-700 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-gray-600 {
+  color: #94a3b8 !important;
+}
+
+
+
+
