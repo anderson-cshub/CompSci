@@ -363,6 +363,53 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
 #progSidebar a.text-emerald-400, #progMenu a.text-emerald-400 {
   text-shadow: 0 0 10px #2cb67d;
 }
+/* Teaching Block Wrapper */
+.teaching-block {
+  max-width: 48rem; /* same as max-w-2xl */
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: white;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Cyberpunk Header */
+.teaching-header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #059669; /* emerald-600 */
+  margin-bottom: 1rem;
+}
+
+/* Syntax Colours */
+.syntax-blue {
+  color: #2563eb; /* blue-600 */
+  font-weight: 600;
+}
+
+.syntax-orange {
+  color: #ea580c; /* orange-600 */
+  font-weight: 600;
+}
+
+.syntax-red {
+  color: #dc2626; /* red-600 */
+  font-weight: 600;
+}
+
+.syntax-emerald {
+  color: #059669; /* emerald-600 */
+  font-weight: 600;
+}
+
+/* Glow Divider */
+.glow-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #34d399, transparent);
+  margin: 1.5rem 0;
+  box-shadow: 0 0 12px #34d399;
+}
 
 
 
