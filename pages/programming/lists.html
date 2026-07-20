@@ -30,7 +30,8 @@
   </div>
 
 <!-- Programming Sidebar -->
-<aside class="fixed left-6 top-32 w-48 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
+<aside id="progSidebar"
+       class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
   <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
   <a href="data_types.html" class="block hover:text-emerald-400 transition">Data Types</a>
   <a href="selection.html" class="block hover:text-emerald-400 transition">Selection</a>
@@ -38,6 +39,23 @@
   <a href="lists.html" class="block hover:text-emerald-400 transition">Lists</a>
   <a href="challenges.html" class="block hover:text-emerald-400 transition">Challenges</a>
 </aside>
+
+<!-- Mobile toggle button -->
+<button id="progMenuBtn"
+        class="md:hidden fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
+  Programming Menu
+</button>
+
+<!-- Mobile slide‑in panel -->
+<div id="progMenu"
+     class="hidden fixed bottom-20 right-6 bg-gray-900/80 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
+  <a href="data_types.html" class="block hover:text-emerald-400 transition">Data Types</a>
+  <a href="selection.html" class="block hover:text-emerald-400 transition">Selection</a>
+  <a href="iteration.html" class="block hover:text-emerald-400 transition">Iteration</a>
+  <a href="lists.html" class="block hover:text-emerald-400 transition">Lists</a>
+  <a href="challenges.html" class="block hover:text-emerald-400 transition">Challenges</a>
+</div>
+
 
   <!-- MAIN CONTENT -->
   <section id="topics" class="max-w-6xl mx-auto px-6 py-12">
