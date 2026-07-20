@@ -255,6 +255,20 @@
     });
 </script>
 
+  <script>
+  // Mobile menu toggle
+  const progMenuBtn = document.getElementById('progMenuBtn');
+  const progMenu = document.getElementById('progMenu');
+  progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
+
+  // Active link highlighting
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('text-emerald-400', 'font-semibold');
+    }
+  });
+</script>
 
 
   
