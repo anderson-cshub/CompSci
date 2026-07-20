@@ -369,7 +369,7 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   margin: 2.5rem auto;
   padding: 1.5rem;
   border-radius: 0.75rem;
-  background: white;
+  background: #ffffff;
   color: #1f2937; /* slate-800 */
   box-shadow: 0 0 12px rgba(0,0,0,0.1);
   animation: fadeIn 0.8s ease-in-out;
@@ -381,7 +381,7 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   backdrop-filter: blur(8px);
   border: 1px solid #34d399;
   box-shadow: 0 0 20px #34d399;
-  color: #e5e7eb; /* gray-200 */
+  color: #e5e7eb;
 }
 
 /* Cyberpunk Header */
@@ -394,45 +394,7 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
 
 /* Dark Mode Header */
 .dark .teaching-header {
-  color: #a5b4fc; /* soft violet glow */
-}
-
-/* Syntax Colours */
-.syntax-blue {
-  color: #2563eb;
-  font-weight: 600;
-}
-
-.syntax-orange {
-  color: #ea580c;
-  font-weight: 600;
-}
-
-.syntax-red {
-  color: #dc2626;
-  font-weight: 600;
-}
-
-.syntax-emerald {
-  color: #059669;
-  font-weight: 600;
-}
-
-/* Dark Mode Syntax Colours (slightly brighter) */
-.dark .syntax-blue {
-  color: #60a5fa;
-}
-
-.dark .syntax-orange {
-  color: #fb923c;
-}
-
-.dark .syntax-red {
-  color: #f87171;
-}
-
-.dark .syntax-emerald {
-  color: #34d399;
+  color: #a5b4fc; /* violet glow */
 }
 
 /* Glow Divider */
