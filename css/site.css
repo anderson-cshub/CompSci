@@ -377,12 +377,14 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
 
 /* Dark Mode Version */
 .dark .teaching-block {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(8px);
   border: 1px solid #34d399;
   box-shadow: 0 0 20px #34d399;
   color: #e5e7eb;
 }
+
+
 
 /* Cyberpunk Header */
 .teaching-header {
