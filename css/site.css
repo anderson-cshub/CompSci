@@ -354,6 +354,15 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   animation: pulseGlow 3s infinite ease-in-out;
 }
 
+/* Sidebar glow animation */
+#progSidebar a:hover, #progMenu a:hover {
+  text-shadow: 0 0 8px #34d399;
+}
+
+/* Active link glow */
+#progSidebar a.text-emerald-400, #progMenu a.text-emerald-400 {
+  text-shadow: 0 0 10px #2cb67d;
+}
 
 
 
