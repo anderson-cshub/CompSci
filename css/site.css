@@ -406,6 +406,23 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   margin: 1.5rem 0;
   box-shadow: 0 0 12px #34d399;
 }
+@keyframes glowFade {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 0 #34d399;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 12px #34d399;
+  }
+}
+
+.glow-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #34d399, transparent);
+  margin: 1.5rem 0;
+  animation: glowFade 1.2s ease-in-out;
+}
 
 
 
