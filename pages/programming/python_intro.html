@@ -9,67 +9,174 @@
   <link rel="stylesheet" href="/CompSci/css/site.css">
 </head>
 
-<body data-page="python_intro" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
+<body data-page="programming" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
-<div id="navbar"></div>
+  <!-- NAVBAR PLACEHOLDER -->
+  <div id="navbar"></div>
 
-<!-- Programming Sidebar -->
-<aside id="progSidebar" class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
-  <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
-  <a href="python_intro.html">Python Intro</a>
-  <a href="data_types.html">Data Types</a>
-  <a href="selection.html">Selection</a>
-  <a href="iteration.html">Iteration</a>
-  <a href="lists.html">Lists</a>
-  <a href="challenges.html">Challenges</a>
-</aside>
+  <!-- CORNER IMAGE -->
+  <img src="../../images/avatar1.png"
+       class="fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
-<section class="max-w-6xl mx-auto px-6 py-12 spacing-fade">
-  <h1 class="text-4xl font-bold mb-6 cyberpunk-text">Python Intro</h1>
+  <!-- YEAR OVERVIEW BUTTON -->
+  <div class="max-w-6xl mx-auto px-6">
+    <a href="../year_overview.html"
+       class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
+       View Year Overview
+    </a>
+  </div>
 
-  <p>Before writing full programs, students need to understand the absolute fundamentals:</p>
+  <!-- Programming Sidebar -->
+  <aside id="progSidebar"
+         class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
+    <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
+    <a href="python_intro.html" class="block hover:text-emerald-400 transition">Python Intro</a>
+    <a href="data_types.html" class="block hover:text-emerald-400 transition">Data Types</a>
+    <a href="selection.html" class="block hover:text-emerald-400 transition">Selection</a>
+    <a href="iteration.html" class="block hover:text-emerald-400 transition">Iteration</a>
+    <a href="lists.html" class="block hover:text-emerald-400 transition">Lists</a>
+    <a href="challenges.html" class="block hover:text-emerald-400 transition">Challenges</a>
+  </aside>
 
-  <ul class="list-disc pl-6">
-    <li>How to print text (“Hello World”)</li>
-    <li>Indentation rules</li>
-    <li>Colons after control statements</li>
-    <li>Basic syntax errors and how to spot them</li>
-  </ul>
+  <!-- Mobile Programming Menu Button -->
+  <button id="progMenuBtn"
+          class="md:hidden fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
+    Programming Menu
+  </button>
 
-  <div class="section-divider"></div>
+  <!-- Mobile Programming Menu Panel -->
+  <div id="progMenu"
+       class="hidden fixed bottom-20 right-6 bg-gray-900/80 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
+    <a href="python_intro.html" class="block hover:text-emerald-400 transition">Python Intro</a>
+    <a href="data_types.html" class="block hover:text-emerald-400 transition">Data Types</a>
+    <a href="selection.html" class="block hover:text-emerald-400 transition">Selection</a>
+    <a href="iteration.html" class="block hover:text-emerald-400 transition">Iteration</a>
+    <a href="lists.html" class="block hover:text-emerald-400 transition">Lists</a>
+    <a href="challenges.html" class="block hover:text-emerald-400 transition">Challenges</a>
+  </div>
 
-  <h2 class="text-2xl font-bold mb-4">Hello World</h2>
-  <p>The simplest Python program:</p>
+  <!-- MAIN CONTENT -->
+  <section class="max-w-6xl mx-auto px-6 py-12 spacing-fade">
+    <h1 class="text-4xl font-bold mb-6 cyberpunk-text">Python Intro - Basics</h1>
 
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg"><code>print("Hello World")</code></pre>
+    <p>Before writing full programs, students need to understand the absolute fundamentals:</p>
 
-  <p>This teaches:</p>
-  <ul class="list-disc pl-6">
-    <li>Function calls</li>
-    <li>Quotation marks</li>
-    <li>Parentheses</li>
-  </ul>
+    <ul class="list-disc pl-6 mb-6">
+      <li>How to print text (“Hello World”)</li>
+      <li>Indentation rules</li>
+      <li>Colons after control statements</li>
+      <li>Basic syntax errors and how to spot them</li>
+    </ul>
 
-  <div class="section-divider"></div>
+    <div class="section-divider"></div>
 
-  <h2 class="text-2xl font-bold mb-4">Indentation</h2>
-  <p>Python uses indentation instead of braces:</p>
+    <h2 class="text-2xl font-bold mb-4">Hello World</h2>
+    <p>The simplest Python program:</p>
 
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg"><code>if True:
+    <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>print("Hello World")</code></pre>
+
+    <p>This teaches:</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li>Function calls</li>
+      <li>Quotation marks</li>
+      <li>Parentheses</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2 class="text-2xl font-bold mb-4">Indentation</h2>
+    <p>Python uses indentation instead of braces:</p>
+
+    <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>if True:
     print("Indented!")</code></pre>
 
-  <p>If indentation is wrong, Python throws an error.</p>
-</section>
+    <p>If indentation is wrong, Python throws an error.</p>
+  </section>
 
-<script>
-  // Sidebar active link
-  const currentPage = window.location.pathname.split('/').pop();
-  document.querySelectorAll('#progSidebar a').forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
-      link.classList.add('text-emerald-400', 'font-semibold');
-    }
-  });
-</script>
+  <!-- FOOTER -->
+  <footer class="bg-white mt-20 py-10 shadow-inner">
+    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+      © 2026 Anderson Computer Science Hub — Resources for Ambrosians 
+    </div>
+  </footer>
+
+  <!-- NAVBAR + DARK MODE SCRIPT -->
+  <script>
+    const currentPageKey = document.body.dataset.page;
+
+    fetch("/CompSci/components/navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+
+        // Highlight active link
+        document.querySelectorAll('#navbar a').forEach(link => {
+          const page = link.dataset.page;
+
+          if (page === currentPageKey) {
+            link.classList.add('nav-link-active');
+            link.classList.remove('border-transparent', 'text-gray-700');
+          } else {
+            link.classList.remove('nav-link-active');
+            link.classList.add('border-transparent', 'text-gray-700');
+          }
+        });
+
+        // Hamburger toggle
+        const burger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (burger && mobileMenu) {
+          burger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+
+        // Dark mode logic
+        const themeToggle = document.getElementById('themeToggle');
+
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+          themeToggle.textContent = '☀️';
+        }
+
+        if (!localStorage.getItem('theme')) {
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (prefersDark) {
+            document.documentElement.classList.add('dark');
+            themeToggle.textContent = '☀️';
+          }
+        }
+
+        themeToggle.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark');
+
+          if (document.documentElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            themeToggle.textContent = '☀️';
+          } else {
+            localStorage.setItem('theme', 'light');
+            themeToggle.textContent = '🌙';
+          }
+        });
+      });
+  </script>
+
+  <!-- Programming sidebar script -->
+  <script>
+    // Mobile programming menu toggle
+    const progMenuBtn = document.getElementById('progMenuBtn');
+    const progMenu = document.getElementById('progMenu');
+    progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
+
+    // Active link highlighting in sidebar
+    const currentPageFile = window.location.pathname.split('/').pop();
+    document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+      if (link.getAttribute('href') === currentPageFile) {
+        link.classList.add('text-emerald-400', 'font-semibold');
+      }
+    });
+  </script>
 
 </body>
 </html>
