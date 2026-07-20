@@ -97,3 +97,80 @@
 
     </div>
   </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-white mt-20 py-10 shadow-inner">
+    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+      © 2026 Anderson Computer Science Hub — Resources for Ambrosians 
+    </div>
+  </footer>
+
+<script>
+  const currentPage = document.body.dataset.page;
+
+  fetch("/CompSci/components/navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+
+      // Highlight active link
+      document.querySelectorAll('#navbar a').forEach(link => {
+        const page = link.dataset.page;
+
+        if (page === currentPage) {
+          link.classList.add('nav-link-active');
+          link.classList.remove('border-transparent', 'text-gray-700');
+        } else {
+          link.classList.remove('nav-link-active');
+          link.classList.add('border-transparent', 'text-gray-700');
+        }
+      });
+
+      // Hamburger toggle (AFTER navbar injection)
+      const burger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      if (burger && mobileMenu) {
+        burger.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // ⭐ DARK MODE LOGIC ⭐
+      const themeToggle = document.getElementById('themeToggle');
+
+      // Apply saved theme
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeToggle.textContent = '☀️';
+      }
+
+      // Auto-detect system theme if no saved preference
+      if (!localStorage.getItem('theme')) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.documentElement.classList.add('dark');
+          themeToggle.textContent = '☀️';
+        }
+      }
+
+      themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+
+        if (document.documentElement.classList.contains('dark')) {
+          localStorage.setItem('theme', 'dark');
+          themeToggle.textContent = '☀️';
+        } else {
+          localStorage.setItem('theme', 'light');
+          themeToggle.textContent = '🌙';
+        }
+      });
+
+    });
+</script>
+
+
+
+
+  
