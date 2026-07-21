@@ -6,173 +6,102 @@
   <title>Exam Questions | Computer Science Hub</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-  .fade-section {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-  }
-  .fade-section.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
-
-  
   <link rel="stylesheet" href="/CompSci/css/site.css">
+
+  <!-- Fade + Slide Animation -->
+  <style>
+    .fade-section {
+      opacity: 0;
+      transform: translateY(15px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    .fade-section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Glow pulse for active button */
+    .active-year {
+      animation: pulseGlow 1.6s infinite ease-in-out;
+    }
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0px #34d399; }
+      50% { box-shadow: 0 0 12px #34d399; }
+      100% { box-shadow: 0 0 0px #34d399; }
+    }
+
+    /* Sticky year selector */
+    #yearSelector {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.7);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body data-page="exam" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
-  <div id="navbar"></div>
+<div id="navbar"></div>
 
-  <!-- CORNER IMAGE -->
-  <img src="../images/avatar1.png"
-       class="fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
+<!-- CORNER IMAGE -->
+<img src="../images/avatar1.png"
+     class="fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
-  <!-- YEAR OVERVIEW BUTTON -->
-  <div class="max-w-6xl mx-auto px-6">
-    <a href="year_overview.html"
-       class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
-       View Year Overview
-    </a>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <section id="papers" class="max-w-6xl mx-auto px-6 py-12">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">OCR GCSE Computer Science — Past Papers</h3>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-
-  <!-- YEAR SELECTOR -->
-<div class="max-w-6xl mx-auto px-6 mt-10">
-  <div class="flex justify-center space-x-4 mb-8">
-    <button id="btn2024" class="year-btn px-5 py-2 rounded-md bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">2024 Papers</button>
-    <button id="btn2023" class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300 transition">2023 Papers</button>
-    <button id="btn2022" class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300 transition">2022 Papers</button>
-    <button id="btnSample" class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold hover:bg-gray-300 transition">Sample Papers</button>
-  </div>
-</div>
-
-<!-- CONTAINER FOR ALL YEARS -->
+<!-- YEAR OVERVIEW BUTTON -->
 <div class="max-w-6xl mx-auto px-6">
-   <!-- 2024 -->
-  <section id="papers2024" class="year-section fade-section">
-      ... your 2024 cards ...
-  </section>
-
-  <!-- 2023 -->
-  <section id="papers2023" class="year-section fade-section hidden">
-      ... your 2023 cards ...
-  </section>
-
-  <!-- 2022 -->
-  <section id="papers2022" class="year-section fade-section hidden">
-      ... your 2022 cards ...
-  </section>
-
-  <!-- SAMPLE -->
-  <section id="papersSample" class="year-section fade-section hidden">
-      ... your sample cards ...
-  </section>
-
+  <a href="year_overview.html"
+     class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
+     View Year Overview
+  </a>
 </div>
 
+<!-- MAIN CONTENT -->
+<section id="papers" class="max-w-6xl mx-auto px-6 py-12">
+  <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">
+    OCR GCSE Computer Science — Past Papers
+  </h3>
 
-  <!-- 2024 -->
-  <section id="papers2024" class="year-section block">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">OCR GCSE Computer Science — Past Papers (2024)</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-      <!-- Paper 1 QP -->
-      <a href="../past_papers_GCSE/2024/2024_paper_one_GCSE.pdf" class="group block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 overflow-hidden">
-        <div class="relative">
-          <img src="../past_papers_GCSE/2024/2024_paper_one_QP.png" alt="OCR GCSE Computer Science Paper 1 — May 2024" class="w-full h-64 object-contain rounded-t-xl transition-transform duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 bg-emerald-600 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300">
-            <span class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100">View Paper</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/01 Computer Systems</h4>
-          <p class="text-gray-700">Exam Paper — 15 May 2024</p>
-        </div>
-      </a>
-
-      <!-- Paper 1 MS -->
-      <a href="../past_papers_GCSE/2024/2024_paper_one_GCSE_MS.pdf" class="group block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 overflow-hidden">
-        <div class="relative">
-          <img src="../past_papers_GCSE/2024/2024_paper_one_MS.png" alt="OCR GCSE Computer Science Paper 1 Mark Scheme — June 2024" class="w-full h-64 object-contain rounded-t-xl transition-transform duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 bg-emerald-600 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300">
-            <span class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100">View Mark Scheme</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/01 Computer Systems</h4>
-          <p class="text-gray-700">Mark Scheme — June 2024</p>
-        </div>
-      </a>
-
-      <!-- Paper 2 QP -->
-      <a href="../past_papers_GCSE/2024/2024_paper_two_GCSE.pdf" class="group block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 overflow-hidden">
-        <div class="relative">
-          <img src="../past_papers_GCSE/2024/2024_paper_two_QP.png" alt="OCR GCSE Computer Science Paper 2 — May 2024" class="w-full h-64 object-contain rounded-t-xl transition-transform duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 bg-emerald-600 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300">
-            <span class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100">View Paper</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/02 Computational Thinking</h4>
-          <p class="text-gray-700">Exam Paper — 20 May 2024</p>
-        </div>
-      </a>
-
-      <!-- Paper 2 MS -->
-      <a href="../past_papers_GCSE/2024/2024_paper_two_GCSE_MS.pdf" class="group block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 overflow-hidden">
-        <div class="relative">
-          <img src="../past_papers_GCSE/2024/2024_paper_two_MS.png" alt="OCR GCSE Computer Science Paper 2 Mark Scheme — June 2024" class="w-full h-64 object-contain rounded-t-xl transition-transform duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 bg-emerald-600 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300">
-            <span class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100">View Mark Scheme</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/02 Computational Thinking</h4>
-          <p class="text-gray-700">Mark Scheme — June 2024</p>
-        </div>
-      </a>
+  <!-- YEAR SELECTOR (sticky) -->
+  <div id="yearSelector" class="max-w-6xl mx-auto px-6 mb-8">
+    <div class="flex justify-center space-x-4">
+      <button id="btn2024" class="year-btn px-5 py-2 rounded-md bg-emerald-600 text-white font-semibold transition">2024 Papers</button>
+      <button id="btn2023" class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold transition">2023 Papers</button>
+      <button id="btn2022" class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold transition">2022 Papers</button>
+      <button id="btnSample" class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold transition">Sample Papers</button>
     </div>
-  </section>
+  </div>
 
-  <!-- 2023 -->
-  <section id="papers2023" class="year-section hidden">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">OCR GCSE Computer Science — Past Papers (2023)</h3>
-    <!-- your 2023 cards here -->
-  </section>
+  <!-- YEAR SECTIONS -->
+  <div class="max-w-6xl mx-auto px-6">
 
-  <!-- 2022 -->
-  <section id="papers2022" class="year-section hidden">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">OCR GCSE Computer Science — Past Papers (2022)</h3>
-    <!-- your 2022 cards here -->
-  </section>
+    <!-- 2024 -->
+    <section id="papers2024" class="year-section fade-section">
+      ... your 2024 cards ...
+    </section>
 
-  <!-- SAMPLE -->
-  <section id="papersSample" class="year-section hidden">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">OCR GCSE Computer Science — Sample Papers</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-      <a href="../past_papers_GCSE/sample/Sample_paper_one_GCSEQPMS.pdf" class="group block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 overflow-hidden">
-        <div class="relative">
-          <img src="../past_papers_GCSE/sample/sample_paper_one_QPMS.png" alt="OCR GCSE Computer Science Sample Paper 1" class="w-full h-64 object-contain rounded-t-xl transition-transform duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 bg-emerald-600 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300">
-            <span class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100">View Paper</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-emerald-700">Sample Paper 1</h4>
-          <p class="text-gray-700">Exam Paper + Mark Scheme</p>
-        </div>
-      </a>
+    <!-- 2023 -->
+    <section id="papers2023" class="year-section fade-section hidden">
+      ... your 2023 cards ...
+    </section>
 
-      <a href="../past_papers_GCSE/sample/Sample_paper_two_GCSEQPMS.pdf" class="group block bg-white
-  </section>
+    <!-- 2022 -->
+    <section id="papers2022" class="year-section fade-section hidden">
+      ... your 2022 cards ...
+    </section>
+
+    <!-- SAMPLE -->
+    <section id="papersSample" class="year-section fade-section hidden">
+      ... your sample cards ...
+    </section>
+
+  </div>
+</section>
+
+<!-- YEAR TOGGLE SCRIPT -->
 <script>
   const sections = {
     "2024": document.getElementById("papers2024"),
@@ -198,21 +127,18 @@
     // Show selected section with fade
     const active = sections[year];
     active.classList.remove("hidden");
-
-    // Force reflow so animation triggers
-    void active.offsetWidth;
-
+    void active.offsetWidth; // trigger animation
     active.classList.add("show");
 
     // Reset all buttons
     Object.values(buttons).forEach(btn => {
-      btn.classList.remove("bg-emerald-600", "text-white");
+      btn.classList.remove("bg-emerald-600", "text-white", "active-year");
       btn.classList.add("bg-gray-200", "text-gray-800");
     });
 
-    // Highlight active button
+    // Highlight active button + glow pulse
     const activeBtn = buttons[year];
-    activeBtn.classList.add("bg-emerald-600", "text-white");
+    activeBtn.classList.add("bg-emerald-600", "text-white", "active-year");
     activeBtn.classList.remove("bg-gray-200", "text-gray-800");
   }
 
@@ -226,14 +152,16 @@
   buttons["Sample"].addEventListener("click", () => showYear("Sample"));
 </script>
 
+<!-- FOOTER -->
+<footer class="bg-white mt-20 py-10 shadow-inner">
+  <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+    © 2026 Anderson Computer Science Hub — Resources for Ambrosians
+  </div>
+</footer>
 
+</body>
+</html>
 
-  <!-- FOOTER -->
-  <footer class="bg-white mt-20 py-10 shadow-inner">
-    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-      © 2026 Anderson Computer Science Hub — Resources for Ambrosians
-    </div>
-  </footer>
 
   <script>
     const currentPage = document.body.dataset.page;
