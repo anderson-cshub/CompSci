@@ -244,13 +244,15 @@ This program asks the user for their name, stores it in a <span class="text-purp
     Many beginners write code like this:
   </p>
 
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>name = "Mr Anderson"
-print("Hello", name)</code></pre>
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>name = input("Enter your name") - user types in Mr Anderson
+print("Hello Mr Anderson)</code></pre>
 
   <p class="mb-4">
     When <strong>they</strong> run it, it prints their name — so they think the program works.
-    But the name is <span class="font-semibold text-red-400">hard‑coded</span>.
-    It will <strong>always</strong> print the same name, even if someone else uses the program.
+    But the name Mr Anderson is <span class="font-semibold text-red-400">hard‑coded</span>.
+    It will <strong>always</strong> print the same name, even if someone else uses the program. You must use the variable name, so that the user can write in what their name actually is.
+    Other mistakes are name = "Mr Anderson"
+    print ("Hello ", name)
   </p>
 
   <p class="mb-4">
