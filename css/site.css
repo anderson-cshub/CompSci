@@ -433,6 +433,10 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
 .pulse-active {
   animation: emeraldPulse 2.2s ease-in-out infinite;
 }
+.dark .pulse-active {
+  animation: emeraldPulse 2.2s ease-in-out infinite;
+  color: #34d399;
+}
 
 
 
