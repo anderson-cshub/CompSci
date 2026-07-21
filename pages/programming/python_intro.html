@@ -200,15 +200,43 @@
 </div>
 
 
-    <div class="section-divider"></div>
+  <div class="section-divider"></div>
 
-    <h2 class="text-2xl font-bold mb-4">Variables</h2>
-    <p>Storing an user's input and then using it</p>
+<h2 class="text-2xl font-bold mb-4">Variables</h2>
+<p>Storing a user’s input and then using it in your program.</p>
 
-    <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>name = input("What is your name")
-    print("Hello ", name)</code></pre>
+<pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>name = input("What is your name? ")
+print("Hello", name)</code></pre>
 
-    <p>If indentation is wrong, Python throws an error.</p>
+<p class="mb-6">
+This program asks the user for their name, stores it in a <span class="text-purple-600 font-semibold">variable</span> called 
+<span class="text-purple-600 font-semibold">name</span>, and then prints a greeting using that variable.
+</p>
+
+<!-- Example card -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Using Variables Inside Text</h3>
+
+  <p class="mb-4">There are two common ways to include a variable inside a sentence:</p>
+
+  <ul class="list-disc pl-6 space-y-3 leading-relaxed">
+    <li>
+      <span class="font-semibold text-blue-600">Concatenation</span> (joining text together):
+      <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mt-2"><code>print("Hello " + name)</code></pre>
+    </li>
+
+    <li>
+      <span class="font-semibold text-blue-600">f‑strings</span> (recommended — cleaner and easier):
+      <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mt-2"><code>print(f"Hello {name}")</code></pre>
+    </li>
+  </ul>
+
+  <p class="text-gray-700 mt-4">
+    f‑strings let you insert variables directly into text using curly braces.  
+    They are the modern, preferred way to format strings in Python.
+  </p>
+</div>
+
   </section>
 
   <!-- FOOTER -->
