@@ -170,7 +170,7 @@
       });
   </script>
 
-  <!-- Programming sidebar script -->
+   <!-- Programming sidebar script -->
   <script>
     // Mobile programming menu toggle
     const progMenuBtn = document.getElementById('progMenuBtn');
@@ -178,13 +178,24 @@
     progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
 
     // Active link highlighting in sidebar
-    const currentPageFile = window.location.pathname.split('/').pop();
-    document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-      if (link.getAttribute('href') === currentPageFile) {
-        link.classList.add('text-emerald-400', 'font-semibold');
-      }
-    });
-  </script>
+//    const currentPageFile = window.location.pathname.split('/').pop();
+ //   document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+  //    if (link.getAttribute('href') === currentPageFile) {
+  //      link.classList.add('text-emerald-400', 'font-semibold');
+ //     }
+//    });
+
+
+  const currentPage = document.body.dataset.page;
+
+  document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+    if (link.dataset.page === currentPage) {
+      link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
+      link.style.textShadow = '0 0 10px #34d399';
+    }
+  });
+</script>
+
 
 
 </body>
