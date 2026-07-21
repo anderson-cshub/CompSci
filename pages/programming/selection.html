@@ -69,23 +69,181 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Example card -->
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
+           <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Basic <span class="text-blue-600">if</span> Statement</h4>
+  <p class="text-gray-700 mb-3">
+    Runs a block of code only if a condition is True.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">age</span> = 18
+
+<span class="text-blue-600">if</span> <span class="text-emerald-700">age</span> >= 18:
+    print(<span class="text-orange-600">"You can vote."</span>)
+  </pre>
+  <p class="text-gray-700 mt-2">Only prints the message when the condition is True.</p>
+</div>
+
       </div>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+     <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700"><span class="text-blue-600">if</span> and <span class="text-blue-600">else</span></h4>
+  <p class="text-gray-700 mb-3">
+    Use <span class="text-blue-600">else</span> when you want something to happen if the condition is False.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">score</span> = 45
+
+<span class="text-blue-600">if</span> <span class="text-emerald-700">score</span> >= 50:
+    print(<span class="text-orange-600">"Pass"</span>)
+<span class="text-blue-600">else</span>:
+    print(<span class="text-orange-600">"Fail"</span>)
+  </pre>
+</div>
+
+    
 
       <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+  <h4 class="text-xl font-bold mb-2 text-emerald-700"><span class="text-blue-600">if</span>, <span class="text-blue-600">elif</span>, <span class="text-blue-600">else</span></h4>
+  <p class="text-gray-700 mb-3">
+    <span class="text-blue-600">elif</span> lets you check multiple conditions in order.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">temp</span> = 25
+
+<span class="text-blue-600">if</span> <span class="text-emerald-700">temp</span> > 30:
+    print(<span class="text-orange-600">"Hot"</span>)
+<span class="text-blue-600">elif</span> <span class="text-emerald-700">temp</span> > 20:
+    print(<span class="text-orange-600">"Warm"</span>)
+<span class="text-blue-600">else</span>:
+    print(<span class="text-orange-600">"Cold"</span>)
+  </pre>
+</div>
+
+
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Multiple <span class="text-blue-600">elif</span> Conditions</h4>
+  <p class="text-gray-700 mb-3">
+    Useful when you need several possible outcomes.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">grade</span> = 72
+
+<span class="text-blue-600">if</span> <span class="text-emerald-700">grade</span> >= 90:
+    print(<span class="text-orange-600">"A"</span>)
+<span class="text-blue-600">elif</span> <span class="text-emerald-700">grade</span> >= 80:
+    print(<span class="text-orange-600">"B"</span>)
+<span class="text-blue-600">elif</span> <span class="text-emerald-700">grade</span> >= 70:
+    print(<span class="text-orange-600">"C"</span>)
+<span class="text-blue-600">else</span>:
+    print(<span class="text-orange-600">"D"</span>)
+  </pre>
+</div>
+
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-5">
+  <h4 class="text-xl font-bold mb-2 text-red-600">Logic Error Example</h4>
+  <p class="text-gray-700 mb-3">
+    Conditions must be ordered correctly.  
+    This example contains a logic error.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">age</span> = 65
+
+<span class="text-blue-600">if</span> <span class="text-emerald-700">age</span> > 50:
+    print(<span class="text-orange-600">"Over 50"</span>)
+<span class="text-blue-600">elif</span> <span class="text-emerald-700">age</span> > 60:
+    print(<span class="text-orange-600">"Over 60"</span>)
+  </pre>
+
+  <p class="text-gray-700 mt-2">
+    The second condition can never run —  
+    <strong>age > 60</strong> is also <strong>age > 50</strong>.  
+    This is a classic GCSE logic error.
+  </p>
+</div>
+
+    
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-6">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Comments</h4>
+  <p class="text-gray-700 mb-3">
+    Comments help explain your code.  
+    Python uses <span class="text-gray-400">#</span> for single‑line comments.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-gray-400"># Ask the user for their age</span>
+<span class="text-emerald-700">age</span> = int(input(<span class="text-orange-600">"Enter age: "</span>))
+
+<span class="text-gray-400"># Check if they are an adult</span>
+<span class="text-blue-600">if</span> <span class="text-emerald-700">age</span> >= 18:
+    print(<span class="text-orange-600">"Adult"</span>)
+  </pre>
+</div>
+
 
     </div>
   </section>
+
+  <h3 class="teaching-header">Selection (Branching) — Making Decisions in Python</h3>
+<div class="glow-divider"></div>
+
+<p class="mb-4">
+  Selection is one of the three key programming constructs:
+</p>
+
+<ul class="list-disc pl-6 text-gray-700 mb-6">
+  <li><strong>Sequence</strong> — instructions run in order</li>
+  <li><strong>Selection</strong> — decisions using <span class="text-blue-600 font-semibold">if</span></li>
+  <li><strong>Iteration</strong> — repeating instructions</li>
+</ul>
+
+<p class="mb-4">
+  Selection allows your program to choose different paths depending on conditions.  
+  Python uses <span class="text-blue-600 font-semibold">if</span>, <span class="text-blue-600 font-semibold">elif</span>, and <span class="text-blue-600 font-semibold">else</span>.
+</p>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Comparison Operators</h4>
+<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+  <li><span class="text-blue-600">==</span> equal to</li>
+  <li><span class="text-blue-600">!=</span> not equal to</li>
+  <li><span class="text-blue-600">&gt;</span> greater than</li>
+  <li><span class="text-blue-600">&lt;</span> less than</li>
+  <li><span class="text-blue-600">&gt;=</span> greater than or equal to</li>
+  <li><span class="text-blue-600">&lt;=</span> less than or equal to</li>
+</ul>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Logic Errors</h4>
+<p class="text-gray-700 mb-4">
+  A logic error is when the program runs but produces the wrong output.  
+  These often happen when conditions are in the wrong order.
+</p>
+
+<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
+<span class="text-emerald-700">age</span> = 65
+
+<span class="text-blue-600">if</span> <span class="text-emerald-700">age</span> > 50:
+    print(<span class="text-orange-600">"Over 50"</span>)
+<span class="text-blue-600">elif</span> <span class="text-emerald-700">age</span> > 60:
+    print(<span class="text-orange-600">"Over 60"</span>)
+</pre>
+
+<p class="text-gray-700 mb-6">
+  The second condition can never run because <strong>age > 60</strong> is also <strong>age > 50</strong>.  
+  OCR love this type of question.
+</p>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Quick Practice</h4>
+<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
+# Write a program that:
+# - Asks for a score
+# - Prints "Distinction", "Merit", "Pass", or "Fail"
+
+# Write a program that:
+# - Asks for age
+# - Prints "Child", "Teenager", "Adult", "Senior"
+</pre>
+
+<p class="text-gray-700">
+  You can add a “Mini Quiz” or “Try It Yourself” section here if you want students to interact with the page.
+</p>
 
 
     <!-- FOOTER -->
