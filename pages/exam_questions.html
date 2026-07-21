@@ -1,3 +1,7 @@
+Excellent — you’ve already got the structure nailed. Let’s polish and extend it so your **Exam Questions** page looks cohesive, professional, and visually balanced.  
+Here’s a refined version that includes both Paper 1 and Paper 2 (question paper + mark scheme), with consistent formatting, spacing, and Tailwind styling that matches your emerald theme:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +10,18 @@
   <title>Exam Questions | Computer Science Hub</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
- <link rel="stylesheet" href="/CompSci/css/site.css">
-
+  <link rel="stylesheet" href="/CompSci/css/site.css">
 </head>
-
 
 <body data-page="exam" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
+  <div id="navbar"></div>
 
- <div id="navbar"></div>
+  <!-- CORNER IMAGE -->
+  <img src="../images/avatar1.png"
+       class="fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
-  
-<!-- CORNER IMAGE -->
-<img src="../images/avatar1.png"
-     class="fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
-
-
- <!-- YEAR OVERVIEW BUTTON -->
+  <!-- YEAR OVERVIEW BUTTON -->
   <div class="max-w-6xl mx-auto px-6">
     <a href="year_overview.html"
        class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
@@ -31,144 +29,129 @@
     </a>
   </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-  <!-- Paper 1 -->
-  <a href="../past_papers_GCSE/2024_paper_one_GCSE.pdf" 
-     class="block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 slide-up delay-1">
-    <img src="../past_papers_GCSE/2024_paper_one_QP.png"
-         alt="OCR GCSE Computer Science Paper – May 2024"
-         class="w-full h-64 object-contain rounded-t-xl">
-    <div class="p-6">
-      <h4 class="text-xl font-bold mb-2">J277/01 Computer Systems</h4>
-      <p class="text-gray-700">Exam Paper — 15 May 2024</p>
-    </div>
-  </a>
-
-  <!-- Mark Scheme -->
-    <a href="../past_papers_GCSE/2024_paper_one_GCSE_MS.pdf" 
-     class="block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 slide-up delay-2">
-     <img src="../past_papers_GCSE/2024_paper_one_MS.png"
-         alt="OCR GCSE Computer Science Mark Scheme – June 2024"
-         class="w-full h-64 object-contain rounded-t-xl">
-    <div class="p-6">
-      <h4 class="text-xl font-bold mb-2">J277/01 Computer Systems</h4>
-      <p class="text-gray-700">Mark Scheme — June 2024</p>
-    </div>
-  </a>
-
-</div>
-
-
   <!-- MAIN CONTENT -->
-  <section id="topics" class="max-w-6xl mx-auto px-6 py-12">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+  <section id="papers" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-3xl font-semibold mb-8 text-gray-900 text-center">OCR GCSE Computer Science — Past Papers (2024)</h3>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
 
-      <!-- Example card -->
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+      <!-- Paper 1 QP -->
+      <a href="../past_papers_GCSE/2024_paper_one_GCSE.pdf"
+         class="block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 slide-up delay-1">
+        <img src="../past_papers_GCSE/2024_paper_one_QP.png"
+             alt="OCR GCSE Computer Science Paper 1 — May 2024"
+             class="w-full h-64 object-contain rounded-t-xl">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/01 Computer Systems</h4>
+          <p class="text-gray-700">Exam Paper — 15 May 2024</p>
+        </div>
+      </a>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+      <!-- Paper 1 MS -->
+      <a href="../past_papers_GCSE/2024_paper_one_GCSE_MS.pdf"
+         class="block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 slide-up delay-2">
+        <img src="../past_papers_GCSE/2024_paper_one_MS.png"
+             alt="OCR GCSE Computer Science Paper 1 Mark Scheme — June 2024"
+             class="w-full h-64 object-contain rounded-t-xl">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/01 Computer Systems</h4>
+          <p class="text-gray-700">Mark Scheme — June 2024</p>
+        </div>
+      </a>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+      <!-- Paper 2 QP -->
+      <a href="../past_papers_GCSE/2024_paper_two_GCSE.pdf"
+         class="block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 slide-up delay-3">
+        <img src="../past_papers_GCSE/2024_paper_two_QP.png"
+             alt="OCR GCSE Computer Science Paper 2 — May 2024"
+             class="w-full h-64 object-contain rounded-t-xl">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/02 Computational Thinking</h4>
+          <p class="text-gray-700">Exam Paper — 20 May 2024</p>
+        </div>
+      </a>
+
+      <!-- Paper 2 MS -->
+      <a href="../past_papers_GCSE/2024_paper_two_GCSE_MS.pdf"
+         class="block bg-white rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all border border-gray-200 slide-up delay-4">
+        <img src="../past_papers_GCSE/2024_paper_two_MS.png"
+             alt="OCR GCSE Computer Science Paper 2 Mark Scheme — June 2024"
+             class="w-full h-64 object-contain rounded-t-xl">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-emerald-700">J277/02 Computational Thinking</h4>
+          <p class="text-gray-700">Mark Scheme — June 2024</p>
+        </div>
+      </a>
 
     </div>
   </section>
 
-
-
-
-
   <!-- FOOTER -->
   <footer class="bg-white mt-20 py-10 shadow-inner">
     <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-      © 2026 Anderson Computer Science Hub — Resources for Ambrosians 
+      © 2026 Anderson Computer Science Hub — Resources for Ambrosians
     </div>
   </footer>
 
-<script>
-  const currentPage = document.body.dataset.page;
+  <script>
+    const currentPage = document.body.dataset.page;
 
-  fetch("/CompSci/components/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
+    fetch("/CompSci/components/navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
 
-      // Highlight active link
-      document.querySelectorAll('#navbar a').forEach(link => {
-        const page = link.dataset.page;
-
-        if (page === currentPage) {
-          link.classList.add('nav-link-active');
-          link.classList.remove('border-transparent', 'text-gray-700');
-        } else {
-          link.classList.remove('nav-link-active');
-          link.classList.add('border-transparent', 'text-gray-700');
-        }
-      });
-
-      // Hamburger toggle (AFTER navbar injection)
-      const burger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-
-      if (burger && mobileMenu) {
-        burger.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
+        document.querySelectorAll('#navbar a').forEach(link => {
+          const page = link.dataset.page;
+          if (page === currentPage) {
+            link.classList.add('nav-link-active');
+            link.classList.remove('border-transparent', 'text-gray-700');
+          } else {
+            link.classList.remove('nav-link-active');
+            link.classList.add('border-transparent', 'text-gray-700');
+          }
         });
-      }
 
-      // ⭐ DARK MODE LOGIC ⭐
-      const themeToggle = document.getElementById('themeToggle');
+        const burger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (burger && mobileMenu) {
+          burger.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
 
-      // Apply saved theme
-      if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.add('dark');
-        themeToggle.textContent = '☀️';
-      }
-
-      // Auto-detect system theme if no saved preference
-      if (!localStorage.getItem('theme')) {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (prefersDark) {
+        const themeToggle = document.getElementById('themeToggle');
+        if (localStorage.getItem('theme') === 'dark') {
           document.documentElement.classList.add('dark');
           themeToggle.textContent = '☀️';
         }
-      }
-
-      themeToggle.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-
-        if (document.documentElement.classList.contains('dark')) {
-          localStorage.setItem('theme', 'dark');
-          themeToggle.textContent = '☀️';
-        } else {
-          localStorage.setItem('theme', 'light');
-          themeToggle.textContent = '🌙';
+        if (!localStorage.getItem('theme')) {
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (prefersDark) {
+            document.documentElement.classList.add('dark');
+            themeToggle.textContent = '☀️';
+          }
         }
+        themeToggle.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark');
+          if (document.documentElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            themeToggle.textContent = '☀️';
+          } else {
+            localStorage.setItem('theme', 'light');
+            themeToggle.textContent = '🌙';
+          }
+        });
       });
-
-    });
-</script>
-
-
+  </script>
 
 </body>
 </html>
+```
 
+### ✨ Improvements included
+- Unified emerald accent for headings.
+- Consistent card height and hover animation.
+- Grid layout that adapts cleanly to mobile and desktop.
+- Clear section heading and spacing.
+- Semantic grouping for Paper 1 and Paper 2.
 
-
-
-
-
-
-
+Would you like me to add a subtle “hover overlay” (e.g., emerald tint + “View Paper” text appearing on hover) to make the cards feel more interactive?
