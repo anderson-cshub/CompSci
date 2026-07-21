@@ -70,23 +70,137 @@
 
       <!-- Example card -->
       <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+        <!-- FOR LOOP -->
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">For Loop (definite iteration)</h4>
+  <p class="text-gray-700 mb-3">
+    A <span class="text-blue-600 font-semibold">for</span> loop repeats a block of code a set number of times.  
+    The loop variable (often <span class="text-emerald-700 font-semibold">i</span> or <span class="text-emerald-700 font-semibold">x</span>) changes each time.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-blue-600">for</span> <span class="text-emerald-700">i</span> <span class="text-blue-600">in</span> <span class="text-blue-600">range</span>(5):
+    print(<span class="text-emerald-700">i</span>)
+  </pre>
+  <p class="text-gray-700 mt-2">This prints 0, 1, 2, 3, 4.</p>
+</div>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+<!-- RANGE EXPLAINED -->
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">The <span class="text-blue-600">range()</span> Function</h4>
+  <p class="text-gray-700 mb-3">
+    <span class="text-blue-600 font-semibold">range()</span> generates a sequence of numbers.  
+    You can use 1, 2 or 3 arguments.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-blue-600">range</span>(5)        # 0 → 4
+<span class="text-blue-600">range</span>(2, 6)     # 2 → 5
+<span class="text-blue-600">range</span>(1, 10, 2) # 1, 3, 5, 7, 9
+  </pre>
+</div>
 
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
-        <h4 class="text-xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-        <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipiscing elit..</p>
-      </div>
+<!-- FOR EACH LOOP -->
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">For‑Each Loop</h4>
+  <p class="text-gray-700 mb-3">
+    Loops through each item in a list or string.  
+    The loop variable becomes each item in turn.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+names = [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Charlie"</span>]
+
+<span class="text-blue-600">for</span> <span class="text-emerald-700">name</span> <span class="text-blue-600">in</span> names:
+    print(<span class="text-emerald-700">name</span>)
+  </pre>
+</div>
+
+<!-- WHILE LOOP -->
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">While Loop (indefinite iteration)</h4>
+  <p class="text-gray-700 mb-3">
+    A <span class="text-blue-600 font-semibold">while</span> loop repeats <strong>until a condition becomes False</strong>.  
+    Used when you don’t know how many times you need to loop.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">count</span> = 0
+
+<span class="text-blue-600">while</span> <span class="text-emerald-700">count</span> < 5:
+    print(<span class="text-emerald-700">count</span>)
+    <span class="text-emerald-700">count</span> += 1
+  </pre>
+</div>
+
+<!-- LOOP CONTROL -->
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-5">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Loop Control: break & continue</h4>
+  <p class="text-gray-700 mb-3">
+    These commands change how loops behave.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-blue-600">for</span> <span class="text-emerald-700">i</span> <span class="text-blue-600">in</span> <span class="text-blue-600">range</span>(10):
+    <span class="text-blue-600">if</span> <span class="text-emerald-700">i</span> == 5:
+        <span class="text-blue-600">break</span>      # stops the loop
+    print(<span class="text-emerald-700">i</span>)
+  </pre>
+</div>
+
+<!-- NESTED LOOPS -->
+<div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-6">
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Nested Loops</h4>
+  <p class="text-gray-700 mb-3">
+    A loop inside another loop.  
+    Useful for grids, tables, and multi‑level data.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-blue-600">for</span> <span class="text-emerald-700">row</span> <span class="text-blue-600">in</span> <span class="text-blue-600">range</span>(3):
+    <span class="text-blue-600">for</span> <span class="text-emerald-700">col</span> <span class="text-blue-600">in</span> <span class="text-blue-600">range</span>(3):
+        print(<span class="text-emerald-700">row</span>, <span class="text-emerald-700">col</span>)
+  </pre>
+</div>
+
 
     </div>
   </section>
 
+<h3 class="teaching-header">Iteration — One of the Three Key Constructs</h3>
+<div class="glow-divider"></div>
+
+<p class="mb-4">
+  Iteration is one of the three fundamental programming constructs:
+</p>
+
+<ul class="list-disc pl-6 text-gray-700 mb-6">
+  <li><strong>Sequence</strong> — instructions run in order</li>
+  <li><strong>Selection</strong> — decisions using <span class="text-blue-600 font-semibold">if</span></li>
+  <li><strong>Iteration</strong> — repeating instructions</li>
+</ul>
+
+<p class="mb-4">
+  Python supports two main types of iteration:
+</p>
+
+<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+  <li><strong>Definite iteration</strong> — using <span class="text-blue-600 font-semibold">for</span> when you know how many times to loop.</li>
+  <li><strong>Indefinite iteration</strong> — using <span class="text-blue-600 font-semibold">while</span> when you loop until a condition changes.</li>
+</ul>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Common GCSE Mistakes</h4>
+<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+  <li>Forgetting to update the loop variable in a <span class="text-blue-600 font-semibold">while</span> loop.</li>
+  <li>Using <span class="text-blue-600 font-semibold">range</span> incorrectly (off‑by‑one errors).</li>
+  <li>Confusing <strong>for‑each</strong> loops with <strong>range</strong> loops.</li>
+  <li>Accidentally creating infinite loops.</li>
+</ul>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Quick Practice</h4>
+<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
+# Write a loop that prints numbers 1 → 10
+# Write a loop that prints each letter in your name
+# Write a while loop that counts down from 5 to 1
+</pre>
+
+<p class="text-gray-700">
+  You can add a “Mini Quiz” or “Try It Yourself” section here if you want students to interact with the page.
+</p>
 
 
     <!-- FOOTER -->
