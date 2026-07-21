@@ -424,6 +424,18 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   animation: glowFade 1.2s ease-in-out;
 }
 
+@keyframes emeraldPulse {
+  0%   { text-shadow: 0 0 6px #34d399; }
+  50%  { text-shadow: 0 0 14px #34d399; }
+  100% { text-shadow: 0 0 6px #34d399; }
+}
+
+.pulse-active {
+  animation: emeraldPulse 2.2s ease-in-out infinite;
+}
+
+
+
 
 
 
