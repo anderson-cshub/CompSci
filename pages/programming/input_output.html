@@ -1,109 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAGE TITLE | Computer Science Hub</title>
-
+  <title>Inputs & Outputs | Computer Science Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../css/site.css">
 </head>
 
+<body data-page="programming"
+      class="bg-gradient-to-b from-emerald-50 to-gray-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100">
 
-<body data-page="programming" class="bg-gradient-to-b from-emerald-50 to-gray-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100"> <!-- remember to change this as it makes the glow!! Use programming for now to see that it works -->
+  <div id="navbar"></div>
 
-<h3 class="text-3xl font-semibold mb-8 text-gray-900 dark:text-gray-100">PAGE TITLE</h3>
-
-<div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-1">
-
-<footer class="bg-white dark:bg-gray-900 mt-20 py-10 shadow-inner">
-
-
- <div id="navbar"></div>
-
-
-<!-- CORNER IMAGE -->
+  <!-- CORNER IMAGE -->
   <img src="../../images/avatar1.png"
-     class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
+       class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
- <!-- YEAR OVERVIEW BUTTON -->
+  <!-- YEAR OVERVIEW BUTTON -->
   <div class="max-w-6xl mx-auto px-6">
     <a href="../year_overview.html"
        class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
-       View Year Overview
+      View Year Overview
     </a>
   </div>
 
-<!-- Programming Sidebar -->
-<aside id="progSidebar"
-       class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
-  <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
-     <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
-<a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
-<a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
-<a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
-<a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
-<a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
-
-</aside>
-
-<!-- Mobile toggle button -->
-<button id="progMenuBtn"
-        class="md:hidden fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
-  Programming Menu
-</button>
-
-<!-- Mobile slide‑in panel -->
-<div id="progMenu"
-     class="hidden fixed bottom-20 right-6 bg-gray-900/80 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
+  <!-- Programming Sidebar -->
+  <aside id="progSidebar"
+         class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
+    <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
     <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
-<a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
-<a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
-<a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
-<a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
-<a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+    <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
+    <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
+    <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
+    <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
+    <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+  </aside>
 
-</div>
-<!-- MAIN CONTENT -->
-<section id="topics" class="max-w-7xl mx-auto px-8 py-14">
+  <!-- Mobile toggle button -->
+  <button id="progMenuBtn"
+          class="md:hidden fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
+    Programming Menu
+  </button>
 
-  <h3 class="text-3xl font-semibold mb-8 text-gray-900">PAGE TITLE</h3>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-    <!-- CARD 1 -->
-    <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
-      <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-      <p class="text-gray-700">Card content goes here.</p>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
-      <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-      <p class="text-gray-700">Card content goes here.</p>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
-      <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-      <p class="text-gray-700">Card content goes here.</p>
-    </div>
-
+  <!-- Mobile slide‑in panel -->
+  <div id="progMenu"
+       class="hidden fixed bottom-20 right-6 bg-gray-900/80 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
+    <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
+    <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
+    <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
+    <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
+    <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
+    <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="bg-white mt-20 py-10 shadow-inner">
-  <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-    © 2026 Anderson Computer Science Hub — Resources for Ambrosians
-  </div>
-</footer>
+  <!-- MAIN CONTENT -->
+  <section id="topics" class="max-w-7xl mx-auto px-8 py-14">
+    <h3 class="text-3xl font-semibold mb-8 text-gray-900 dark:text-gray-100">Inputs & Outputs</h3>
 
-</body>
-</html>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-1">
+        <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
+        <p class="text-gray-700 dark:text-gray-200">Card content goes here.</p>
+      </div>
 
- <!-- NAVBAR + DARK MODE SCRIPT -->
+      <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-2">
+        <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
+        <p class="text-gray-700 dark:text-gray-200">Card content goes here.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-3">
+        <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
+        <p class="text-gray-700 dark:text-gray-200">Card content goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white dark:bg-gray-900 mt-20 py-10 shadow-inner">
+    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600 dark:text-gray-300">
+      © 2026 Anderson Computer Science Hub — Resources for Ambrosians
+    </div>
+  </footer>
+
+  <!-- NAVBAR + DARK MODE SCRIPT -->
   <script>
     const currentPageKey = document.body.dataset.page;
 
@@ -115,7 +95,6 @@
         // Highlight active link
         document.querySelectorAll('#navbar a').forEach(link => {
           const page = link.dataset.page;
-
           if (page === currentPageKey) {
             link.classList.add('nav-link-active');
             link.classList.remove('border-transparent', 'text-gray-700');
@@ -128,7 +107,6 @@
         // Hamburger toggle
         const burger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
-
         if (burger && mobileMenu) {
           burger.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
@@ -137,63 +115,52 @@
 
         // Dark mode logic
         const themeToggle = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
 
-        if (localStorage.getItem('theme') === 'dark') {
-          document.documentElement.classList.add('dark');
-          themeToggle.textContent = '☀️';
-        }
-
-        if (!localStorage.getItem('theme')) {
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (prefersDark) {
+        const applyInitialTheme = (btn) => {
+          if (!btn) return;
+          if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark');
-            themeToggle.textContent = '☀️';
-          }
-        }
-
-        themeToggle.addEventListener('click', () => {
-          document.documentElement.classList.toggle('dark');
-
-          if (document.documentElement.classList.contains('dark')) {
-            localStorage.setItem('theme', 'dark');
-            themeToggle.textContent = '☀️';
+            btn.textContent = '☀️';
           } else {
-            localStorage.setItem('theme', 'light');
-            themeToggle.textContent = '🌙';
+            btn.textContent = '🌙';
           }
+        };
+
+        applyInitialTheme(themeToggle);
+        applyInitialTheme(themeToggleMobile);
+
+        [themeToggle, themeToggleMobile].forEach(btn => {
+          if (!btn) return;
+          btn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            if (document.documentElement.classList.contains('dark')) {
+              localStorage.setItem('theme', 'dark');
+              btn.textContent = '☀️';
+            } else {
+              localStorage.setItem('theme', 'light');
+              btn.textContent = '🌙';
+            }
+          });
         });
       });
   </script>
 
-   <!-- Programming sidebar script -->
+  <!-- Programming sidebar script -->
   <script>
-    // Mobile programming menu toggle
     const progMenuBtn = document.getElementById('progMenuBtn');
     const progMenu = document.getElementById('progMenu');
+
     progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
 
-    // Active link highlighting in sidebar
-//    const currentPageFile = window.location.pathname.split('/').pop();
- //   document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-  //    if (link.getAttribute('href') === currentPageFile) {
-  //      link.classList.add('text-emerald-400', 'font-semibold');
- //     }
-//    });
-
-
-  const currentPage = document.body.dataset.page;
-
-  document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-    if (link.dataset.page === currentPage) {
-      link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
-      link.style.textShadow = '0 0 10px #34d399';
-    }
-  });
-</script>
-
-
+    const currentPage = document.body.dataset.page;
+    document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+      if (link.dataset.page === currentPage) {
+        link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
+        link.style.textShadow = '0 0 10px #34d399';
+      }
+    });
+  </script>
 
 </body>
 </html>
-
-
