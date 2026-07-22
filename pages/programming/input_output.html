@@ -76,13 +76,35 @@
     </div>
 
     <!-- CARD 2 -->
-    <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
-      <h4 class="text-xl font-bold mb-2 text-emerald-700">Input</h4>
-      <p class="text-gray-700">Inputs are needed when the user needs to enter their own data. </p>
-      <p class="text-gray-700">To store the user's input we need to use a variable. 
-      A variable is storage.  Variable is storage/data that can vary ie. change 
-      <span class="text-green-400 font-semibold">printremember this bit as it pops up in exams. Variable can change </p></span>
-    </div>
+   <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg 
+            transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 
+            slide-up delay-2">
+
+  <h4 class="text-xl font-bold mb-4 text-emerald-700">Input</h4>
+
+  <p class="text-gray-700 dark:text-gray-200 mb-3">
+    Inputs are used when the user needs to enter their own data. To store this data, we use a 
+    <span class="text-emerald-600 font-semibold">variable</span>.
+  </p>
+
+  <p class="text-gray-700 dark:text-gray-200 mb-3">
+    A variable is a named piece of storage in memory. The value inside it can 
+    <span class="text-emerald-500 font-semibold">change</span> — which is why it’s called a “variable”.
+  </p>
+
+  <div class="bg-emerald-50 dark:bg-gray-700 border-l-4 border-emerald-500 p-3 rounded-md mb-4">
+    <p class="text-gray-800 dark:text-gray-200 text-sm">
+      <strong>Exam tip:</strong> A variable can change. A constant cannot.
+    </p>
+  </div>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+name = input("Enter your name: ")
+print("Hello", name)
+  </pre>
+
+</div>
+
 
     <!-- CARD 3 -->
     <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
