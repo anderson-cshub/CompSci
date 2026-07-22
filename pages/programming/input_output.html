@@ -284,34 +284,44 @@ print(f"Score: {score}")
           });
         }
 
-        // Dark mode logic
-        const themeToggle = document.getElementById('themeToggle');
+       // ⭐ DARK MODE LOGIC ⭐
+const themeToggleDesktop = document.getElementById('themeToggle');
+const themeToggleMobile  = document.getElementById('themeToggleMobile');
 
-        if (localStorage.getItem('theme') === 'dark') {
-          document.documentElement.classList.add('dark');
-          themeToggle.textContent = '☀️';
-        }
+const toggles = [themeToggleDesktop, themeToggleMobile].filter(Boolean);
 
-        if (!localStorage.getItem('theme')) {
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (prefersDark) {
-            document.documentElement.classList.add('dark');
-            themeToggle.textContent = '☀️';
-          }
-        }
+if (toggles.length) {
+  // Apply saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+    toggles.forEach(btn => btn.textContent = '☀️');
+  }
 
-        themeToggle.addEventListener('click', () => {
-          document.documentElement.classList.toggle('dark');
+  // Auto-detect system theme if no saved preference
+  if (!localStorage.getItem('theme')) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      document.documentElement.classList.add('dark');
+      toggles.forEach(btn => btn.textContent = '☀️');
+    }
+  }
 
-          if (document.documentElement.classList.contains('dark')) {
-            localStorage.setItem('theme', 'dark');
-            themeToggle.textContent = '☀️';
-          } else {
-            localStorage.setItem('theme', 'light');
-            themeToggle.textContent = '🌙';
-          }
-        });
-      });
+  // Attach click to BOTH buttons
+  toggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        toggles.forEach(b => b.textContent = '☀️');
+      } else {
+        localStorage.setItem('theme', 'light');
+        toggles.forEach(b => b.textContent = '🌙');
+      }
+    });
+  });
+}
+  });
   </script>
 
 
