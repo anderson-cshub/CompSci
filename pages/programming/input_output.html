@@ -3,87 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inputs & Outputs | Computer Science Hub</title>
-  
+  <title>Inputs and Outputs | Computer Science Hub</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <link rel="stylesheet" href="../css/site.css">
+
+  <link rel="stylesheet" href="/CompSci/css/site.css">
 </head>
 
+
+<body data-page="lists" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800"> 
   
-<body data-page="programming" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800"> 
+ <div id="navbar"></div>
 
-  <div id="navbar"></div>
 
-  
-  <!-- CORNER IMAGE -->
-  <img src="../../images/avatar1.png"
-       class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
+<!-- CORNER IMAGE -->
+<img src="../../images/avatar1.png"
+     class="fixed top-30 right-10 w-40 h-40 object-contain opacity-90 slide-up delay-2 drop-shadow-[0_0_12px_#34d399] hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
-  <!-- YEAR OVERVIEW BUTTON -->
+
+ <!-- YEAR OVERVIEW BUTTON -->
   <div class="max-w-6xl mx-auto px-6">
     <a href="../year_overview.html"
        class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
-      View Year Overview
+       View Year Overview
     </a>
   </div>
 
-  
-  <!-- Programming Sidebar -->
-  <aside id="progSidebar"
-         class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
-    <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
-    <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
-    <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
-    <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
-    <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
-    <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
-    <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
-  </aside>
+<!-- Programming Sidebar -->
+<aside id="progSidebar"
+       class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
+  <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
+   <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
+<a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
+<a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
+<a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
+<a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
+<a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+</aside>
 
-  <!-- Mobile toggle button -->
-  <button id="progMenuBtn"
-          class="md:hidden fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
-    Programming Menu
-  </button>
+<!-- Mobile toggle button -->
+<button id="progMenuBtn"
+        class="md:hidden fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
+  Programming Menu
+</button>
 
-  <!-- Mobile slide‑in panel -->
-  <div id="progMenu"
-       class="hidden fixed bottom-20 right-6 bg-gray-900/80 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
+<!-- Mobile slide‑in panel -->
+<div id="progMenu"
+     class="hidden fixed bottom-20 right-6 bg-gray-900/80 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399]">
     <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
-    <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
-    <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
-    <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
-    <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
-    <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
-  </div>
+<a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
+<a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
+<a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
+<a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
+<a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+</div>
 
   <!-- MAIN CONTENT -->
-  <section id="topics" class="max-w-7xl mx-auto px-8 py-14">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900 dark:text-gray-100">Inputs & Outputs</h3>
+<section id="topics" class="max-w-7xl mx-auto px-8 py-14">
+   <h3 class="text-3xl font-semibold mb-8 text-gray-900">Lists and Arrays</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+   
+       <!-- Python Lists -->
+      
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-1">
-        <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-        <p class="text-gray-700 dark:text-gray-200">Card content goes here.</p>
-      </div>
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Lists in Python</h4>
+  <p class="text-gray-700 mb-3">
+    A <strong>list</strong> stores multiple values in one variable. Lists are dynamic — they can grow or shrink.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">scores</span> = [10, 20, 30, 40]
+print(<span class="text-emerald-700">scores</span>[0])  <span class="text-gray-400"># first item</span>
+<span class="text-emerald-700">scores</span>.append(50)
+  </pre>
+  <p class="text-gray-700 mt-2">Lists can hold mixed data types and change size at runtime.</p>
+</div>
 
-      <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-2">
-        <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-        <p class="text-gray-700 dark:text-gray-200">Card content goes here.</p>
-      </div>
+<!-- GCSE Arrays -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
 
-      <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 slide-up delay-3">
-        <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-        <p class="text-gray-700 dark:text-gray-200">Card content goes here.</p>
-      </div>
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Arrays (GCSE Concept)</h4>
+  <p class="text-gray-700 mb-3">
+    In GCSE theory, an <strong>array</strong> is a fixed‑size structure storing data of the same type.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-gray-400"># Example GCSE pseudocode</span>
+<span class="text-blue-600">DECLARE</span> <span class="text-emerald-700">scores</span>[5] <span class="text-blue-600">AS INTEGER</span>
+<span class="text-emerald-700">scores</span>[0] ← 10
+<span class="text-emerald-700">scores</span>[1] ← 20
+  </pre>
+  <p class="text-gray-700 mt-2">Arrays are fixed in size and type — unlike Python lists.</p>
+</div>
+
+<!-- 2D Array (Tic‑Tac‑Toe) -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">2D Array — Tic‑Tac‑Toe Grid</h4>
+  <p class="text-gray-700 mb-3">
+    A 2D array stores data in rows and columns. Each element is accessed by two indices.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">grid</span> = [
+    [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>],
+    [<span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>],
+    [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">" "</span>, <span class="text-orange-600">"O"</span>]
+]
+
+print(<span class="text-emerald-700">grid</span>[0][2])  <span class="text-gray-400"># top‑right cell</span>
+  </pre>
+  <p class="text-gray-700 mt-2">Each row represents a line on the board; each column a position.</p>
+</div>
+
+<!-- 2D Array — Pupil Scores -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">2D Array — Pupil Scores</h4>
+  <p class="text-gray-700 mb-3">
+    A table of names, subjects, and scores can be stored as a 2D array.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">results</span> = [
+    [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Maths"</span>, 88],
+    [<span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Science"</span>, 75],
+    [<span class="text-orange-600">"Charlie"</span>, <span class="text-orange-600">"English"</span>, 92]
+]
+
+print(<span class="text-emerald-700">results</span>[1][0])  <span class="text-gray-400"># Bob</span>
+print(<span class="text-emerald-700">results</span>[2][2])  <span class="text-gray-400"># Charlie’s score</span>
+  </pre>
+  <p class="text-gray-700 mt-2">Row = pupil, column = data field.</p>
+</div>
+
+<!-- Accessing Elements -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+
+  <h4 class="text-xl font-bold mb-2 text-emerald-700">Accessing Elements</h4>
+  <p class="text-gray-700 mb-3">
+    Use indices to access or update elements in lists or arrays.
+  </p>
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-emerald-700">scores</span> = [10, 20, 30]
+<span class="text-emerald-700">scores</span>[1] = 25
+print(<span class="text-emerald-700">scores</span>)
+  </pre>
+</div>
+</div>
+    
+  <section class="max-w-6xl mx-auto px-6 py-12">
+ <div class="teaching-block">
+      <h3 class="teaching-header">Lists and Arrays — Storing Collections of Data</h3>
+<div class="glow-divider"></div>
+
+<p class="mb-4">
+  Lists and arrays are both used to store multiple values, but they behave differently.  
+  Python uses <strong>lists</strong>, while GCSE pseudocode often refers to <strong>arrays</strong>.
+</p>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Python Lists</h4>
+<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+  <li>Dynamic — can grow or shrink.</li>
+  <li>Can store mixed data types.</li>
+  <li>Access items using indices starting at 0.</li>
+</ul>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">GCSE Arrays</h4>
+<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+  <li>Fixed size and data type.</li>
+  <li>Used in pseudocode and exam questions.</li>
+  <li>Often shown as tables or grids.</li>
+</ul>
+
+<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">2D Arrays</h4>
+<p class="text-gray-700 mb-4">
+  A 2D array stores data in rows and columns — like a spreadsheet.  
+  Each element is accessed using two indices: <code>[row][column]</code>.
+</p>
+
+<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
+<span class="text-gray-400"># Tic‑Tac‑Toe grid example</span>
+<span class="text-emerald-700">grid</span> = [
+    [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>],
+    [<span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>],
+    [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">" "</span>, <span class="text-orange-600">"O"</span>]
+]
+print(<span class="text-emerald-700">grid</span>[0][0])  <span class="text-gray-400"># top‑left cell</span>
+print(<span class="text-emerald-700">grid</span>[0][2])  <span class="text-gray-400"># top‑right cell</span>
+</pre>
+  
+
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-white dark:bg-gray-900 mt-20 py-10 shadow-inner">
-    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600 dark:text-gray-300">
-      © 2026 Anderson Computer Science Hub — Resources for Ambrosians
+
+
+    <!-- FOOTER -->
+  <footer class="bg-white mt-20 py-10 shadow-inner">
+    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+      © 2026 Anderson Computer Science Hub — Resources for Ambrosians 
     </div>
   </footer>
 
@@ -176,5 +292,7 @@
   });
 </script>
 
+
 </body>
 </html>
+
