@@ -57,8 +57,7 @@
 <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
 </div>
 
-  <!-- MAIN CONTENT -->
-<!-- MAIN CONTENT -->
+ <!-- MAIN CONTENT -->
 <section id="topics" class="max-w-7xl mx-auto px-8 py-14">
 
   <h3 class="text-3xl font-semibold mb-8 text-gray-900">PAGE TITLE</h3>
@@ -84,39 +83,119 @@
     </div>
   </div>
     
-  <section class="max-w-6xl mx-auto px-6 py-12">
  <div class="teaching-block">
-      <h3 class="teaching-header">Title of main stuff</h3>
-<div class="glow-divider"></div>
 
-<p class="mb-4">
- main body can go in here.  
-  
-</p>
+  <h3 class="teaching-header">Inputs and Outputs — Writing Clean, Readable Code</h3>
+  <div class="glow-divider"></div>
 
-<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Title</h4>
-<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-  <li>List body</li>
-  <li>a list </li>
-  <li>b list </li>
-</ul>
+  <p class="mb-4 text-gray-700 dark:text-gray-200">
+    Inputs and outputs are how your program communicates with the user. Good programs don’t just work — they are readable, well‑structured, and easy to maintain. This section covers best practice for naming variables, formatting output, and writing clean multi‑line code.
+  </p>
 
-<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">List 2</h4>
-<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-  <li>List body</li>
-  <li>a list </li>
-  <li>b list </li>
-</ul>
+  <!-- Meaningful Identifiers -->
+  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Meaningful Identifiers</h4>
+  <p class="text-gray-700 dark:text-gray-200 mb-4">
+    A variable name should describe what it stores. Python allows several naming styles:
+  </p>
 
-<h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Title</h4>
-<p class="text-gray-700 mb-4">
-  lorum ipsum 
- </p>
+  <ul class="list-disc pl-6 text-gray-700 dark:text-gray-200 space-y-2 mb-6">
+    <li><strong>lowercase</strong> — simple variables: <code>name</code>, <code>score</code></li>
+    <li><strong>snake_case</strong> — Python’s preferred style: <code>total_score</code>, <code>user_name</code></li>
+    <li><strong>camelCase</strong> — common in JavaScript, allowed but not standard in Python: <code>userName</code></li>
+    <li><strong>kebab-case</strong> — <em>not allowed</em> in Python (hyphens are subtraction): <code>user-name</code></li>
+    <li><strong>UPPER_CASE</strong> — used for constants: <code>MAX_SIZE = 10</code></li>
+  </ul>
 
-<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
-<span class="text-gray-400"># Code examples can go in here</span>
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+# Good naming
+user_name = input("Enter your name: ")
+total_score = 0
 
-</pre>
+# Constant (Python convention)
+MAX_ATTEMPTS = 3
+  </pre>
+
+  <!-- Input -->
+  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Using Input</h4>
+  <p class="text-gray-700 dark:text-gray-200 mb-4">
+    <code>input()</code> always returns a string. Convert it when needed:
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+age = int(input("Enter your age: "))
+height = float(input("Enter your height in metres: "))
+  </pre>
+
+  <!-- Output Formatting -->
+  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Output Formatting</h4>
+  <p class="text-gray-700 dark:text-gray-200 mb-4">
+    Python lets you join text and variables in several ways:
+  </p>
+
+  <ul class="list-disc pl-6 text-gray-700 dark:text-gray-200 space-y-2 mb-6">
+    <li><strong>Comma separator</strong> — easiest, adds spaces automatically.</li>
+    <li><strong>Plus operator</strong> — joins strings only (must convert numbers).</li>
+    <li><strong>f‑strings</strong> — modern, clean, recommended.</li>
+  </ul>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+name = "Alice"
+score = 42
+
+print("Hello", name)              # comma separator
+print("Score: " + str(score))     # plus operator
+print(f"{name} scored {score}")   # f-string (best)
+  </pre>
+
+  <!-- New Lines -->
+  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">New Lines and Multi‑Line Output</h4>
+  <p class="text-gray-700 dark:text-gray-200 mb-4">
+    Use <code>\n</code> for new lines, or triple quotes for multi‑line text.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+print("Line 1\nLine 2\nLine 3")
+
+print("""
+Name: Alice
+Score: 42
+Grade: A
+""")
+  </pre>
+
+  <!-- Long Lines -->
+  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Avoiding Long Lines</h4>
+  <p class="text-gray-700 dark:text-gray-200 mb-4">
+    If a line gets too long, break it across multiple lines using parentheses:
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+message = (
+    "This is a very long message that would normally "
+    "go off the screen, but splitting it keeps the code tidy."
+)
+
+print(message)
+  </pre>
+
+  <!-- Example Program -->
+  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Example — Clean Input/Output Program</h4>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+user_name = input("Enter your name: ")
+score = int(input("Enter your score: "))
+
+print(f"\nResults for {user_name}")
+print("----------------------")
+print(f"Score: {score}")
+  </pre>
+
+  <p class="text-gray-700 dark:text-gray-200 mb-4">
+    This example shows clean naming, input conversion, f‑strings, and formatted output.
+  </p>
+
+</div>
+
     
      </div> <!--closing div -->
   </section> <!--closing section -->
