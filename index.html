@@ -137,7 +137,9 @@
       }
 
       // ⭐ DARK MODE LOGIC ⭐
-      const themeToggle = document.getElementById('themeToggle');
+    
+const themeToggle = document.getElementById('themeToggle')
+                 || document.getElementById('themeToggleMobile');
 
       // Apply saved theme
       if (localStorage.getItem('theme') === 'dark') {
