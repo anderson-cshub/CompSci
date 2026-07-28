@@ -309,12 +309,6 @@ import random
 <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Dice 2:"</span>, <span class="text-green-400">dice2</span>)
     </pre>
 
-    <!-- Dice Game (No Functions) -->
-    <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game — Two Players (No Functions)</h4>
-
-    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
-import random
-
 # --- Player 1 rolls ---
 <span class="text-green-400">p1_roll1</span> = random.randint(1, 6)
 <span class="text-green-400">p1_roll2</span> = random.randint(1, 6)
@@ -336,6 +330,41 @@ import random
 <span class="text-cyan-400">print</span>("Player 2 total:", player2_total)
 
 # --- Decide winner ---
+<span class="text-blue-600">if</span> player1_total > player2_total:
+    <span class="text-cyan-400">print</span>("Player 1 wins!")
+<span class="text-blue-600">elif</span> player2_total > player1_total:
+    <span class="text-cyan-400">print</span>("Player 2 wins!")
+<span class="text-blue-600">else</span>:
+    <span class="text-cyan-400">print</span>("It's a draw!")
+    </pre>
+
+  </div>
+
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-6">
+
+  <div class="teaching-block w-full">
+
+    <h3 class="teaching-header">Dice Example using function</h3>
+    <div class="glow-divider"></div>
+  <!-- Dice Game (With Functions) -->
+    <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game — Using a Function (GCSE‑Level)</h4>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
+import random
+
+<span class="text-blue-600">def</span> <span class="text-green-400">roll_two_dice</span>():
+    <span class="text-green-400">d1</span> = random.randint(1, 6)
+    <span class="text-green-400">d2</span> = random.randint(1, 6)
+    <span class="text-blue-600">return</span> <span class="text-green-400">d1</span> + <span class="text-green-400">d2</span>
+
+<span class="text-green-400">player1_total</span> = roll_two_dice() + roll_two_dice()
+<span class="text-green-400">player2_total</span> = roll_two_dice() + roll_two_dice()
+
+<span class="text-cyan-400">print</span>("Player 1 total:", player1_total)
+<span class="text-cyan-400">print</span>("Player 2 total:", player2_total)
+
 <span class="text-blue-600">if</span> player1_total > player2_total:
     <span class="text-cyan-400">print</span>("Player 1 wins!")
 <span class="text-blue-600">elif</span> player2_total > player1_total:
