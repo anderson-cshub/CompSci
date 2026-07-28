@@ -217,9 +217,9 @@ import math
 </section>
 
   <!--Random Numbers Section -->
-  <section class="max-w-6xl mx-auto px-6 py-6">
+<section class="max-w-6xl mx-auto px-6 py-6">
 
-  <div class="teaching-block">
+  <div class="teaching-block w-full">
 
     <h3 class="teaching-header">Random Numbers</h3>
     <div class="glow-divider"></div>
@@ -282,14 +282,26 @@ import random
       Use <strong>randint(1,10)</strong> or <strong>uniform(0,10)</strong> instead.
     </p>
 
-    <!-- Two Dice -->
-    <h4 class="text-xl font-bold mb-2 text-emerald-700">Two Dice — Different Random Numbers</h4>
-    <p class="text-gray-700 mb-3">
-      Each call to <strong>randint()</strong> generates a new random number.
-      If you roll two dice, you must call <strong>randint()</strong> twice.
+  </div>
+
+</section>
+<section class="max-w-6xl mx-auto px-6 py-6">
+
+  <div class="teaching-block w-full">
+
+    <h3 class="teaching-header">Dice Examples</h3>
+    <div class="glow-divider"></div>
+
+    <p class="mb-4 text-gray-700">
+      These examples show how to generate multiple random numbers and build simple dice games.
     </p>
 
+    <!-- Two Dice (No Functions) -->
+    <h4 class="text-xl font-bold mb-2 text-emerald-700">Rolling Two Dice (No Functions)</h4>
+
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+import random
+
 <span class="text-green-400">dice1</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
 <span class="text-green-400">dice2</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
 
@@ -297,84 +309,45 @@ import random
 <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Dice 2:"</span>, <span class="text-green-400">dice2</span>)
     </pre>
 
-   <!-- Dice Game (Functions) -->
-        <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game Example Using Functions (GCSE‑Level)</h4>
-    <p class="text-gray-700 mb-3">
-      Two players roll two dice twice.  
-      The highest total score wins.
-    </p>
-
-    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
-
-import random
-
-<span class="text-blue-600">def</span> <span class="text-green-400">roll_two_dice</span>():
-    <span class="text-green-400">d1</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-    <span class="text-green-400">d2</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-    <span class="text-blue-600">return</span> <span class="text-green-400">d1</span> + <span class="text-green-400">d2</span>
-
-<span class="text-green-400">player1_total</span> = roll_two_dice() + roll_two_dice()
-<span class="text-green-400">player2_total</span> = roll_two_dice() + roll_two_dice()
-
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 1 total:"</span>, <span class="text-green-400">player1_total</span>)
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 total:"</span>, <span class="text-green-400">player2_total</span>)
-
-<span class="text-blue-600">if</span> <span class="text-green-400">player1_total</span> > <span class="text-green-400">player2_total</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 1 wins!"</span>)
-<span class="text-blue-600">elif</span> <span class="text-green-400">player2_total</span> > <span class="text-green-400">player1_total</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 wins!"</span>)
-<span class="text-blue-600">else</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"It's a draw!"</span>)
-    </pre>
-
-  </div>
-
-
     <!-- Dice Game (No Functions) -->
     <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game — Two Players (No Functions)</h4>
-    <p class="text-gray-700 mb-3">
-      Each player rolls two dice twice.  
-      Add all four rolls together.  
-      The highest total wins.
-    </p>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
-
 import random
 
 # --- Player 1 rolls ---
-<span class="text-green-400">p1_roll1</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">p1_roll2</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">p1_roll3</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">p1_roll4</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
+<span class="text-green-400">p1_roll1</span> = random.randint(1, 6)
+<span class="text-green-400">p1_roll2</span> = random.randint(1, 6)
+<span class="text-green-400">p1_roll3</span> = random.randint(1, 6)
+<span class="text-green-400">p1_roll4</span> = random.randint(1, 6)
 
-<span class="text-green-400">player1_total</span> = <span class="text-green-400">p1_roll1</span> + <span class="text-green-400">p1_roll2</span> + <span class="text-green-400">p1_roll3</span> + <span class="text-green-400">p1_roll4</span>
+<span class="text-green-400">player1_total</span> = p1_roll1 + p1_roll2 + p1_roll3 + p1_roll4
 
 # --- Player 2 rolls ---
-<span class="text-green-400">p2_roll1</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">p2_roll2</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">p2_roll3</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">p2_roll4</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
+<span class="text-green-400">p2_roll1</span> = random.randint(1, 6)
+<span class="text-green-400">p2_roll2</span> = random.randint(1, 6)
+<span class="text-green-400">p2_roll3</span> = random.randint(1, 6)
+<span class="text-green-400">p2_roll4</span> = random.randint(1, 6)
 
-<span class="text-green-400">player2_total</span> = <span class="text-green-400">p2_roll1</span> + <span class="text-green-400">p2_roll2</span> + <span class="text-green-400">p2_roll3</span> + <span class="text-green-400">p2_roll4</span>
+<span class="text-green-400">player2_total</span> = p2_roll1 + p2_roll2 + p2_roll3 + p2_roll4
 
 # --- Show results ---
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 1 total:"</span>, <span class="text-green-400">player1_total</span>)
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 total:"</span>, <span class="text-green-400">player2_total</span>)
+<span class="text-cyan-400">print</span>("Player 1 total:", player1_total)
+<span class="text-cyan-400">print</span>("Player 2 total:", player2_total)
 
 # --- Decide winner ---
-<span class="text-blue-600">if</span> <span class="text-green-400">player1_total</span> > <span class="text-green-400">player2_total</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 1 wins!"</span>)
-<span class="text-blue-600">elif</span> <span class="text-green-400">player2_total</span> > <span class="text-green-400">player1_total</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 wins!"</span>)
+<span class="text-blue-600">if</span> player1_total > player2_total:
+    <span class="text-cyan-400">print</span>("Player 1 wins!")
+<span class="text-blue-600">elif</span> player2_total > player1_total:
+    <span class="text-cyan-400">print</span>("Player 2 wins!")
 <span class="text-blue-600">else</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"It's a draw!"</span>)
+    <span class="text-cyan-400">print</span>("It's a draw!")
     </pre>
 
   </div>
 
 </section>
- 
+
    
   </div> <!-- CLOSE GRID -->
 
