@@ -81,139 +81,139 @@
     operations using clear examples.
   </p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
 
     <!-- CONCATENATION -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Concatenation</h4>
       <p class="text-gray-700 mb-3">Joining strings using <span class="text-blue-600 font-semibold">+</span>.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-first = <span class="text-orange-400">"Computer"</span>
-second = <span class="text-orange-400">"Science"</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+first = "Computer"
+second = "Science"
 
-print(first + second)        <span class="text-gray-400"># ComputerScience</span>
-print(first + <span class="text-orange-400">" "</span> + second)  <span class="text-gray-400"># Computer Science</span>
+print(first + second)        # ComputerScience
+print(first + " " + second)  # Computer Science
       </pre>
     </div>
 
     <!-- F-STRINGS -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">f‑Strings</h4>
       <p class="text-gray-700 mb-3">Insert variables directly into text using <strong>{ }</strong>.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-name = <span class="text-orange-400">"Mr Anderson"</span>
-age = <span class="text-purple-300">15</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+name = "Mr Anderson"
+age = 15
 
-print(f<span class="text-orange-400">"Hello {name}"</span>)
-print(f<span class="text-orange-400">"You are {age} years old"</span>)
+print(f"Hello {name}")
+print(f"You are {age} years old")
       </pre>
     </div>
 
     <!-- UPPER / LOWER -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Upper / Lower</h4>
       <p class="text-gray-700 mb-3">Change the case of a string.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-name = <span class="text-orange-400">"Mr Anderson"</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+name = "Mr Anderson"
 
-print(name.upper())   <span class="text-gray-400"># MR ANDERSON</span>
-print(name.lower())   <span class="text-gray-400"># mr anderson</span>
+print(name.upper())   # MR ANDERSON
+print(name.lower())   # mr anderson
       </pre>
     </div>
 
     <!-- LENGTH -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Length</h4>
       <p class="text-gray-700 mb-3"><span class="text-blue-600 font-semibold">len()</span> counts characters, including spaces.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-word = <span class="text-orange-400">"computer"</span>
-print(len(word))   <span class="text-gray-400"># 8</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+word = "computer"
+print(len(word))   # 8
 
-phrase = <span class="text-orange-400">"Mr Anderson"</span>
-print(len(phrase)) <span class="text-gray-400"># 11</span>
+phrase = "Mr Anderson"
+print(len(phrase)) # 11
       </pre>
     </div>
 
     <!-- SLICING -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-5">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-5 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Slicing</h4>
       <p class="text-gray-700 mb-3">Extract parts of a string using <strong>[start:end]</strong>.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-word = <span class="text-orange-400">"computer"</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+word = "computer"
 
-print(word[0:3])   <span class="text-gray-400"># com</span>
-print(word[-3:])   <span class="text-gray-400"># ter</span>
-print(word[3:6])   <span class="text-gray-400"># put</span>
+print(word[0:3])   # com
+print(word[-3:])   # ter
+print(word[3:6])   # put
       </pre>
     </div>
 
     <!-- SPLIT -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-6">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-6 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Split</h4>
       <p class="text-gray-700 mb-3">Break a string into words. Creates a list.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-sentence = <span class="text-orange-400">"I love computer science"</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+sentence = "I love computer science"
 words = sentence.split()
 
-print(words)    <span class="text-gray-400"># ['I','love','computer','science']</span>
-print(words[2]) <span class="text-gray-400"># computer</span>
+print(words)    # ['I','love','computer','science']
+print(words[2]) # computer
       </pre>
     </div>
 
     <!-- CONTAINS -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-7">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-7 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Contains</h4>
       <p class="text-gray-700 mb-3">Check if text appears inside a string.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-word = <span class="text-orange-400">"computer"</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+word = "computer"
 
-print(<span class="text-orange-400">"put"</span> in word) <span class="text-gray-400"># True</span>
-print(<span class="text-orange-400">"dog"</span> in word) <span class="text-gray-400"># False</span>
+print("put" in word) # True
+print("dog" in word) # False
       </pre>
     </div>
 
     <!-- REPLACE -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-8">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-8 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Replace</h4>
       <p class="text-gray-700 mb-3">Swap one piece of text for another.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-text = <span class="text-orange-400">"I love cats"</span>
-print(text.replace(<span class="text-orange-400">"cats"</span>, <span class="text-orange-400">"dogs"</span>))
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+text = "I love cats"
+print(text.replace("cats", "dogs"))
       </pre>
     </div>
 
     <!-- ASCII -->
-    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-9">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-9 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">ASC / CHR</h4>
       <p class="text-gray-700 mb-3">Convert between characters and ASCII numbers.</p>
 
-      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-print(ord(<span class="text-orange-400">'A'</span>)) <span class="text-gray-400"># 65</span>
-print(chr(<span class="text-purple-300">65</span>))  <span class="text-gray-400"># A</span>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+print(ord('A')) # 65
+print(chr(65))  # A
       </pre>
     </div>
 
     <!-- MISCONCEPTION -->
-    <div class="bg-gray-900/80 p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-emerald-500 slide-up delay-10 text-gray-200">
+    <div class="bg-gray-900/80 p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-emerald-500 slide-up delay-10 text-gray-200 w-full">
       <h4 class="text-xl font-bold mb-2 text-emerald-400">Common Misconception</h4>
       <p class="mb-3">You cannot join text and numbers directly.</p>
 
-      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm">
+      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 age = 15
-print("You are " + age)   # ❌ ERROR
+print("You are " + age) # ❌ ERROR
       </pre>
 
       <p class="mb-3">Correct versions:</p>
 
-      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm">
+      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 print("You are " + str(age))
 print(f"You are {age}")
       </pre>
@@ -229,106 +229,39 @@ print(f"You are {age}")
   </div>
 </footer>
 
- <!-- NAVBAR + DARK MODE SCRIPT -->
-  <script>
-    const currentPageKey = document.body.dataset.page;
+<!-- NAVBAR SCRIPT -->
+<script>
+const currentPageKey = document.body.dataset.page;
 
-    fetch("/CompSci/components/navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
+fetch("/CompSci/components/navbar.html")
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById("navbar").innerHTML = html;
 
-        // Highlight active link
-        document.querySelectorAll('#navbar a').forEach(link => {
-          const page = link.dataset.page;
-
-          if (page === currentPageKey) {
-            link.classList.add('nav-link-active');
-            link.classList.remove('border-transparent', 'text-gray-700');
-          } else {
-            link.classList.remove('nav-link-active');
-            link.classList.add('border-transparent', 'text-gray-700');
-          }
-        });
-
-        // Hamburger toggle
-        const burger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        if (burger && mobileMenu) {
-          burger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-          });
-        }
-
-         // ⭐ DARK MODE LOGIC ⭐
-const themeToggleDesktop = document.getElementById('themeToggle');
-const themeToggleMobile  = document.getElementById('themeToggleMobile');
-
-const toggles = [themeToggleDesktop, themeToggleMobile].filter(Boolean);
-
-if (toggles.length) {
-  // Apply saved theme
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-    toggles.forEach(btn => btn.textContent = '☀️');
-  }
-
-  // Auto-detect system theme if no saved preference
-  if (!localStorage.getItem('theme')) {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefersDark) {
-      document.documentElement.classList.add('dark');
-      toggles.forEach(btn => btn.textContent = '☀️');
-    }
-  }
-
-  // Attach click to BOTH buttons
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        toggles.forEach(b => b.textContent = '☀️');
-      } else {
-        localStorage.setItem('theme', 'light');
-        toggles.forEach(b => b.textContent = '🌙');
+    document.querySelectorAll('#navbar a').forEach(link => {
+      const page = link.dataset.page;
+      if (page === currentPageKey) {
+        link.classList.add('nav-link-active');
       }
     });
   });
-}
-  });
-  </script>
-
-   <!-- Programming sidebar script -->
-  <script>
-    // Mobile programming menu toggle
-    const progMenuBtn = document.getElementById('progMenuBtn');
-    const progMenu = document.getElementById('progMenu');
-    progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
-
-    // Active link highlighting in sidebar
-//    const currentPageFile = window.location.pathname.split('/').pop();
- //   document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-  //    if (link.getAttribute('href') === currentPageFile) {
-  //      link.classList.add('text-emerald-400', 'font-semibold');
- //     }
-//    });
-
-
-  const currentPage = document.body.dataset.page;
-
-  document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-    if (link.dataset.page === currentPage) {
-      link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
-      link.style.textShadow = '0 0 10px #34d399';
-    }
-  });
 </script>
 
+<!-- SIDEBAR SCRIPT -->
+<script>
+const progMenuBtn = document.getElementById('progMenuBtn');
+const progMenu = document.getElementById('progMenu');
+progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
 
+const currentPage = document.body.dataset.page;
 
+document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+  if (link.dataset.page === currentPage) {
+    link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
+    link.style.textShadow = '0 0 10px #34d399';
+  }
+});
+</script>
 
 </body>
 </html>
