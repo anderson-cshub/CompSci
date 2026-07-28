@@ -285,49 +285,64 @@ import random
   </div>
 
 </section>
-<section class="max-w-6xl mx-auto px-6 py-6">
 
+<!-- Dice Examples (Simple + No Functions + With Functions) -->
+
+<!-- Example 1: Rolling Two Dice -->
+<section class="max-w-6xl mx-auto px-6 py-6">
   <div class="teaching-block w-full">
 
-    <h3 class="teaching-header">Dice Examples</h3>
+    <h3 class="teaching-header">Rolling Two Dice (No Functions)</h3>
     <div class="glow-divider"></div>
 
     <p class="mb-4 text-gray-700">
-      These examples show how to generate multiple random numbers and build simple dice games.
+      This example shows how to roll two dice and use the values.
     </p>
 
-    <!-- Two Dice (No Functions) -->
-    <h4 class="text-xl font-bold mb-2 text-emerald-700">Rolling Two Dice (No Functions)</h4>
-
-    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
 import random
 
-<span class="text-green-400">dice1</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-<span class="text-green-400">dice2</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
+<span class="text-green-400">dice1</span> = random.randint(1, 6)
+<span class="text-green-400">dice2</span> = random.randint(1, 6)
 
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Dice 1:"</span>, <span class="text-green-400">dice1</span>)
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Dice 2:"</span>, <span class="text-green-400">dice2</span>)
+<span class="text-cyan-400">print</span>("Dice 1:", <span class="text-green-400">dice1</span>)
+<span class="text-cyan-400">print</span>("Dice 2:", <span class="text-green-400">dice2</span>)
+
+<span class="text-green-400">total</span> = <span class="text-green-400">dice1</span> + <span class="text-green-400">dice2</span>
+<span class="text-cyan-400">print</span>("Total:", <span class="text-green-400">total</span>)
     </pre>
 
-# --- Player 1 rolls ---
-<span class="text-green-400">p1_roll1</span> = random.randint(1, 6)
-<span class="text-green-400">p1_roll2</span> = random.randint(1, 6)
-<span class="text-green-400">p1_roll3</span> = random.randint(1, 6)
-<span class="text-green-400">p1_roll4</span> = random.randint(1, 6)
+  </div>
+</section>
 
-<span class="text-green-400">player1_total</span> = p1_roll1 + p1_roll2 + p1_roll3 + p1_roll4
 
-# --- Player 2 rolls ---
-<span class="text-green-400">p2_roll1</span> = random.randint(1, 6)
-<span class="text-green-400">p2_roll2</span> = random.randint(1, 6)
-<span class="text-green-400">p2_roll3</span> = random.randint(1, 6)
-<span class="text-green-400">p2_roll4</span> = random.randint(1, 6)
+<!-- Example 2: Dice Game (No Functions) -->
+<section class="max-w-6xl mx-auto px-6 py-6">
+  <div class="teaching-block w-full">
 
-<span class="text-green-400">player2_total</span> = p2_roll1 + p2_roll2 + p2_roll3 + p2_roll4
+    <h3 class="teaching-header">Dice Game — Two Players (No Functions)</h3>
+    <div class="glow-divider"></div>
+
+    <p class="mb-4 text-gray-700">
+      Each player rolls two dice twice. Add the totals together. Highest score wins.
+    </p>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
+import random
+
+# --- Player 1 rolls two dice twice ---
+<span class="text-green-400">p1_roll1</span> = random.randint(1, 6) + random.randint(1, 6)
+<span class="text-green-400">p1_roll2</span> = random.randint(1, 6) + random.randint(1, 6)
+<span class="text-green-400">player1_total</span> = <span class="text-green-400">p1_roll1</span> + <span class="text-green-400">p1_roll2</span>
+
+# --- Player 2 rolls two dice twice ---
+<span class="text-green-400">p2_roll1</span> = random.randint(1, 6) + random.randint(1, 6)
+<span class="text-green-400">p2_roll2</span> = random.randint(1, 6) + random.randint(1, 6)
+<span class="text-green-400">player2_total</span> = <span class="text-green-400">p2_roll1</span> + <span class="text-green-400">p2_roll2</span>
 
 # --- Show results ---
-<span class="text-cyan-400">print</span>("Player 1 total:", player1_total)
-<span class="text-cyan-400">print</span>("Player 2 total:", player2_total)
+<span class="text-cyan-400">print</span>("Player 1 total:", <span class="text-green-400">player1_total</span>)
+<span class="text-cyan-400">print</span>("Player 2 total:", <span class="text-green-400">player2_total</span>)
 
 # --- Decide winner ---
 <span class="text-blue-600">if</span> player1_total > player2_total:
@@ -339,17 +354,19 @@ import random
     </pre>
 
   </div>
-
 </section>
 
-<section class="max-w-6xl mx-auto px-6 py-6">
 
+<!-- Example 3: Dice Game (With Functions) -->
+<section class="max-w-6xl mx-auto px-6 py-6">
   <div class="teaching-block w-full">
 
-    <h3 class="teaching-header">Dice Example using function</h3>
+    <h3 class="teaching-header">Dice Game — Using a Function (GCSE‑Level)</h3>
     <div class="glow-divider"></div>
-  <!-- Dice Game (With Functions) -->
-    <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game — Using a Function (GCSE‑Level)</h4>
+
+    <p class="mb-4 text-gray-700">
+      This version uses a function to roll two dice. It is cleaner and easier to reuse.
+    </p>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
 import random
@@ -374,8 +391,8 @@ import random
     </pre>
 
   </div>
-
 </section>
+
 
    
   </div> <!-- CLOSE GRID -->
