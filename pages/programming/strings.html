@@ -202,22 +202,36 @@ print(chr(<span class="text-purple-300">65</span>))  <span class="text-gray-400"
     </div>
 
     <!-- MISCONCEPTION -->
-    <div class="bg-gray-900/80 p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-emerald-500 slide-up delay-10 text-gray-200 w-full">
-      <h4 class="text-xl font-bold mb-2 text-emerald-400">Common Misconception</h4>
-      <p class="mb-3">You cannot join text and numbers directly.</p>
+   <div class="teaching-block mt-12">
 
-      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+  <h3 class="teaching-header">Common Misconception — Mixing Text and Numbers</h3>
+  <div class="glow-divider"></div>
+
+  <p class="mb-4 text-gray-700">
+    A very common mistake is trying to join text (a <strong>string</strong>) with a number (an <strong>integer</strong>)
+    using the <span class="text-blue-600 font-semibold">+</span> operator. Python cannot do this.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4 overflow-x-auto">
 <span class="text-emerald-700">age</span> = <span class="text-purple-300">15</span>
-print(<span class="text-orange-400">"You are "</span> + <span class="text-emerald-700">age</span>) <span class="text-gray-400"># ❌ ERROR</span>
-      </pre>
+print(<span class="text-orange-400">"You are "</span> + <span class="text-emerald-700">age</span>)   <span class="text-gray-400"># ❌ ERROR</span>
+  </pre>
 
-      <p class="mb-3">Correct versions:</p>
+  <p class="mb-4 text-gray-700">
+    Python does not automatically convert numbers to text. You must either:
+  </p>
 
-      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
+  <ul class="list-disc pl-6 text-gray-700 mb-4">
+    <li>convert the number using <span class="text-blue-600 font-semibold">str()</span></li>
+    <li>or use an <strong>f‑string</strong>, which handles the conversion automatically</li>
+  </ul>
+
+  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm overflow-x-auto">
 print(<span class="text-orange-400">"You are "</span> + str(<span class="text-emerald-700">age</span>))
 print(f<span class="text-orange-400">"You are {age}"</span>)
-      </pre>
-    </div>
+  </pre>
+
+</div>
 
   </div>
 </section>
