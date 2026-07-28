@@ -70,7 +70,113 @@
 
 
 <!-- MAIN CONTENT -->
-<section id="topics" class="max-w-7xl mx-auto px-8 py-14">
+<div class="section-divider"></div>
+
+<h2 class="text-2xl font-bold mb-4">Working With Strings</h2>
+<p>Strings are pieces of text. Python gives you lots of useful tools to change, check, and analyse them.</p>
+
+<!-- UPPER / LOWER -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Uppercase & Lowercase</h3>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>name = "Mr Anderson"
+
+print(name.upper())   # MR ANDERSON
+print(name.lower())   # mr anderson</code></pre>
+
+  <p class="text-gray-700">Useful for checking input (e.g. making comparisons case‑insensitive).</p>
+</div>
+
+<!-- LENGTH -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Length of a String</h3>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>word = "computer"
+print(len(word))   # 8</code></pre>
+
+  <p class="text-gray-700">The <span class="font-semibold text-blue-600">len()</span> function counts characters.</p>
+</div>
+
+<!-- LEFT / RIGHT / MID (SLICING) -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Left, Right & Middle (Slicing)</h3>
+
+  <p class="mb-4">Python doesn’t have LEFT/RIGHT like pseudocode — instead, it uses <strong>slicing</strong>.</p>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>word = "computer"
+
+print(word[0:3])   # com   (LEFT 3)
+print(word[-3:])   # ter   (RIGHT 3)
+print(word[3:6])   # put   (MIDDLE)</code></pre>
+
+  <p class="text-gray-700">Slicing uses <strong>[start:end]</strong> — end is not included.</p>
+</div>
+
+<!-- SPLIT -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Split</h3>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>sentence = "I love computer science"
+words = sentence.split()
+
+print(words)   # ['I', 'love', 'computer', 'science']</code></pre>
+
+  <p class="text-gray-700">Split turns a string into a list of words.</p>
+</div>
+
+<!-- CONTAINS -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Contains</h3>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>word = "computer"
+
+print("put" in word)     # True
+print("dog" in word)     # False</code></pre>
+
+  <p class="text-gray-700">Use <strong>in</strong> to check if text appears inside a string.</p>
+</div>
+
+<!-- REPLACE -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">Replace</h3>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>text = "I love cats"
+print(text.replace("cats", "dogs"))</code></pre>
+
+  <p class="text-gray-700">Replace swaps one piece of text for another.</p>
+</div>
+
+<!-- ASC / CHR -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-700">ASC & CHR (ASCII Codes)</h3>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>print(ord('A'))   # 65   (ASC)
+print(chr(65))    # A    (CHR)</code></pre>
+
+  <p class="text-gray-700">Use <strong>ord()</strong> to get ASCII numbers, and <strong>chr()</strong> to convert back.</p>
+</div>
+
+<!-- COMMON MISCONCEPTION -->
+<div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-gray-900/80 border border-emerald-500 shadow-[0_0_15px_#34d399] text-gray-200 fade-in">
+  <h3 class="text-xl font-bold mb-4 text-emerald-400">Common Misconception</h3>
+
+  <p class="mb-4">Students often try to “add” strings and numbers together:</p>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>age = 15
+print("You are " + age)   # ❌ ERROR</code></pre>
+
+  <p class="mb-4">Python cannot join text and numbers directly.</p>
+
+  <p class="mb-4">Correct versions:</p>
+
+  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>print("You are " + str(age))        # casting
+print(f"You are {age}")              # f-string (recommended)</code></pre>
+
+  <p>Use <strong>str()</strong> or f‑strings when mixing text and numbers.</p>
+</div>
+
+  <!-- maybe needs deleting this section -->
+  <section id="topics" class="max-w-7xl mx-auto px-8 py-14">
 
   <h3 class="text-3xl font-semibold mb-8 text-gray-900">Strings</h3>
 
