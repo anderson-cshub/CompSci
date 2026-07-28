@@ -216,13 +216,16 @@ import math
       </div>
 </section>
 
-    <section class="max-w-6xl mx-auto px-6 py-12">
+  <!--Random Numbers Section -->
+  <section class="max-w-6xl mx-auto px-6 py-6">
 
-  <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 w-full">
- <div class="glow-divider"></div>
-    <h3 class="text-2xl font-bold mb-4 text-emerald-700">Random Numbers</h3>
-    <p class="text-gray-700 mb-4">
-      Python can generate random integers, random decimals, and random choices. 
+  <div class="teaching-block">
+
+    <h3 class="teaching-header">Random Numbers</h3>
+    <div class="glow-divider"></div>
+
+    <p class="mb-4 text-gray-700">
+      Python can generate random integers, random decimals, and random choices.
       You must <strong>import random</strong> before using any random functions.
     </p>
 
@@ -230,6 +233,7 @@ import math
 import random
     </pre>
 
+    <!-- Random Integer -->
     <h4 class="text-xl font-bold mb-2 text-emerald-700">Random Integer (Start → End)</h4>
     <p class="text-gray-700 mb-3">
       <strong>randint(start, end)</strong> gives a whole number between the two values <em>including both ends</em>.
@@ -240,6 +244,7 @@ import random
 <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Random number 1–10:"</span>, <span class="text-green-400">num</span>)
     </pre>
 
+    <!-- Random Float -->
     <h4 class="text-xl font-bold mb-2 text-emerald-700">Random Decimal (Float)</h4>
     <p class="text-gray-700 mb-3">
       <strong>uniform(start, end)</strong> gives a decimal number between the two values.
@@ -250,6 +255,7 @@ import random
 <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Random float 1.0–5.0:"</span>, <span class="text-green-400">value</span>)
     </pre>
 
+    <!-- Random Choice -->
     <h4 class="text-xl font-bold mb-2 text-emerald-700">Random Choice</h4>
     <p class="text-gray-700 mb-3">
       <strong>choice(list)</strong> picks one item from a list at random.
@@ -260,14 +266,15 @@ import random
 <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Dice roll:"</span>, <span class="text-green-400">roll</span>)
     </pre>
 
+    <!-- random(10) explanation -->
     <h4 class="text-xl font-bold mb-2 text-emerald-700">Can Python Do random(10)?</h4>
     <p class="text-gray-700 mb-3">
-      No. Python does <strong>not</strong> have a function called <strong>random(10)</strong>.  
+      No. Python does <strong>not</strong> have a function called <strong>random(10)</strong>.
       Pupils often try this — it will always cause an error.
     </p>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-<span class="text-green-400">num</span> = random(10)  
+<span class="text-green-400">num</span> = random(10)
 <span class="text-gray-400"># ❌ ERROR — random() does not exist</span>
     </pre>
 
@@ -275,9 +282,10 @@ import random
       Use <strong>randint(1,10)</strong> or <strong>uniform(0,10)</strong> instead.
     </p>
 
+    <!-- Two Dice -->
     <h4 class="text-xl font-bold mb-2 text-emerald-700">Two Dice — Different Random Numbers</h4>
     <p class="text-gray-700 mb-3">
-      Each call to <strong>randint()</strong> generates a new random number.  
+      Each call to <strong>randint()</strong> generates a new random number.
       If you roll two dice, you must call <strong>randint()</strong> twice.
     </p>
 
@@ -289,45 +297,15 @@ import random
 <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Dice 2:"</span>, <span class="text-green-400">dice2</span>)
     </pre>
 
-    <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game Example (GCSE‑Level)</h4>
+    <!-- Dice Game (No Functions) -->
+    <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game — Two Players (No Functions)</h4>
     <p class="text-gray-700 mb-3">
-      Two players roll two dice twice.  
-      The highest total score wins.
+      Each player rolls two dice twice.  
+      Add all four rolls together.  
+      The highest total wins.
     </p>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
-
-import random
-
-<span class="text-blue-600">def</span> <span class="text-green-400">roll_two_dice</span>():
-    <span class="text-green-400">d1</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-    <span class="text-green-400">d2</span> = random.randint(<span class="text-purple-300">1</span>, <span class="text-purple-300">6</span>)
-    <span class="text-blue-600">return</span> <span class="text-green-400">d1</span> + <span class="text-green-400">d2</span>
-
-<span class="text-green-400">player1_total</span> = roll_two_dice() + roll_two_dice()
-<span class="text-green-400">player2_total</span> = roll_two_dice() + roll_two_dice()
-
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 1 total:"</span>, <span class="text-green-400">player1_total</span>)
-<span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 total:"</span>, <span class="text-green-400">player2_total</span>)
-
-<span class="text-blue-600">if</span> <span class="text-green-400">player1_total</span> > <span class="text-green-400">player2_total</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 1 wins!"</span>)
-<span class="text-blue-600">elif</span> <span class="text-green-400">player2_total</span> > <span class="text-green-400">player1_total</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 wins!"</span>)
-<span class="text-blue-600">else</span>:
-    <span class="text-cyan-400">print</span>(<span class="text-orange-400">"It's a draw!"</span>)
-    </pre>
-
-  </div>
-
-      <h4 class="text-xl font-bold mb-2 text-emerald-700">Dice Game — Two Players (No Functions)</h4>
-<p class="text-gray-700 mb-3">
-  Each player rolls two dice twice.  
-  Add all four rolls together.  
-  The highest total wins.
-</p>
-
-<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
 
 import random
 
@@ -358,11 +336,12 @@ import random
     <span class="text-cyan-400">print</span>(<span class="text-orange-400">"Player 2 wins!"</span>)
 <span class="text-blue-600">else</span>:
     <span class="text-cyan-400">print</span>(<span class="text-orange-400">"It's a draw!"</span>)
-</pre>
+    </pre>
 
+  </div>
 
 </section>
-
+ 
    
   </div> <!-- CLOSE GRID -->
 
