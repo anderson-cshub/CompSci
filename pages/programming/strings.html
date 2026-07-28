@@ -6,350 +6,262 @@
   <title>Strings | Computer Science Hub</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
   <link rel="stylesheet" href="/CompSci/css/site.css">
 </head>
 
-<body data-page="strings" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800"> 
-  
- <div id="navbar"></div>
+<body data-page="strings" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<div id="navbar"></div>
 
 <!-- CORNER IMAGE -->
 <img src="../../images/avatar1.png"
-       class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 
-            slide-up delay-2 drop-shadow-[0_0_12px_#34d399] 
+     class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90
+            slide-up delay-2 drop-shadow-[0_0_12px_#34d399]
             hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
-  <!-- YEAR OVERVIEW BUTTON -->
-  <div class="max-w-6xl mx-auto px-6">
-    <a href="../year_overview.html"
-       class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
-       View Year Overview
-    </a>
-  </div>
-
-<!-- Programming Sidebar -->
-<aside id="progSidebar"
-       class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500 rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
-  <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
-   <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
-<a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
-  <a href="input_output.html" data-page="input_output" class="block hover:text-emerald-400 transition">Inputs and Outputs</a>
-<a href="strings.html" data-page="strings" class="block hover:text-emerald-400 transition">Strings</a>
-<a href="numbers.html" data-page="numbers" class="block hover:text-emerald-400 transition">Numbers</a>
-<a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
-<a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
-<a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
-<a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
-</aside>
-
-<!-- Mobile toggle button -->
-<button id="progMenuBtn"
-        class="md:hidden fixed bottom-6 right-6 z-50 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
-    Programming Menu
-</button>
-
-<!-- Mobile slide‑up panel -->
-<div id="progMenu"
-     class="hidden fixed bottom-0 left-0 right-0 mx-auto w-11/12 z-50 
-            bg-gray-900/90 backdrop-blur-md border border-emerald-500 
-            rounded-t-xl p-5 text-lg text-gray-200 space-y-3 
-            shadow-[0_0_20px_#34d399] transition-all duration-300">
-
-    <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro </a>
-    <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
-    <a href="input_output.html" data-page="input_output" class="block hover:text-emerald-400 transition">Inputs and Outputs</a>
-    <a href="strings.html" data-page="strings" class="block hover:text-emerald-400 transition">Strings</a>
-    <a href="numbers.html" data-page="numbers" class="block hover:text-emerald-400 transition">Numbers</a>
-    <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
-    <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
-    <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
-    <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+<!-- YEAR OVERVIEW BUTTON -->
+<div class="max-w-6xl mx-auto px-6">
+  <a href="../year_overview.html"
+     class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
+     View Year Overview
+  </a>
 </div>
 
+<!-- SIDEBAR -->
+<aside id="progSidebar"
+       class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500
+              rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
 
-  <!-- MAIN CONTENT -->
-  <section class="max-w-6xl mx-auto px-6 py-12 spacing-fade">
+  <h3 class="text-emerald-400 font-bold mb-2">Programming Topics</h3>
 
-    <h1 class="text-4xl font-bold mb-6 cyberpunk-text">Strings</h1>
-    <p class="mb-6">Strings are pieces of text. Python lets you join them together, change their case, check what they contain, and extract parts of them. They are one of the most important data types in programming.</p>
+  <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
+  <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
+  <a href="input_output.html" data-page="input_output" class="block hover:text-emerald-400 transition">Inputs and Outputs</a>
+  <a href="strings.html" data-page="strings" class="block hover:text-emerald-400 transition">Strings</a>
+  <a href="numbers.html" data-page="numbers" class="block hover:text-emerald-400 transition">Numbers</a>
+  <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
+  <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
+  <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
+  <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+</aside>
 
-    <div class="section-divider"></div>
+<!-- MOBILE MENU BUTTON -->
+<button id="progMenuBtn"
+        class="md:hidden fixed bottom-6 right-6 z-50 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-emerald-700 transition">
+  Programming Menu
+</button>
 
-    <!-- CONCATENATION -->
-    <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Joining Text Together (Concatenation)</h3>
+<!-- MOBILE MENU -->
+<div id="progMenu"
+     class="hidden fixed bottom-0 left-0 right-0 mx-auto w-11/12 z-50
+            bg-gray-900/90 backdrop-blur-md border border-emerald-500
+            rounded-t-xl p-5 text-lg text-gray-200 space-y-3
+            shadow-[0_0_20px_#34d399] transition-all duration-300">
 
-  <p class="mb-4 text-gray-700">
-    Concatenation means joining strings together.  
-    Python uses the <span class="text-blue-600 font-semibold">+</span> operator to join text.
+  <a href="python_intro.html" data-page="python_intro" class="block hover:text-emerald-400 transition">Python Intro</a>
+  <a href="data_types.html" data-page="data_types" class="block hover:text-emerald-400 transition">Data Types</a>
+  <a href="input_output.html" data-page="input_output" class="block hover:text-emerald-400 transition">Inputs and Outputs</a>
+  <a href="strings.html" data-page="strings" class="block hover:text-emerald-400 transition">Strings</a>
+  <a href="numbers.html" data-page="numbers" class="block hover:text-emerald-400 transition">Numbers</a>
+  <a href="selection.html" data-page="selection" class="block hover:text-emerald-400 transition">Selection</a>
+  <a href="iteration.html" data-page="iteration" class="block hover:text-emerald-400 transition">Iteration</a>
+  <a href="lists.html" data-page="lists" class="block hover:text-emerald-400 transition">Lists</a>
+  <a href="challenges.html" data-page="challenges" class="block hover:text-emerald-400 transition">Challenges</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+
+  <h1 class="text-4xl font-bold mb-6 cyberpunk-text">Strings</h1>
+
+  <p class="mb-8 text-gray-700">
+    Strings are pieces of text. Python lets you join them, split them, search inside them,
+    change their case, and extract parts of them. This page shows the most important string
+    operations using clear examples.
   </p>
 
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- CONCATENATION -->
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Concatenation</h4>
+      <p class="text-gray-700 mb-3">Joining strings using <span class="text-blue-600 font-semibold">+</span>.</p>
+
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 first = <span class="text-orange-400">"Computer"</span>
 second = <span class="text-orange-400">"Science"</span>
 
 print(first + second)        <span class="text-gray-400"># ComputerScience</span>
 print(first + <span class="text-orange-400">" "</span> + second)  <span class="text-gray-400"># Computer Science</span>
-</code></pre>
-
-  <p class="text-gray-700">
-    Concatenation only works when <strong>both sides are strings</strong>.  
-    If you try to join text with a number, Python throws an error.
-  </p>
-</div>
+      </pre>
+    </div>
 
     <!-- F-STRINGS -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Using Variables Inside Text (f‑strings)</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">f‑Strings</h4>
+      <p class="text-gray-700 mb-3">Insert variables directly into text using <strong>{ }</strong>.</p>
 
-  <p class="mb-4 text-gray-700">
-    f‑strings let you insert variables directly into text using <strong>{ }</strong>.  
-    They are cleaner and avoid the need for <span class="text-blue-600 font-semibold">str()</span>.
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 name = <span class="text-orange-400">"Mr Anderson"</span>
 age = <span class="text-purple-300">15</span>
 
-print(f<span class="text-orange-400">"Hello {name}"</span>)          
+print(f<span class="text-orange-400">"Hello {name}"</span>)
 print(f<span class="text-orange-400">"You are {age} years old"</span>)
-</code></pre>
-
-  <p class="text-gray-700">
-    Python automatically converts numbers to text inside an f‑string.
-  </p>
-</div>
+      </pre>
+    </div>
 
     <!-- UPPER / LOWER -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Uppercase & Lowercase</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Upper / Lower</h4>
+      <p class="text-gray-700 mb-3">Change the case of a string.</p>
 
-  <p class="mb-4 text-gray-700">
-    These functions change the case of a string.  
-    Useful for comparisons (e.g. making user input case‑insensitive).
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 name = <span class="text-orange-400">"Mr Anderson"</span>
 
 print(name.upper())   <span class="text-gray-400"># MR ANDERSON</span>
 print(name.lower())   <span class="text-gray-400"># mr anderson</span>
-</code></pre>
-</div>
-
+      </pre>
+    </div>
 
     <!-- LENGTH -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Length of a String</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Length</h4>
+      <p class="text-gray-700 mb-3"><span class="text-blue-600 font-semibold">len()</span> counts characters, including spaces.</p>
 
-  <p class="mb-4 text-gray-700">
-    <span class="text-blue-600 font-semibold">len()</span> counts how many characters are in a string.  
-    This includes letters, numbers, punctuation, and <strong>spaces</strong>.
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 word = <span class="text-orange-400">"computer"</span>
 print(len(word))   <span class="text-gray-400"># 8</span>
 
 phrase = <span class="text-orange-400">"Mr Anderson"</span>
-print(len(phrase)) <span class="text-gray-400"># 11 (includes the space)</span>
-</code></pre>
-</div>
-
+print(len(phrase)) <span class="text-gray-400"># 11</span>
+      </pre>
+    </div>
 
     <!-- SLICING -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Left, Right & Middle (Slicing)</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-5">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Slicing</h4>
+      <p class="text-gray-700 mb-3">Extract parts of a string using <strong>[start:end]</strong>.</p>
 
-  <p class="mb-4 text-gray-700">
-    Python uses <strong>slicing</strong> instead of LEFT/RIGHT.  
-    Slicing uses <strong>[start:end]</strong> — the first number is where to begin,  
-    the second number is where to stop (but the stop position is <em>not</em> included).
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 word = <span class="text-orange-400">"computer"</span>
 
-print(word[0:3])   <span class="text-gray-400"># com   (characters 0,1,2)</span>
-print(word[-3:])   <span class="text-gray-400"># ter   (last 3 characters)</span>
-print(word[3:6])   <span class="text-gray-400"># put   (characters 3,4,5)</span>
-</code></pre>
-
-  <p class="text-gray-700">
-    Python starts counting at <strong>0</strong>, not 1.
-  </p>
-</div>
+print(word[0:3])   <span class="text-gray-400"># com</span>
+print(word[-3:])   <span class="text-gray-400"># ter</span>
+print(word[3:6])   <span class="text-gray-400"># put</span>
+      </pre>
+    </div>
 
     <!-- SPLIT -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Split</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-6">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Split</h4>
+      <p class="text-gray-700 mb-3">Break a string into words. Creates a list.</p>
 
-  <p class="mb-4 text-gray-700">
-    <span class="text-blue-600 font-semibold">split()</span> breaks a string into pieces and stores them in a list.  
-    By default, it splits wherever it finds a space.
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 sentence = <span class="text-orange-400">"I love computer science"</span>
 words = sentence.split()
 
-print(words)        <span class="text-gray-400"># ['I', 'love', 'computer', 'science']</span>
-print(words[0])     <span class="text-gray-400"># I</span>
-print(words[2])     <span class="text-gray-400"># computer</span>
-</code></pre>
-
-  <p class="text-gray-700">
-    The numbers <strong>[0]</strong>, <strong>[1]</strong>, <strong>[2]</strong> refer to positions in the list.
-  </p>
-</div>
+print(words)    <span class="text-gray-400"># ['I','love','computer','science']</span>
+print(words[2]) <span class="text-gray-400"># computer</span>
+      </pre>
+    </div>
 
     <!-- CONTAINS -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Contains</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-7">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Contains</h4>
+      <p class="text-gray-700 mb-3">Check if text appears inside a string.</p>
 
-  <p class="mb-4 text-gray-700">
-    Use <strong>in</strong> to check if text appears inside a string.
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 word = <span class="text-orange-400">"computer"</span>
 
-print(<span class="text-orange-400">"put"</span> in word)     <span class="text-gray-400"># True</span>
-print(<span class="text-orange-400">"dog"</span> in word)     <span class="text-gray-400"># False</span>
-</code></pre>
-</div>
-
+print(<span class="text-orange-400">"put"</span> in word) <span class="text-gray-400"># True</span>
+print(<span class="text-orange-400">"dog"</span> in word) <span class="text-gray-400"># False</span>
+      </pre>
+    </div>
 
     <!-- REPLACE -->
-    <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">Replace</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-8">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Replace</h4>
+      <p class="text-gray-700 mb-3">Swap one piece of text for another.</p>
 
-  <p class="mb-4 text-gray-700">
-    <span class="text-blue-600 font-semibold">replace()</span> swaps one piece of text for another.
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
 text = <span class="text-orange-400">"I love cats"</span>
 print(text.replace(<span class="text-orange-400">"cats"</span>, <span class="text-orange-400">"dogs"</span>))
-</code></pre>
-</div>
-
+      </pre>
+    </div>
 
     <!-- ASCII -->
-   <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-white shadow-md fade-in">
-  <h3 class="text-xl font-bold mb-4 text-emerald-700">ASC & CHR (ASCII Codes)</h3>
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-9">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">ASC / CHR</h4>
+      <p class="text-gray-700 mb-3">Convert between characters and ASCII numbers.</p>
 
-  <p class="mb-4 text-gray-700">
-    <span class="text-blue-600 font-semibold">ord()</span> gives the ASCII number of a character.  
-    <span class="text-blue-600 font-semibold">chr()</span> converts a number back to a character.
-  </p>
-
-  <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
-print(ord(<span class="text-orange-400">'A'</span>))   <span class="text-gray-400"># 65</span>
-print(chr(<span class="text-purple-300">65</span>))    <span class="text-gray-400"># A</span>
-</code></pre>
-</div>
-
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+print(ord(<span class="text-orange-400">'A'</span>)) <span class="text-gray-400"># 65</span>
+print(chr(<span class="text-purple-300">65</span>))  <span class="text-gray-400"># A</span>
+      </pre>
+    </div>
 
     <!-- MISCONCEPTION -->
-    <div class="max-w-2xl mx-auto mb-10 p-6 rounded-xl bg-gray-900/80 border border-emerald-500
-                shadow-[0_0_15px_#34d399] text-gray-200 fade-in">
+    <div class="bg-gray-900/80 p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-emerald-500 slide-up delay-10 text-gray-200">
+      <h4 class="text-xl font-bold mb-2 text-emerald-400">Common Misconception</h4>
+      <p class="mb-3">You cannot join text and numbers directly.</p>
 
-      <h3 class="text-xl font-bold mb-4 text-emerald-400">Common Misconception</h3>
+      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm">
+age = 15
+print("You are " + age)   # ❌ ERROR
+      </pre>
 
-      <p class="mb-4">Students often try to “add” strings and numbers together:</p>
+      <p class="mb-3">Correct versions:</p>
 
-      <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>age = 15
-print("You are " + age)   # ❌ ERROR</code></pre>
-
-      <p class="mb-4">Python cannot join text and numbers directly.</p>
-
-      <p class="mb-4">Correct versions:</p>
-
-      <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>print("You are " + str(age))        # casting
-print(f"You are {age}")              # f-string (recommended)</code></pre>
-
-      <p>Use <strong>str()</strong> or f‑strings when mixing text and numbers.</p>
+      <pre class="bg-gray-800 text-gray-100 p-3 rounded-md text-sm">
+print("You are " + str(age))
+print(f"You are {age}")
+      </pre>
     </div>
 
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="bg-white mt-20 py-10 shadow-inner">
-    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-      © 2026 Anderson Computer Science Hub — Resources for Ambrosians
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-white mt-20 py-10 shadow-inner">
+  <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+    © 2026 Anderson Computer Science Hub — Resources for Ambrosians
+  </div>
+</footer>
 
-  <!-- NAVBAR + DARK MODE SCRIPT -->
-  <script>
-    const currentPageKey = document.body.dataset.page;
+<!-- NAVBAR SCRIPT -->
+<script>
+const currentPageKey = document.body.dataset.page;
 
-    fetch("/CompSci/components/navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
+fetch("/CompSci/components/navbar.html")
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById("navbar").innerHTML = html;
 
-        document.querySelectorAll('#navbar a').forEach(link => {
-          const page = link.dataset.page;
-          if (page === currentPageKey) {
-            link.classList.add('nav-link-active');
-            link.classList.remove('border-transparent', 'text-gray-700');
-          } else {
-            link.classList.remove('nav-link-active');
-            link.classList.add('border-transparent', 'text-gray-700');
-          }
-        });
-
-        const burger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        if (burger && mobileMenu) {
-          burger.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        }
-
-        const themeToggle = document.getElementById('themeToggle');
-        if (localStorage.getItem('theme') === 'dark') {
-          document.documentElement.classList.add('dark');
-          themeToggle.textContent = '☀️';
-        }
-
-        if (!localStorage.getItem('theme')) {
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (prefersDark) {
-            document.documentElement.classList.add('dark');
-            themeToggle.textContent = '☀️';
-          }
-        }
-
-        themeToggle.addEventListener('click', () => {
-          document.documentElement.classList.toggle('dark');
-          if (document.documentElement.classList.contains('dark')) {
-            localStorage.setItem('theme', 'dark');
-            themeToggle.textContent = '☀️';
-          } else {
-            localStorage.setItem('theme', 'light');
-            themeToggle.textContent = '🌙';
-          }
-        });
-      });
-  </script>
-
-  <!-- SIDEBAR SCRIPT -->
-  <script>
-    const progMenuBtn = document.getElementById('progMenuBtn');
-    const progMenu = document.getElementById('progMenu');
-    progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
-
-    const currentPage = document.body.dataset.page;
-
-    document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-      if (link.dataset.page === currentPage) {
-        link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
-        link.style.textShadow = '0 0 10px #34d399';
+    document.querySelectorAll('#navbar a').forEach(link => {
+      const page = link.dataset.page;
+      if (page === currentPageKey) {
+        link.classList.add('nav-link-active');
       }
     });
-  </script>
+  });
+</script>
+
+<!-- SIDEBAR SCRIPT -->
+<script>
+const progMenuBtn = document.getElementById('progMenuBtn');
+const progMenu = document.getElementById('progMenu');
+progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
+
+const currentPage = document.body.dataset.page;
+
+document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+  if (link.dataset.page === currentPage) {
+    link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
+    link.style.textShadow = '0 0 10px #34d399';
+  }
+});
+</script>
 
 </body>
 </html>
