@@ -285,16 +285,20 @@
 </section>
 
   
-<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
-<!-- 2D Array (Tic‑Tac‑Toe) -->
-<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
+</div> <!-- CLOSE THE GRID -->
 
-  <h4 class="text-xl font-bold mb-2 text-green-400">2D Array — Tic‑Tac‑Toe Grid</h4>
-  <p class="text-gray-700 mb-3">
-    A 2D array stores data in rows and columns. Each element is accessed by two indices.
-  </p>
+<!-- 2D ARRAY — TIC TAC TOE (Teaching Block 1) -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <div class="teaching-block">
+    <h3 class="teaching-header">2D Arrays — Tic‑Tac‑Toe Example</h3>
+    <div class="glow-divider"></div>
 
-  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+    <p class="text-gray-700 mb-4">
+      A 2D array stores data in rows and columns. Each element is accessed using two indices:
+      <code>[row][column]</code>.
+    </p>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
 <span class="text-green-400">grid</span> = [
     [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>],
     [<span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>],
@@ -302,47 +306,30 @@
 ]
 
 <span class="text-pink-400">print</span>(<span class="text-green-400">grid</span>[0][2])  <span class="text-gray-400"># top‑right cell</span>
-  </pre>
+    </pre>
 
-  <p class="text-gray-700 mt-2">Each row represents a line on the board; each column a position.</p>
-</div>
+    <p class="text-gray-700 mt-2">
+      Each row represents a line on the board; each column a position.
+    </p>
+  </div>
+</section>
 
-  
-  -<!-- 2D Array — Pupil Scores -->
-  <h4 class="text-xl font-bold mb-2 text-green-400">2D Array — Pupil Scores</h4>
-  <p class="text-gray-700 mb-3">
-    A table of names, subjects, and scores can be stored as a 2D array.
-  </p>
 
-  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-<span class="text-green-400">results</span> = [
-    [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Maths"</span>, 88],
-    [<span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Science"</span>, 75],
-    [<span class="text-orange-600">"Charlie"</span>, <span class="text-orange-600">"English"</span>, 92]
-]
-
-<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][0])  <span class="text-gray-400"># Bob</span>
-<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[2][2])  <span class="text-gray-400"># Charlie’s score</span>
-  </pre>
-
-  <p class="text-gray-700 mt-2">Row = pupil, column = data field.</p>
-</div>
-
-<!-- 2D Array — Pupil Easy Explaination -->
-
-    <section class="max-w-6xl mx-auto px-6 py-12">
+<!-- 2D ARRAY — PUPIL SCORES (Teaching Block 2) -->
+<section class="max-w-6xl mx-auto px-6 py-12">
   <div class="teaching-block">
-    <h3 class="teaching-header">2D Arrays — Pupil Scores Explained</h3>
+    <h3 class="teaching-header">2D Arrays — Pupil Scores (X/Y Explanation)</h3>
     <div class="glow-divider"></div>
-    
-    <p class="text-gray-700 mb-3">
-    Taking the example of the  student names, subjects, and scores. We can think of the array as a map using X and Y co-ordinates. Y is the Row and X is the Coloumn.
-    Normally X would be first, but in the array the row is first so Y, then X.
-    Y is the Row - so O would be Alice's data, 1 would be Bob's data. We have 3 rows - Alice (0), Bob (1) and Charlie (2)
-    X is the Column - there are three fields of data - Name (0), Subject (1) and score (2)
-  </p>
 
-  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+    <p class="text-gray-700 mb-4">
+      We can think of a 2D array like a map using X and Y co‑ordinates.
+      In Python lists, the <strong>row</strong> comes first (Y), then the <strong>column</strong> (X).
+      <br><br>
+      <strong>Rows (Y):</strong> Alice = 0, Bob = 1, Charlie = 2  
+      <strong>Columns (X):</strong> Name = 0, Subject = 1, Score = 2
+    </p>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
 <span class="text-green-400">results</span> = [
     [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Maths"</span>, 88],
     [<span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Science"</span>, 75],
@@ -350,21 +337,25 @@
 ]
 
 <span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][0])  <span class="text-gray-400"># Alice</span>
-    <span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][1])  <span class="text-gray-400"># Alice’s subject</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][1])  <span class="text-gray-400"># Alice’s subject</span>
 <span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][2])  <span class="text-gray-400"># Alice’s score</span>
 
-    <span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][0])  <span class="text-gray-400"># Bob</span>
-    <span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][1])  <span class="text-gray-400"># Bobs’s subject</span>
-<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][2])  <span class="text-gray-400"># Bobs’s score</span>
-    
-  </pre>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][0])  <span class="text-gray-400"># Bob</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][1])  <span class="text-gray-400"># Bob’s subject</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][2])  <span class="text-gray-400"># Bob’s score</span>
+    </pre>
 
-  <p class="text-gray-700 mt-2">Row = pupil, column = data field.</p>
-</div>
-    
-  <section class="max-w-6xl mx-auto px-6 py-12">
+    <p class="text-gray-700 mt-2">
+      Row = pupil, column = data field.
+    </p>
+  </div>
+</section>
+
+
+<!-- 2D ARRAY — PUPIL SCORES (Clean GCSE Explanation) -->
+<section class="max-w-6xl mx-auto px-6 py-12">
   <div class="teaching-block">
-    <h3 class="teaching-header">2D Arrays — Pupil Scores Explained</h3>
+    <h3 class="teaching-header">2D Arrays — Pupil Scores (GCSE Explanation)</h3>
     <div class="glow-divider"></div>
 
     <p class="mb-4 text-gray-700">
@@ -384,7 +375,8 @@
     </pre>
 
     <p class="mb-4 text-gray-700">
-      Rows are pupils (0 = Alice, 1 = Bob, 2 = Charlie). Columns are data fields (0 = Name, 1 = Subject, 2 = Score).
+      Rows are pupils (0 = Alice, 1 = Bob, 2 = Charlie).  
+      Columns are data fields (0 = Name, 1 = Subject, 2 = Score).
     </p>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
@@ -395,55 +387,8 @@
 
     <p class="text-gray-700 mt-4">Row = pupil, column = data field.</p>
   </div>
+</section>
 
-
-
-<!-- Teaching Block -->
-<section class="max-w-6xl mx-auto px-6 py-12">
- <div class="teaching-block">
-
-      <h3 class="teaching-header">Lists and Arrays — Storing Collections of Data</h3>
-      <div class="glow-divider"></div>
-
-<p class="mb-4">
-  Lists and arrays are both used to store multiple values, but they behave differently.  
-  Python uses <strong>lists</strong>, while GCSE pseudocode often refers to <strong>arrays</strong>.
-</p>
-
-<h4 class="text-xl font-semibold text-green-400 mt-6 mb-2">Python Lists</h4>
-<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-  <li>Dynamic — can grow or shrink.</li>
-  <li>Can store mixed data types.</li>
-  <li>Access items using indices starting at 0.</li>
-</ul>
-
-<h4 class="text-xl font-semibold text-green-400 mt-6 mb-2">GCSE Arrays</h4>
-<ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-  <li>Fixed size and data type.</li>
-  <li>Used in pseudocode and exam questions.</li>
-  <li>Often shown as tables or grids.</li>
-</ul>
-
-<h4 class="text-xl font-semibold text-green-400 mt-6 mb-2">2D Arrays</h4>
-<p class="text-gray-700 mb-4">
-  A 2D array stores data in rows and columns — like a spreadsheet.  
-  Each element is accessed using two indices: <code>[row][column]</code>.
-</p>
-
-<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
-<span class="text-gray-400"># Tic‑Tac‑Toe grid example</span>
-<span class="text-green-400">grid</span> = [
-    [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>],
-    [<span class="text-orange-600">"O"</span>, <span class="text-orange-600">"X"</span>, <span class="text-orange-600">"O"</span>],
-    [<span class="text-orange-600">"X"</span>, <span class="text-orange-600">" "</span>, <span class="text-orange-600">"O"</span>]
-]
-
-<span class="text-pink-400">print</span>(<span class="text-green-400">grid</span>[0][0])  <span class="text-gray-400"># top‑left cell</span>
-<span class="text-pink-400">print</span>(<span class="text-green-400">grid</span>[0][2])  <span class="text-gray-400"># top‑right cell</span>
-</pre>
-
-    </div>
-  </section>
 
 
     <!-- FOOTER -->
