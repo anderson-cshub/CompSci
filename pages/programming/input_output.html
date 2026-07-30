@@ -69,6 +69,7 @@
 
 
  <!-- MAIN CONTENT -->
+<!-- MAIN CONTENT -->
 <section id="topics" class="max-w-7xl mx-auto px-8 py-14">
 
   <h3 class="text-3xl font-semibold mb-8 text-gray-900">Inputs and Outputs</h3>
@@ -79,162 +80,175 @@
     <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
       <h4 class="text-xl font-bold mb-2 text-emerald-700">Output</h4>
       <p class="text-gray-700">print is the command word for an output. That is all it does - it outputs to the screen</p>
-       <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4">
-<code>
+
+      <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg mb-4"><code>
 <span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"hello world"</span>)
-</code>
-  </pre>
+</code></pre>
     </div>
 
     <!-- CARD 2 -->
- <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg 
-            transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 
-            slide-up delay-2">
+    <div class="bg-white dark:bg-gray-800 p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg 
+                transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 
+                slide-up delay-2">
 
-  <h4 class="text-xl font-bold mb-4 text-emerald-700">Input</h4>
+      <h4 class="text-xl font-bold mb-4 text-emerald-700">Input</h4>
 
-  <p class="text-gray-700 dark:text-gray-200 mb-3">
-    Inputs allow the user to enter their own data. We store this data in a 
-    <span class="text-emerald-600 font-semibold">variable</span>.
-  </p>
+      <p class="text-gray-700 dark:text-gray-200 mb-3">
+        Inputs allow the user to enter their own data. We store this data in a 
+        <span class="text-emerald-600 font-semibold">variable</span>.
+      </p>
 
-  <p class="text-gray-700 dark:text-gray-200 mb-3">
-    A variable is a piece of storage in memory. Its value can 
-    <span class="text-green-400 font-semibold">change during the program</span>.
-  </p>
+      <p class="text-gray-700 dark:text-gray-200 mb-3">
+        A variable is a piece of storage in memory. Its value can 
+        <span class="text-green-400 font-semibold">change during the program</span>.
+      </p>
 
-  <p class="text-gray-700 dark:text-gray-200 mb-3">
-    This is a common exam point: 
-    <span class="text-emerald-500 font-bold">variables can change</span>, 
-    <span class="text-red-500 font-bold">constants cannot</span>.
-  </p>
+      <p class="text-gray-700 dark:text-gray-200 mb-3">
+        This is a common exam point: 
+        <span class="text-emerald-500 font-bold">variables can change</span>, 
+        <span class="text-red-500 font-bold">constants cannot</span>.
+      </p>
 
-  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
-name = input("Enter your name: ")
-print("Hello", name)
-  </pre>
+      <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm"><code>
+<span class="text-purple-300 font-semibold">name</span> = <span class="text-blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter your name: "</span>)
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"Hello"</span>, <span class="text-purple-300 font-semibold">name</span>)
+</code></pre>
 
-</div>
-
-    <!-- CARD 3 -->
-    <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
-      <h4 class="text-xl font-bold mb-2 text-emerald-700">Card Title</h4>
-      <p class="text-gray-700">Card content goes here.</p>
     </div>
+
+    <!-- CARD 3 — NEW COMBINED EXAMPLE -->
+    <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
+      <h4 class="text-xl font-bold mb-2 text-emerald-700">Input + Output Example</h4>
+      <p class="text-gray-700 mb-3">
+        A simple program that asks for two numbers, adds them, and prints the result.
+      </p>
+
+      <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm"><code>
+<span class="text-purple-300 font-semibold">num1</span> = <span class="text-blue-400 font-semibold">int</span>(<span class="text-blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter first number: "</span>))
+<span class="text-purple-300 font-semibold">num2</span> = <span class="text-blue-400 font-semibold">int</span>(<span class="text.blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter second number: "</span>))
+
+<span class="text-purple-300 font-semibold">total</span> = <span class="text-purple-300 font-semibold">num1</span> + <span class="text-purple-300 font-semibold">num2</span>
+
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">f"The total is {</span><span class="text-purple-300 font-semibold">total</span><span class="text-orange-400 font-semibold">}"</span>)
+</code></pre>
+    </div>
+
   </div>
-    
- <div class="teaching-block">
 
-  <h3 class="teaching-header">Inputs and Outputs — Writing Clean, Readable Code</h3>
-  <div class="glow-divider"></div>
 
-  <p class="mb-4 text-gray-700 dark:text-gray-200">
-    Inputs and outputs are how your program communicates with the user. Good programs don’t just work — they are readable, well‑structured, and easy to maintain. This section covers best practice for naming variables, formatting output, and writing clean multi‑line code.
-  </p>
+  <!-- TEACHING BLOCK -->
+  <div class="teaching-block">
 
-  <!-- Meaningful Identifiers -->
-  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Meaningful Identifiers</h4>
-  <p class="text-gray-700 dark:text-gray-200 mb-4">
-    A variable name should describe what it stores. Python allows several naming styles:
-  </p>
+    <h3 class="teaching-header">Inputs and Outputs — Writing Clean, Readable Code</h3>
+    <div class="glow-divider"></div>
 
-  <ul class="list-disc pl-6 text-gray-700 dark:text-gray-200 space-y-2 mb-6">
-    <li><strong>lowercase</strong> — simple variables: <code>name</code>, <code>score</code></li>
-    <li><strong>snake_case</strong> — Python’s preferred style: <code>total_score</code>, <code>user_name</code></li>
-    <li><strong>camelCase</strong> — common in JavaScript, allowed but not standard in Python: <code>userName</code></li>
-    <li><strong>kebab-case</strong> — <em>not allowed</em> in Python (hyphens are subtraction): <code>user-name</code></li>
-    <li><strong>UPPER_CASE</strong> — used for constants: <code>MAX_SIZE = 10</code></li>
-  </ul>
+    <p class="mb-4 text-gray-700 dark:text-gray-200">
+      Inputs and outputs are how your program communicates with the user. Good programs don’t just work — they are readable, well‑structured, and easy to maintain. This section covers best practice for naming variables, formatting output, and writing clean multi‑line code.
+    </p>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-# Good naming
-user_name = input("Enter your name: ")
-total_score = 0
+    <!-- Meaningful Identifiers -->
+    <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Meaningful Identifiers</h4>
+    <p class="text-gray-700 dark:text-gray-200 mb-4">
+      A variable name should describe what it stores. Python allows several naming styles:
+    </p>
 
-# Constant (Python convention)
-MAX_ATTEMPTS = 3
-  </pre>
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-200 space-y-2 mb-6">
+      <li><strong>lowercase</strong> — simple variables: <code>name</code>, <code>score</code></li>
+      <li><strong>snake_case</strong> — Python’s preferred style: <code>total_score</code>, <code>user_name</code></li>
+      <li><strong>camelCase</strong> — common in JavaScript, allowed but not standard in Python: <code>userName</code></li>
+      <li><strong>kebab-case</strong> — <em>not allowed</em> in Python (hyphens are subtraction): <code>user-name</code></li>
+      <li><strong>UPPER_CASE</strong> — used for constants: <code>MAX_SIZE = 10</code></li>
+    </ul>
 
-  <!-- Input -->
-  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Using Input</h4>
-  <p class="text-gray-700 dark:text-gray-200 mb-4">
-    <code>input()</code> always returns a string. Convert it when needed:
-  </p>
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6"><code>
+<span class="text-purple-300 font-semibold">user_name</span> = <span class="text.blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter your name: "</span>)
+<span class="text-purple-300 font-semibold">total_score</span> = <span class="text-green-300 font-semibold">0</span>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-age = int(input("Enter your age: "))
-height = float(input("Enter your height in metres: "))
-  </pre>
+<span class="text-purple-300 font-semibold">MAX_ATTEMPTS</span> = <span class="text-green-300 font-semibold">3</span>
+</code></pre>
 
-  <!-- Output Formatting -->
-  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Output Formatting</h4>
-  <p class="text-gray-700 dark:text-gray-200 mb-4">
-    Python lets you join text and variables in several ways:
-  </p>
+    <!-- Input -->
+    <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Using Input</h4>
+    <p class="text-gray-700 dark:text-gray-200 mb-4">
+      <code>input()</code> always returns a string. Convert it when needed:
+    </p>
 
-  <ul class="list-disc pl-6 text-gray-700 dark:text-gray-200 space-y-2 mb-6">
-    <li><strong>Comma separator</strong> — easiest, adds spaces automatically.</li>
-    <li><strong>Plus operator</strong> — joins strings only (must convert numbers).</li>
-    <li><strong>f‑strings</strong> — modern, clean, recommended.</li>
-  </ul>
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6"><code>
+<span class="text-purple-300 font-semibold">age</span> = <span class="text-blue-400 font-semibold">int</span>(<span class="text-blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter your age: "</span>))
+<span class="text-purple-300 font-semibold">height</span> = <span class="text-blue-400 font-semibold">float</span>(<span class="text-blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter your height in metres: "</span>))
+</code></pre>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-name = "Alice"
-score = 42
+    <!-- Output Formatting -->
+    <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Output Formatting</h4>
+    <p class="text-gray-700 dark:text-gray-200 mb-4">
+      Python lets you join text and variables in several ways:
+    </p>
 
-print("Hello", name)              # comma separator
-print("Score: " + str(score))     # plus operator
-print(f"{name} scored {score}")   # f-string (best)
-  </pre>
+    <ul class="list-disc pl-6 text-gray-700 dark:text-gray-200 space-y-2 mb-6">
+      <li><strong>Comma separator</strong> — easiest, adds spaces automatically.</li>
+      <li><strong>Plus operator</strong> — joins strings only (must convert numbers).</li>
+      <li><strong>f‑strings</strong> — modern, clean, recommended.</li>
+    </ul>
 
-  <!-- New Lines -->
-  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">New Lines and Multi‑Line Output</h4>
-  <p class="text-gray-700 dark:text-gray-200 mb-4">
-    Use <code>\n</code> for new lines, or triple quotes for multi‑line text.
-  </p>
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6"><code>
+<span class="text-purple-300 font-semibold">name</span> = <span class="text-orange-400 font-semibold">"Alice"</span>
+<span class="text-purple-300 font-semibold">score</span> = <span class="text-green-300 font-semibold">42</span>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-print("Line 1\nLine 2\nLine 3")
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"Hello"</span>, <span class="text-purple-300 font-semibold">name</span>)
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"Score: "</span> + <span class="text-blue-400 font-semibold">str</span>(<span class="text-purple-300 font-semibold">score</span>))
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">f"{</span><span class="text-purple-300 font-semibold">name</span><span class="text-orange-400 font-semibold">} scored {</span><span class="text-purple-300 font-semibold">score</span><span class="text-orange-400 font-semibold">}"</span>)
+</code></pre>
 
-print("""
+    <!-- New Lines -->
+    <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">New Lines and Multi‑Line Output</h4>
+    <p class="text-gray-700 dark:text-gray-200 mb-4">
+      Use <code>\n</code> for new lines, or triple quotes for multi‑line text.
+    </p>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6"><code>
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"Line 1\nLine 2\nLine 3"</span>)
+
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"""
 Name: Alice
 Score: 42
 Grade: A
-""")
-  </pre>
+"""</span>)
+</code></pre>
 
-  <!-- Long Lines -->
-  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Avoiding Long Lines</h4>
-  <p class="text-gray-700 dark:text-gray-200 mb-4">
-    If a line gets too long, break it across multiple lines using parentheses:
-  </p>
+    <!-- Long Lines -->
+    <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Avoiding Long Lines</h4>
+    <p class="text-gray-700 dark:text-gray-200 mb-4">
+      If a line gets too long, break it across multiple lines using parentheses:
+    </p>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-message = (
-    "This is a very long message that would normally "
-    "go off the screen, but splitting it keeps the code tidy."
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6"><code>
+<span class="text-purple-300 font-semibold">message</span> = (
+    <span class="text-orange-400 font-semibold">"This is a very long message that would normally "</span>
+    <span class="text-orange-400 font-semibold">"go off the screen, but splitting it keeps the code tidy."</span>
 )
 
-print(message)
-  </pre>
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-purple-300 font-semibold">message</span>)
+</code></pre>
 
-  <!-- Example Program -->
-  <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Example — Clean Input/Output Program</h4>
+    <!-- Example Program -->
+    <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Example — Clean Input/Output Program</h4>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
-user_name = input("Enter your name: ")
-score = int(input("Enter your score: "))
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6"><code>
+<span class="text-purple-300 font-semibold">user_name</span> = <span class="text-blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter your name: "</span>)
+<span class="text-purple-300 font-semibold">score</span> = <span class="text-blue-400 font-semibold">int</span>(<span class="text-blue-400 font-semibold">input</span>(<span class="text-orange-400 font-semibold">"Enter your score: "</span>))
 
-print(f"\nResults for {user_name}")
-print("----------------------")
-print(f"Score: {score}")
-  </pre>
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">f"\nResults for {</span><span class="text-purple-300 font-semibold">user_name</span><span class="text-orange-400 font-semibold">}"</span>)
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">"----------------------"</span>)
+<span class="text-blue-400 font-semibold">print</span>(<span class="text-orange-400 font-semibold">f"Score: {</span><span class="text-purple-300 font-semibold">score</span><span class="text-orange-400 font-semibold">}"</span>)
+</code></pre>
 
-  <p class="text-gray-700 dark:text-gray-200 mb-4">
-    This example shows clean naming, input conversion, f‑strings, and formatted output.
-  </p>
+    <p class="text-gray-700 dark:text-gray-200 mb-4">
+      This example shows clean naming, input conversion, f‑strings, and formatted output.
+    </p>
 
-</div>
+  </div>
+
+</section>
 
     
      </div> <!--closing div -->
