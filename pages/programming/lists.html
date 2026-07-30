@@ -357,6 +357,42 @@
 
 </div>
 
+  <section class="max-w-6xl mx-auto px-6 py-12">
+  <div class="teaching-block">
+    <h3 class="teaching-header">2D Arrays — Pupil Scores Explained</h3>
+    <div class="glow-divider"></div>
+
+    <p class="mb-4 text-gray-700">
+      A 2D array stores data in rows and columns. Each row represents a pupil, and each column holds a data field such as name, subject, or score.
+    </p>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-6">
+<span class="text-green-400">results</span> = [
+    [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Maths"</span>, 88],
+    [<span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Science"</span>, 75],
+    [<span class="text-orange-600">"Charlie"</span>, <span class="text-orange-600">"English"</span>, 92]
+]
+
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][0])  <span class="text-gray-400"># Alice</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][1])  <span class="text-gray-400"># Alice’s subject</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[0][2])  <span class="text-gray-400"># Alice’s score</span>
+    </pre>
+
+    <p class="mb-4 text-gray-700">
+      Rows are pupils (0 = Alice, 1 = Bob, 2 = Charlie). Columns are data fields (0 = Name, 1 = Subject, 2 = Score).
+    </p>
+
+    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm">
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][0])  <span class="text-gray-400"># Bob</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][1])  <span class="text-gray-400"># Bob’s subject</span>
+<span class="text-pink-400">print</span>(<span class="text-green-400">results</span>[1][2])  <span class="text-gray-400"># Bob’s score</span>
+    </pre>
+
+    <p class="text-gray-700 mt-4">Row = pupil, column = data field.</p>
+  </div>
+</section>
+
+
 <!-- Teaching Block -->
 <section class="max-w-6xl mx-auto px-6 py-12">
  <div class="teaching-block">
