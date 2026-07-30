@@ -94,6 +94,148 @@
   <p class="text-gray-700 mt-2">Lists can hold mixed data types and change size at runtime - you can add to the list dynamically, so you don't need to program the size of the list.</p>
 </div>
 
+    <!-- Append -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Append (Add an Item)</h4>
+  <p class="text-gray-700 mb-3">
+    <strong>append()</strong> adds a new item to the end of a list.  
+    This is one of the most important GCSE list operations.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">scores</span> = [10, 20, 30]
+<span class="text-green-400">scores</span>.<span class="text-pink-400">append</span>(40)
+<span class="text-pink-400">print</span>(<span class="text-green-400">scores</span>)  <span class="text-gray-400"># [10, 20, 30, 40]</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Append = add to the end of the list.</p>
+</div>
+
+    <!-- Remove -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Remove (Delete an Item)</h4>
+  <p class="text-gray-700 mb-3">
+    <strong>remove()</strong> deletes the first matching value from a list.  
+    Another essential GCSE operation.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">scores</span> = [10, 20, 30]
+<span class="text-green-400">scores</span>.<span class="text-pink-400">remove</span>(20)
+<span class="text-pink-400">print</span>(<span class="text-green-400">scores</span>)  <span class="text-gray-400"># [10, 30]</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Remove = delete by value.</p>
+</div>
+
+    <!-- Insert -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Insert (Add at a Position)</h4>
+  <p class="text-gray-700 mb-3">
+    <strong>insert()</strong> places a new item at a specific index.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">scores</span> = [10, 30, 40]
+<span class="text-green-400">scores</span>.<span class="text-pink-400">insert</span>(1, 20)
+<span class="text-pink-400">print</span>(<span class="text-green-400">scores</span>)  <span class="text-gray-400"># [10, 20, 30, 40]</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Insert = add at a chosen index.</p>
+</div>
+
+    <!-- Length -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-5">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Length of a List</h4>
+  <p class="text-gray-700 mb-3">
+    Use <strong>len()</strong> to count how many items are in a list.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">scores</span> = [10, 20, 30, 40]
+<span class="text-pink-400">print</span>(<span class="text-pink-400">len</span>(<span class="text-green-400">scores</span>))  
+<span class="text-gray-400"># 4</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Length = number of items.</p>
+</div>
+
+    <!-- Count -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-6">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Count Items in a List</h4>
+  <p class="text-gray-700 mb-3">
+    <strong>count()</strong> tells you how many times a value appears.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">scores</span> = [10, 20, 10, 30, 10]
+<span class="text-pink-400">print</span>(<span class="text-green-400">scores</span>.<span class="text-pink-400">count</span>(10))  
+<span class="text-gray-400"># 3</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Count = how many times a value appears.</p>
+</div>
+
+    <!-- Index -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-7">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Find an Item’s Index</h4>
+  <p class="text-gray-700 mb-3">
+    <strong>index()</strong> returns the position of a value in the list.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">names</span> = [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Charlie"</span>]
+<span class="text-pink-400">print</span>(<span class="text-green-400">names</span>.<span class="text-pink-400">index</span>(<span class="text-orange-600">"Bob"</span>))  
+<span class="text-gray-400"># 1</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Index = position of an item.</p>
+</div>
+
+    <!-- Print item using index -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-8">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Print an Item Using Its Index</h4>
+  <p class="text-gray-700 mb-3">
+    Access items directly using square brackets.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">names</span> = [<span class="text-orange-600">"Alice"</span>, <span class="text-orange-600">"Bob"</span>, <span class="text-orange-600">"Charlie"</span>]
+<span class="text-pink-400">print</span>(<span class="text-green-400">names</span>[2])  
+<span class="text-gray-400"># Charlie</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Indexing = access by position.</p>
+</div>
+
+    <!-- Pop -->
+<div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-9">
+
+  <h4 class="text-xl font-bold mb-2 text-green-400">Pop (Delete by Index)</h4>
+  <p class="text-gray-700 mb-3">
+    <strong>pop()</strong> removes an item using its index and returns it.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-green-400">scores</span> = [10, 20, 30]
+<span class="text-green-400">removed</span> = <span class="text-green-400">scores</span>.<span class="text-pink-400">pop</span>(1)
+<span class="text-pink-400">print</span>(<span class="text-green-400">removed</span>)  
+<span class="text-gray-400"># 20</span>
+
+<span class="text-pink-400">print</span>(<span class="text-green-400">scores</span>)  
+<span class="text-gray-400"># [10, 30]</span>
+  </pre>
+
+  <p class="text-gray-700 mt-2">Pop = delete by index.</p>
+</div>
+
 
 <!-- GCSE Arrays -->
 <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
