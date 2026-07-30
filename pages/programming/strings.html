@@ -86,7 +86,7 @@
     <!-- CONCATENATION -->
     <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1 w-full">
       <h4 class="text-xl font-bold mb-2 text-green-400">Concatenation</h4>
-      <p class="text-gray-700 mb-3">Joining strings using <span class="text-blue-600 font-semibold">+</span>.</p>
+      <p class="text-gray-700 mb-3">Joining strings using <span class="text-cyan-400 font-semibold">+</span>.</p>
 
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">first</span> = <span class="text-orange-400">"Computer"</span>
@@ -100,14 +100,14 @@ print(<span class="text-green-400">first</span> + <span class="text-orange-400">
     <!-- F-STRINGS -->
     <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2 w-full">
       <h4 class="text-xl font-bold mb-2 text-green-400">f‑Strings</h4>
-      <p class="text-gray-700 mb-3">Insert variables directly into text using <strong>{ }</strong>.</p>
+      <p class="text-gray-700 mb-3">Insert variables directly into text using <strong class="text-pink-400">{ }</strong>.</p>
 
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">name</span> = <span class="text-orange-400">"Mr Anderson"</span>
 <span class="text-green-400">age</span> = <span class="text-purple-300">15</span>
 
-print(f<span class="text-orange-400">"Hello {name}"</span>)
-print(f<span class="text-orange-400">"You are {age} years old"</span>)
+print(<span class="text-pink-400">f</span><span class="text-orange-400">"Hello {name}"</span>)
+print(<span class="text-pink-400">f</span><span class="text-orange-400">"You are {age} years old"</span>)
       </pre>
     </div>
 
@@ -119,22 +119,22 @@ print(f<span class="text-orange-400">"You are {age} years old"</span>)
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">name</span> = <span class="text-orange-400">"Mr Anderson"</span>
 
-print(<span class="text-green-400">name</span>.upper())   <span class="text-gray-400"># MR ANDERSON</span>
-print(<span class="text-green-400">name</span>.lower())   <span class="text-gray-400"># mr anderson</span>
+print(<span class="text-green-400">name</span>.<span class="text-pink-400">upper</span>())   <span class="text-gray-400"># MR ANDERSON</span>
+print(<span class="text-green-400">name</span>.<span class="text-pink-400">lower</span>())   <span class="text-gray-400"># mr anderson</span>
       </pre>
     </div>
 
     <!-- LENGTH -->
     <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-4 w-full">
       <h4 class="text-xl font-bold mb-2 text-green-400">Length</h4>
-      <p class="text-gray-700 mb-3"><span class="text-blue-600 font-semibold">len()</span> counts characters, including spaces.</p>
+      <p class="text-gray-700 mb-3"><span class="text-cyan-400 font-semibold">len()</span> counts characters, including spaces.</p>
 
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">word</span> = <span class="text-orange-400">"computer"</span>
-print(len(<span class="text-green-400">word</span>))   <span class="text-gray-400"># 8</span>
+print(<span class="text-pink-400">len</span>(<span class="text-green-400">word</span>))   <span class="text-gray-400"># 8</span>
 
 <span class="text-green-400">phrase</span> = <span class="text-orange-400">"Mr Anderson"</span>
-print(len(<span class="text-green-400">phrase</span>)) <span class="text-gray-400"># 11</span>
+print(<span class="text-pink-400">len</span>(<span class="text-green-400">phrase</span>)) <span class="text-gray-400"># 11</span>
       </pre>
     </div>
 
@@ -159,7 +159,7 @@ print(<span class="text-green-400">word</span>[3:6])   <span class="text-gray-40
 
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">sentence</span> = <span class="text-orange-400">"I love computer science"</span>
-<span class="text-green-400">words</span> = <span class="text-green-400">sentence</span>.split()
+<span class="text-green-400">words</span> = <span class="text-green-400">sentence</span>.<span class="text-pink-400">split</span>()
 
 print(<span class="text-green-400">words</span>)    <span class="text-gray-400"># ['I','love','computer','science']</span>
 print(<span class="text-green-400">words</span>[2]) <span class="text-gray-400"># computer</span>
@@ -174,8 +174,8 @@ print(<span class="text-green-400">words</span>[2]) <span class="text-gray-400">
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">word</span> = <span class="text-orange-400">"computer"</span>
 
-print(<span class="text-orange-400">"put"</span> in <span class="text-green-400">word</span>) <span class="text-gray-400"># True</span>
-print(<span class="text-orange-400">"dog"</span> in <span class="text-green-400">word</span>) <span class="text-gray-400"># False</span>
+print(<span class="text-orange-400">"put"</span> <span class="text-pink-400">in</span> <span class="text-green-400">word</span>) <span class="text-gray-400"># True</span>
+print(<span class="text-orange-400">"dog"</span> <span class="text-pink-400">in</span> <span class="text-green-400">word</span>) <span class="text-gray-400"># False</span>
       </pre>
     </div>
 
@@ -186,7 +186,7 @@ print(<span class="text-orange-400">"dog"</span> in <span class="text-green-400"
 
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
 <span class="text-green-400">text</span> = <span class="text-orange-400">"I love cats"</span>
-print(<span class="text-green-400">text</span>.replace(<span class="text-orange-400">"cats"</span>, <span class="text-orange-400">"dogs"</span>))
+print(<span class="text-green-400">text</span>.<span class="text-pink-400">replace</span>(<span class="text-orange-400">"cats"</span>, <span class="text-orange-400">"dogs"</span>))
       </pre>
     </div>
 
@@ -196,17 +196,15 @@ print(<span class="text-green-400">text</span>.replace(<span class="text-orange-
       <p class="text-gray-700 mb-3">Convert between characters and ASCII numbers.</p>
 
       <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-print(ord(<span class="text-orange-400">'A'</span>)) <span class="text-gray-400"># 65</span>
-print(chr(<span class="text-purple-300">65</span>))  <span class="text-gray-400"># A</span>
+print(<span class="text-pink-400">ord</span>(<span class="text-orange-400">'A'</span>)) <span class="text-gray-400"># 65</span>
+print(<span class="text-pink-400">chr</span>(<span class="text-purple-300">65</span>))  <span class="text-gray-400"># A</span>
       </pre>
     </div>
-</div> <!-- main CLOSE THE GRID -->
+  </div>
+</section>
 
-</section> <!--  CLOSE MAIN CONTENT SECTION -->
-
-<!--  Misconceptions section with a wider section //its still like a card, but its own section -->
-
-  <section class="max-w-6xl mx-auto px-6 py-12">
+<!-- MISCONCEPTIONS -->
+<section class="max-w-6xl mx-auto px-6 py-12">
 
   <div class="teaching-block">
     <h3 class="teaching-header">Common Misconception — Mixing Text and Numbers</h3>
@@ -214,7 +212,7 @@ print(chr(<span class="text-purple-300">65</span>))  <span class="text-gray-400"
 
     <p class="mb-4 text-gray-700">
       A very common mistake is trying to join text (a <strong>string</strong>) with a number (an <strong>integer</strong>)
-      using the <span class="text-blue-600 font-semibold">+</span> operator. Python cannot do this.
+      using the <span class="text-cyan-400 font-semibold">+</span> operator. Python cannot do this.
     </p>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4 overflow-x-auto">
@@ -227,19 +225,18 @@ print(<span class="text-orange-400">"You are "</span> + <span class="text-green-
     </p>
 
     <ul class="list-disc pl-6 text-gray-700 mb-4">
-      <li>convert the number using <span class="text-blue-600 font-semibold">str()</span></li>
-      <li>or use an <strong>f‑string</strong>, which handles the conversion automatically</li>
+      <li>convert the number using <span class="text-cyan-400 font-semibold">str()</span></li>
+      <li>or use an <strong class="text-pink-400">f‑string</strong>, which handles the conversion automatically</li>
     </ul>
 
     <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm overflow-x-auto">
-print(<span class="text-orange-400">"You are "</span> + str(<span class="text-green-400">age</span>))
-print(f<span class="text-orange-400">"You are {age}"</span>)
+print(<span class="text-orange-400">"You are "</span> + <span class="text-pink-400">str</span>(<span class="text-green-400">age</span>))
+print(<span class="text-pink-400">f</span><span class="text-orange-400">"You are {age}"</span>)
     </pre>
 
   </div>
 
 </section>
-
 
 <!-- FOOTER -->
 <footer class="bg-white mt-20 py-10 shadow-inner">
