@@ -387,7 +387,34 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   color: #e5e7eb;
 }
 
+/* ============================================================
+   WIDER TEACHING BLOCK (LOCAL PAGE OVERRIDE)
+   ============================================================ */
 
+/* Wider version of the teaching block for pages that need more space */
+.teaching-block-wide {
+  max-width: 70rem;        /* wider than the default 48rem */
+  margin: 2.5rem auto;     /* same spacing as normal teaching block */
+  padding: 1.5rem;         /* same padding */
+  border-radius: 0.75rem;  /* same rounded corners */
+  background: #ffffff;     /* same light mode background */
+  color: #1f2937;          /* slate-800 text */
+  box-shadow: 0 0 12px rgba(0,0,0,0.1); /* same subtle shadow */
+  animation: fadeIn 0.8s ease-in-out;   /* same animation */
+}
+
+/* Dark Mode Version */
+.dark .teaching-block-wide {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid #34d399;
+  box-shadow: 0 0 20px #34d399;
+  color: #e5e7eb;
+}
+
+/* ============================================================
+   Headers
+   ============================================================ */
 
 /* Cyberpunk Header */
 .teaching-header {
