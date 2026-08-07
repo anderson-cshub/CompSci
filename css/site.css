@@ -505,30 +505,33 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
    ============================================================ */
 
 .uc-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  text-align: center;
-  padding: 1.2rem 0;
+  padding: 1.5rem 0;
   margin-top: 2rem;
+
   font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
+  font-weight: 800;
+  font-size: 2.5rem;
   letter-spacing: 3px;
+  text-transform: uppercase;
 
-  color: #facc15; /* bright amber */
-  background: #000; /* cyberpunk black */
-  border-top: 3px solid #facc15;
-  border-bottom: 3px solid #facc15;
+  color: #facc15; /* bright yellow */
+  background-color: #000; /* black bar */
+  border-top: 4px solid #facc15;
+  border-bottom: 4px solid #facc15;
 
-  text-shadow: 0 0 8px #facc15, 0 0 16px #fbbf24;
-  box-shadow: 0 0 20px #facc15 inset, 0 0 20px #facc15;
-
-  animation: ucPulse 2.5s infinite ease-in-out;
+  text-shadow: 0 0 10px #facc15, 0 0 20px #fbbf24;
+  box-shadow: 0 0 25px #facc15 inset, 0 0 25px #facc15;
+  animation: glowPulse 2.5s infinite ease-in-out;
 }
 
-@keyframes ucPulse {
-  0%   { text-shadow: 0 0 6px #facc15; }
-  50%  { text-shadow: 0 0 16px #fbbf24; }
-  100% { text-shadow: 0 0 6px #facc15; }
+@keyframes glowPulse {
+  0%   { text-shadow: 0 0 8px #facc15; }
+  50%  { text-shadow: 0 0 20px #fbbf24; }
+  100% { text-shadow: 0 0 8px #facc15; }
 }
 
 
