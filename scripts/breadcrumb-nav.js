@@ -1,6 +1,6 @@
 // Build breadcrumb trail 
 function buildBreadcrumb(trail) {
-  const container = document.getElementById("breadcrumb");
+  const container = document.getElementById("breadcrumb-nav");
   if (!container) return;
 
   container.innerHTML = "";
