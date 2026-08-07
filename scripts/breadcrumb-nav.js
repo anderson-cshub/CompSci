@@ -20,7 +20,7 @@ function buildBreadcrumb(trail) {
 
 // Auto-load breadcrumb component + auto-build trail
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("breadcrumb");
+  const container = document.getElementById("breadcrumb-nav");
   if (!container) return;
 
   fetch("/CompSci/components/breadcrumb.html")
