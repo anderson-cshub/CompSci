@@ -290,19 +290,20 @@ body {
    SUBTLE FADE-IN SPACING ANIMATION
    ============================================================ */
 
-/* Smooth fade‑in without vertical offset */
-.spacing-fade {
+/* Smooth fade‑in without vertical offset - didn't work properly - deleted entire cards */
+/*.spacing-fade {
   opacity: 0;
   transform: translateY(0); /* no downward start */
   animation: spacingFade 0.6s ease-out forwards;
+   */
 
-/* Old fade - sometimes text was not aligned */
-/*.spacing-fade {
+/* fade - sometimes text is not aligned - programming index card titles */
+.spacing-fade {
   opacity: 0;
   transform: translateY(10px);
   animation: spacingFade 0.6s ease-out forwards;
 }
-*/
+
 
 
 @keyframes spacingFade {
