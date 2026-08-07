@@ -1,3 +1,4 @@
+// Build breadcrumb trail
 function buildBreadcrumb(trail) {
   const container = document.getElementById("breadcrumb");
   if (!container) return;
@@ -16,3 +17,19 @@ function buildBreadcrumb(trail) {
     }
   });
 }
+
+// Auto-load breadcrumb component + auto-build trail
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("breadcrumb");
+  if (!container) return;
+
+  fetch("/CompSci/components/breadcrumb.html")
+    .then(r => r.text())
+    .then(html => {
+      container.innerHTML = html;
+
+      if (window.breadcrumbTrail && Array.isArray(window.breadcrumbTrail)) {
+        buildBreadcrumb(window.breadcrumbTrail);
+      }
+    });
+});
