@@ -13,6 +13,14 @@
 <body data-page="data_types" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
  <div id="navbar"></div>
+
+  <div id="breadcrumb"></div>
+<script>
+  fetch("/CompSci/components/breadcrumb.html")
+    .then(r => r.text())
+    .then(html => document.getElementById("breadcrumb").innerHTML = html);
+</script>
+
   
 <!-- CORNER IMAGE -->
 <img src="../../images/avatar1.png"
