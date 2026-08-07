@@ -500,6 +500,32 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   margin: 0 0.3rem;
 }
 
+.uc-banner {
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 3px;
+
+  color: #facc15; /* bright amber */
+  background: #000; /* cyberpunk black */
+  border-top: 3px solid #facc15;
+  border-bottom: 3px solid #facc15;
+
+  text-shadow: 0 0 8px #facc15, 0 0 16px #fbbf24;
+  box-shadow: 0 0 20px #facc15 inset, 0 0 20px #facc15;
+
+  animation: ucPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes ucPulse {
+  0%   { text-shadow: 0 0 6px #facc15; }
+  50%  { text-shadow: 0 0 16px #fbbf24; }
+  100% { text-shadow: 0 0 6px #facc15; }
+}
 
 
 
