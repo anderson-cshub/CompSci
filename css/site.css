@@ -471,6 +471,25 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
 }
 
 
+/* ============================================================
+   breadcrumb navigation
+   ============================================================ */
+#breadcrumb a {
+  color: #059669;
+  text-decoration: none;
+}
+#breadcrumb a:hover {
+  text-decoration: underline;
+}
+#breadcrumb span {
+  color: #1f2937;
+  font-weight: 500;
+}
+#breadcrumb .divider {
+  color: #9ca3af;
+  padding: 0 4px;
+}
+
 
 
 
