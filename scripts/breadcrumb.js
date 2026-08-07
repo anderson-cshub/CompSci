@@ -1,4 +1,4 @@
-// Build breadcrumb trail
+// Build breadcrumb trail 
 function buildBreadcrumb(trail) {
   const container = document.getElementById("breadcrumb");
   if (!container) return;
