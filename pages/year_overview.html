@@ -15,6 +15,14 @@
 <body data-page="year_overview" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
   
 <div id="navbar"></div>
+
+  <div id="breadcrumb"></div>
+<script>
+  fetch("/CompSci/components/breadcrumb.html")
+    .then(r => r.text())
+    .then(html => document.getElementById("breadcrumb").innerHTML = html);
+</script>
+
   
 <a href="year_overview.html"
    class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
