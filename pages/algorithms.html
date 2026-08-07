@@ -15,6 +15,14 @@
 <body data-page="algorithms" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
   <div id="navbar"></div>
 
+  <div id="breadcrumb"></div>
+<script>
+  fetch("/CompSci/components/breadcrumb.html")
+    .then(r => r.text())
+    .then(html => document.getElementById("breadcrumb").innerHTML = html);
+</script>
+
+
 <!-- CORNER IMAGE -->
 <img src="../images/avatar1.png"
       class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 
