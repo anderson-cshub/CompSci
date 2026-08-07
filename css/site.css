@@ -296,13 +296,13 @@ body {
   transform: translateY(0); /* no downward start */
   animation: spacingFade 0.6s ease-out forwards;
 
-
-<!--.spacing-fade {
+/* Old fade - sometimes text was not aligned */
+/*.spacing-fade {
   opacity: 0;
   transform: translateY(10px);
   animation: spacingFade 0.6s ease-out forwards;
 }
--->
+*/
 
 
 @keyframes spacingFade {
