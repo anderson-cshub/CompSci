@@ -12,13 +12,27 @@
 
 <body data-page="challenges" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
+  <!- Load the navbar from the components section-->
  <div id="navbar"></div>
 
+   <!- Load the breadcrumb from the components section-->
   <div id="breadcrumb"></div>
+
+<script src="/CompSci/scripts/breadcrumb.js"></script>
+
 <script>
   fetch("/CompSci/components/breadcrumb.html")
     .then(r => r.text())
-    .then(html => document.getElementById("breadcrumb").innerHTML = html);
+    .then(html => {
+      document.getElementById("breadcrumb").innerHTML = html;
+
+      // Breadcrumb now exists — safe to build it - edit the correct pages to navigate from here!!
+      buildBreadcrumb([
+        { label: "Home", link: "/CompSci/index.html" },
+        { label: "Programming", link: "/CompSci/pages/programming/index.html" },
+        { label: "Challenges" }
+      ]);
+    });
 </script>
 
 
@@ -109,17 +123,7 @@
     </div>
   </footer>
 
-  <!Breadcrumbs navigation -->
- <script src="/CompSci/scripts/breadcrumb.js"></script>
-<script>
-  buildBreadcrumb([
-    { label: "Home", link: "/CompSci/index.html" },
-    { label: "Programming", link: "/CompSci/pages/programming/index.html" },
-    { label: "Challenges" }
-  ]);
-</script>
-
-
+ 
 
  <!-- NAVBAR + DARK MODE SCRIPT -->
   <script>
