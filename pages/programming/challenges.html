@@ -16,24 +16,18 @@
  <div id="navbar"></div>
 
    <!- Load the breadcrumb from the components section-->
-  <div id="breadcrumb"></div>
+ <div id="breadcrumb"></div>
 
 <script src="/CompSci/scripts/breadcrumb.js"></script>
 
 <script>
-  fetch("/CompSci/components/breadcrumb.html")
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById("breadcrumb").innerHTML = html;
-
-      // Breadcrumb now exists — safe to build it - edit the correct pages to navigate from here!!
-      buildBreadcrumb([
-        { label: "Home", link: "/CompSci/index.html" },
-        { label: "Programming", link: "/CompSci/pages/programming/index.html" },
-        { label: "Challenges" }
-      ]);
-    });
+  window.breadcrumbTrail = [
+    { label: "Home", link: "/CompSci/index.html" },
+    { label: "Programming", link: "/CompSci/pages/programming/index.html" },
+    { label: "Challenges" }
+  ];
 </script>
+
 
 
 <!-- CORNER IMAGE -->
