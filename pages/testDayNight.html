@@ -12,6 +12,14 @@
   <!-- NAVBAR  -->
   <div id="navbar"></div>
 
+  <div id="breadcrumb"></div>
+<script>
+  fetch("/CompSci/components/breadcrumb.html")
+    .then(r => r.text())
+    .then(html => document.getElementById("breadcrumb").innerHTML = html);
+</script>
+
+
   <div class="max-w-6xl mx-auto px-6 py-10">
     <h1 class="text-3xl font-bold dark:text-gray-200">Dark Mode Test</h1>
     <p class="mt-4 dark:text-gray-300">Toggle the theme using the moon icon.</p>
