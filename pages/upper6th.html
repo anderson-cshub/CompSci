@@ -6,143 +6,41 @@
   <title>Upper 6th | Computer Science Hub</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
   <link rel="stylesheet" href="/CompSci/css/site.css">
-
-
 </head>
 
 <body data-page="upper6th" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
- <div id="navbar"></div>
+<div id="navbar"></div>
 
-<div class="uc-banner">
-  UNDER CONSTRUCTION
-</div>
-  
+<!-- UNDER CONSTRUCTION BANNER -->
+<div class="uc-banner">UNDER CONSTRUCTION</div>
+
 <!-- CORNER IMAGE -->
 <img src="../images/UnderConstruction1.png"
-      class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 
-            slide-up delay-2 drop-shadow-[0_0_12px_#34d399] 
+     class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90
+            slide-up delay-2 drop-shadow-[0_0_12px_#34d399]
             hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
+<!-- YEAR OVERVIEW BUTTON -->
+<div class="max-w-6xl mx-auto px-6">
+  <a href="year_overview.html"
+     class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
+     View Year Overview
+  </a>
+</div>
 
-  <!-- YEAR OVERVIEW BUTTON -->
-  <div class="max-w-6xl mx-auto px-6">
-    <a href="year_overview.html"
-       class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
-       View Year Overview
-    </a>
-  </div>
+<!-- ============================
+     UPPER 6TH STICKY SIDEBAR
+============================= -->
+<aside id="u6Sidebar"
+  class="fixed left-6 top-32 w-56 bg-gray-900/70 backdrop-blur-md border border-emerald-500
+         rounded-xl p-4 text-sm text-gray-200 space-y-2 shadow-[0_0_15px_#34d399] hidden md:block">
 
-  <!-- MAIN CONTENT -->
-  <section id="topics" class="max-w-6xl mx-auto px-6 py-12">
-    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Upper 6th</h3>
+  <h3 class="text-emerald-400 font-bold mb-2">Upper 6th Topics</h3>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Example card -->
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
-        <h4 class="text-xl font-bold mb-2">Paper 1 Content</h4>
-        <p class="text-gray-700">Programming languages, databases, networks, data types, legislation, ethics, NEA work.</p>
-      </div>
-
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
-        <h4 class="text-xl font-bold mb-2">Paper 2 Content</h4>
-        <p class="text-gray-700">Algorithms, recursion, trees, graphs, queues, stacks, OOP, Big O notation.</p>
-      </div>
-
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
-        <h4 class="text-xl font-bold mb-2">NEA</h4>
-        <p class="text-gray-700">Analysis, design, development, testing, evaluation — integrated throughout the year.</p>
-      </div>
-
-    </div>
-  </section>
-
-   <!-- FOOTER -->
-  <footer class="bg-white mt-20 py-10 shadow-inner">
-    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-      © 2026 Anderson Computer Science Hub — Resources for Ambrosians
-
-
-    </div>
-  </footer>
-
-<script>
-  const currentPage = document.body.dataset.page;
-
-  fetch("/CompSci/components/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
-
-      // Highlight active link
-      document.querySelectorAll('#navbar a').forEach(link => {
-        const page = link.dataset.page;
-
-        if (page === currentPage) {
-          link.classList.add('nav-link-active');
-          link.classList.remove('border-transparent', 'text-gray-700');
-        } else {
-          link.classList.remove('nav-link-active');
-          link.classList.add('border-transparent', 'text-gray-700');
-        }
-      });
-
-      // Hamburger toggle (AFTER navbar injection)
-      const burger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-
-      if (burger && mobileMenu) {
-        burger.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
-      }
-
-     // ⭐ DARK MODE LOGIC ⭐
-const themeToggleDesktop = document.getElementById('themeToggle');
-const themeToggleMobile  = document.getElementById('themeToggleMobile');
-
-const toggles = [themeToggleDesktop, themeToggleMobile].filter(Boolean);
-
-if (toggles.length) {
-  // Apply saved theme
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-    toggles.forEach(btn => btn.textContent = '☀️');
-  }
-
-  // Auto-detect system theme if no saved preference
-  if (!localStorage.getItem('theme')) {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefersDark) {
-      document.documentElement.classList.add('dark');
-      toggles.forEach(btn => btn.textContent = '☀️');
-    }
-  }
-
-  // Attach click to BOTH buttons
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        toggles.forEach(b => b.textContent = '☀️');
-      } else {
-        localStorage.setItem('theme', 'light');
-        toggles.forEach(b => b.textContent = '🌙');
-      }
-    });
-  });
-}
-  });
-</script>
-
-
-
-
-</body>
-</html>
-
+  <a href="algorithms_advanced.html" class="block hover:text-emerald-400 transition">Algorithms (Advanced)</a>
+  <a href="data_structures_advanced.html" class="block hover:text-emerald-400 transition">Data Structures (Advanced)</a>
+  <a href="recursion.html" class="block hover:text-emerald-400 transition">Recursion</a>
+  <a href="oop.html" class="block hover:text-emerald-400 transition">Object-Oriented Programming</a>
+  <a href="big_o.html" class="block hover:text-emerald-400 transition">
