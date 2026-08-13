@@ -544,6 +544,15 @@ body, nav, .bg-white, .text-gray-900, .text-gray-700, .text-gray-600 {
   100% { text-shadow: 0 0 8px #facc15; }
 }
 
+/* ============================================================
+   sidebar glow
+   ============================================================ */
+
+.sidebar-active {
+  color: #34d399 !important;
+  font-weight: 600;
+  text-shadow: 0 0 10px #34d399;
+}
 
 
 
