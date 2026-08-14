@@ -6,71 +6,32 @@
   <title>Overview | Computer Science Hub</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="stylesheet" href="/CompSci/css/site.css">
-
+  <link rel="stylesheet" href="/CompSci/css/site.css">
 </head>
 
-
 <body data-page="year_overview" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
-  
+
 <div id="navbar"></div>
 
-  
 <a href="year_overview.html"
    class="inline-block mt-6 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition">
    View Year Overview
 </a>
 
-
 <!-- CORNER IMAGE -->
 <img src="../images/avatar1.png"
-      class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 
+     class="absolute md:fixed top-30 right-10 w-40 h-40 object-contain opacity-90 
             slide-up delay-2 drop-shadow-[0_0_12px_#34d399] 
             hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
- <!-- MAIN CONTENT -->
-<!-- YEAR SELECTOR -->
-<div id="yearSelector" class="max-w-6xl mx-auto px-6 py-8">
+<!-- MAIN CONTENT -->
+<section class="max-w-6xl mx-auto px-6 py-12 fade-up" id="content">
 
-  <div class="flex flex-wrap justify-center gap-4">
-
-    <button id="btnY10"
-      class="year-btn px-5 py-2 rounded-md bg-emerald-600 text-white font-semibold">
-      Year 10
-    </button>
-
-    <button id="btnY11"
-      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
-      Year 11
-    </button>
-
-    <button id="btnGCSE"
-      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
-      GCSE Programming
-    </button>
-
-    <button id="btnY12"
-      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
-      Year 12
-    </button>
-
-    <button id="btnY13"
-      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
-      Year 13
-    </button>
-
-  </div>
-
-</div>
-
-  <div id="overviewContent">
-
-  <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
+  <h1 class="text-4xl font-bold text-center text-gray-900 mb-8">
     Upper 6th Curriculum Overview
   </h1>
 
-  <p class="text-center text-gray-700 dark:text-gray-300 max-w-4xl mx-auto mb-12">
+  <p class="text-center text-gray-700 max-w-4xl mx-auto mb-12">
     The Upper 6th curriculum covers the final preparation for OCR A Level
     Computer Science Paper 1 and Paper 2 whilst supporting the completion
     of the Non-Exam Assessment (NEA). Topics are delivered across
@@ -78,7 +39,7 @@
   </p>
 
   <!-- PAPER 1 -->
-  <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8 mb-10">
+  <div class="bg-white rounded-xl shadow-md p-8 mb-10">
 
     <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
       Paper 1
@@ -87,12 +48,9 @@
     <div class="grid md:grid-cols-3 gap-6">
 
       <!-- Michaelmas -->
-      <div class="bg-emerald-50 dark:bg-slate-700 rounded-lg p-6 border border-emerald-100 dark:border-slate-600">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">
-          Michaelmas
-        </h3>
-
-        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Michaelmas</h3>
+        <ul class="space-y-2 text-gray-700">
           <li>• Databases</li>
           <li>• Data Types</li>
           <li>• Networks</li>
@@ -100,12 +58,9 @@
       </div>
 
       <!-- Lent -->
-      <div class="bg-emerald-50 dark:bg-slate-700 rounded-lg p-6 border border-emerald-100 dark:border-slate-600">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">
-          Lent
-        </h3>
-
-        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Lent</h3>
+        <ul class="space-y-2 text-gray-700">
           <li>• Computer Legislation</li>
           <li>• Ethical Issues</li>
           <li>• Moral & Cultural Issues</li>
@@ -113,12 +68,9 @@
       </div>
 
       <!-- Trinity -->
-      <div class="bg-emerald-50 dark:bg-slate-700 rounded-lg p-6 border border-emerald-100 dark:border-slate-600">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">
-          Trinity
-        </h3>
-
-        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Trinity</h3>
+        <ul class="space-y-2 text-gray-700">
           <li>• Data Structures Revision</li>
           <li>• Exam Preparation</li>
           <li>• Consolidation</li>
@@ -129,7 +81,7 @@
   </div>
 
   <!-- PAPER 2 -->
-  <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8 mb-10">
+  <div class="bg-white rounded-xl shadow-md p-8 mb-10">
 
     <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
       Paper 2
@@ -138,12 +90,9 @@
     <div class="grid md:grid-cols-3 gap-6">
 
       <!-- Michaelmas -->
-      <div class="bg-emerald-50 dark:bg-slate-700 rounded-lg p-6 border border-emerald-100 dark:border-slate-600">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">
-          Michaelmas
-        </h3>
-
-        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Michaelmas</h3>
+        <ul class="space-y-2 text-gray-700">
           <li>• Computational Thinking</li>
           <li>• Applied Computational Methods</li>
           <li>• Algorithms & Data Structures</li>
@@ -151,12 +100,9 @@
       </div>
 
       <!-- Lent -->
-      <div class="bg-emerald-50 dark:bg-slate-700 rounded-lg p-6 border border-emerald-100 dark:border-slate-600">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">
-          Lent
-        </h3>
-
-        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Lent</h3>
+        <ul class="space-y-2 text-gray-700">
           <li>• Tree Traversal</li>
           <li>• Data Mining & Pipelining</li>
           <li>• Object-Oriented Programming</li>
@@ -164,12 +110,9 @@
       </div>
 
       <!-- Trinity -->
-      <div class="bg-emerald-50 dark:bg-slate-700 rounded-lg p-6 border border-emerald-100 dark:border-slate-600">
-        <h3 class="text-xl font-bold text-emerald-700 mb-3">
-          Trinity
-        </h3>
-
-        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Trinity</h3>
+        <ul class="space-y-2 text-gray-700">
           <li>• Dijkstra's Algorithm</li>
           <li>• A* Algorithm</li>
           <li>• Big O Notation & Efficiency</li>
@@ -180,7 +123,7 @@
   </div>
 
   <!-- NEA -->
-  <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-8">
+  <div class="bg-white rounded-xl shadow-md p-8">
 
     <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
       Non-Exam Assessment (NEA)
@@ -188,36 +131,36 @@
 
     <div class="grid md:grid-cols-5 gap-4 text-center">
 
-      <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-        <h3 class="font-semibold text-gray-900 dark:text-white">Analysis</h3>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <h3 class="font-semibold text-gray-900">Analysis</h3>
       </div>
 
-      <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-        <h3 class="font-semibold text-gray-900 dark:text-white">Design</h3>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <h3 class="font-semibold text-gray-900">Design</h3>
       </div>
 
-      <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-        <h3 class="font-semibold text-gray-900 dark:text-white">Development</h3>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <h3 class="font-semibold text-gray-900">Development</h3>
       </div>
 
-      <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-        <h3 class="font-semibold text-gray-900 dark:text-white">Testing</h3>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <h3 class="font-semibold text-gray-900">Testing</h3>
       </div>
 
-      <div class="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg">
-        <h3 class="font-semibold text-gray-900 dark:text-white">Evaluation</h3>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <h3 class="font-semibold text-gray-900">Evaluation</h3>
       </div>
 
     </div>
 
-    <p class="mt-6 text-gray-700 dark:text-gray-300">
+    <p class="mt-6 text-gray-700">
       Coursework development continues throughout the year alongside taught
       content, culminating in the submission of a complete computational
       solution and supporting documentation.
     </p>
 
   </div>
-</div>
+
 </section>
 
 <!-- Reveal animation -->
@@ -233,94 +176,82 @@ window.addEventListener("DOMContentLoaded", () => {
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
 }
 </style>
 
-
-
- <!-- FOOTER -->
-  <footer class="bg-white mt-20 py-10 shadow-inner">
-    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
-      © 2026 Anderson Computer Science Hub — Resources for Ambrosians 
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-white mt-20 py-10 shadow-inner">
+  <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+    © 2026 Anderson Computer Science Hub — Resources for Ambrosians 
+  </div>
+</footer>
 
 <script>
-  const currentPage = document.body.dataset.page;
+const currentPage = document.body.dataset.page;
 
-  fetch("/CompSci/components/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
+fetch("/CompSci/components/navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
 
-      // Highlight active link
-      document.querySelectorAll('#navbar a').forEach(link => {
-        const page = link.dataset.page;
-
-        if (page === currentPage) {
-          link.classList.add('nav-link-active');
-          link.classList.remove('border-transparent', 'text-gray-700');
-        } else {
-          link.classList.remove('nav-link-active');
-          link.classList.add('border-transparent', 'text-gray-700');
-        }
-      });
-
-      // Hamburger toggle (AFTER navbar injection)
-      const burger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-
-      if (burger && mobileMenu) {
-        burger.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
-      }
-
-     // ⭐ DARK MODE LOGIC ⭐
-const themeToggleDesktop = document.getElementById('themeToggle');
-const themeToggleMobile  = document.getElementById('themeToggleMobile');
-
-const toggles = [themeToggleDesktop, themeToggleMobile].filter(Boolean);
-
-if (toggles.length) {
-  // Apply saved theme
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-    toggles.forEach(btn => btn.textContent = '☀️');
-  }
-
-  // Auto-detect system theme if no saved preference
-  if (!localStorage.getItem('theme')) {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefersDark) {
-      document.documentElement.classList.add('dark');
-      toggles.forEach(btn => btn.textContent = '☀️');
-    }
-  }
-
-  // Attach click to BOTH buttons
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-
-      if (document.documentElement.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        toggles.forEach(b => b.textContent = '☀️');
+    // Highlight active link
+    document.querySelectorAll('#navbar a').forEach(link => {
+      const page = link.dataset.page;
+      if (page === currentPage) {
+        link.classList.add('nav-link-active');
+        link.classList.remove('border-transparent', 'text-gray-700');
       } else {
-        localStorage.setItem('theme', 'light');
-        toggles.forEach(b => b.textContent = '🌙');
+        link.classList.remove('nav-link-active');
+        link.classList.add('border-transparent', 'text-gray-700');
       }
     });
-  });
-}
+
+    // Hamburger toggle
+    const burger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (burger && mobileMenu) {
+      burger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Dark mode logic
+    const themeToggleDesktop = document.getElementById('themeToggle');
+    const themeToggleMobile  = document.getElementById('themeToggleMobile');
+    const toggles = [themeToggleDesktop, themeToggleMobile].filter(Boolean);
+
+    if (toggles.length) {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        toggles.forEach(btn => btn.textContent = '☀️');
+      }
+
+      if (!localStorage.getItem('theme')) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.documentElement.classList.add('dark');
+          toggles.forEach(btn => btn.textContent = '☀️');
+        }
+      }
+
+      toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark');
+          if (document.documentElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            toggles.forEach(b => b.textContent = '☀️');
+          } else {
+            localStorage.setItem('theme', 'light');
+            toggles.forEach(b => b.textContent = '🌙');
+          }
+        });
+      });
+    }
   });
 </script>
 
-
-
-
-
+</body>
+</html>
