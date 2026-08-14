@@ -1055,6 +1055,9 @@
       </div>
       </div>   <!-- end of y12Paper1 -->
 
+    </div> <!-- END OF PAPER 1 -->
+
+
 <!-- PAPER 2 divider container -->
 <div id="y12Paper2" class="space-y-10">
 <!-- ========================= -->
@@ -1371,6 +1374,35 @@
   y12P2Buttons.l2.addEventListener("click", () => showY12P2("l2"));
   y12P2Buttons.t1.addEventListener("click", () => showY12P2("t1"));
   y12P2Buttons.t2.addEventListener("click", () => showY12P2("t2"));
+</script>
+<script>
+const y12PaperButtons = {
+  p1: document.getElementById("y12Paper1Btn"),
+  p2: document.getElementById("y12Paper2Btn")
+};
+
+const y12PaperSections = {
+  p1: document.getElementById("y12Paper1"),
+  p2: document.getElementById("y12Paper2")
+};
+
+function showY12Paper(paper) {
+  Object.values(y12PaperSections).forEach(sec => sec.classList.add("hidden"));
+  y12PaperSections[paper].classList.remove("hidden");
+
+  Object.values(y12PaperButtons).forEach(btn => {
+    btn.classList.remove("bg-emerald-600", "text-white");
+    btn.classList.add("bg-gray-200", "text-gray-800");
+  });
+
+  y12PaperButtons[paper].classList.remove("bg-gray-200", "text-gray-800");
+  y12PaperButtons[paper].classList.add("bg-emerald-600", "text-white");
+}
+
+showY12Paper("p1");
+
+y12PaperButtons.p1.addEventListener("click", () => showY12Paper("p1"));
+y12PaperButtons.p2.addEventListener("click", () => showY12Paper("p2"));
 </script>
 
 
