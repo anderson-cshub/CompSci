@@ -1323,6 +1323,51 @@
 
 </div>
 
+  <script>
+// ============================
+// YEAR 12 — PAPER 1 TERM LOGIC
+// ============================
+
+const y12P1TermButtons = {
+  term1: document.getElementById("y12P1Term1Btn"),
+  term2: document.getElementById("y12P1Term2Btn"),
+  term3: document.getElementById("y12P1Term3Btn")
+};
+
+const y12P1TermSections = {
+  term1: document.getElementById("y12P1Term1"),
+  term2: document.getElementById("y12P1Term2"),
+  term3: document.getElementById("y12P1Term3")
+};
+
+function showY12P1Term(term) {
+  // Hide all term sections
+  Object.values(y12P1TermSections).forEach(sec => sec.classList.add("hidden"));
+
+  // Show selected term
+  y12P1TermSections[term].classList.remove("hidden");
+
+  // Reset button styles
+  Object.values(y12P1TermButtons).forEach(btn => {
+    btn.classList.remove("bg-emerald-600", "text-white");
+    btn.classList.add("bg-gray-200", "text-gray-800");
+  });
+
+  // Highlight selected button
+  y12P1TermButtons[term].classList.remove("bg-gray-200", "text-gray-800");
+  y12P1TermButtons[term].classList.add("bg-emerald-600", "text-white");
+}
+
+// Default: show Term 1
+showY12P1Term("term1");
+
+// Event listeners
+y12P1TermButtons.term1.addEventListener("click", () => showY12P1Term("term1"));
+y12P1TermButtons.term2.addEventListener("click", () => showY12P1Term("term2"));
+y12P1TermButtons.term3.addEventListener("click", () => showY12P1Term("term3"));
+</script>
+
+
 <script>
   // ============================
   // YEAR 12 — PAPER 2 TAB LOGIC
