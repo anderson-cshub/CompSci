@@ -350,14 +350,15 @@
 //    });
 
 
-  const currentPage = document.body.dataset.page;
+   // ⭐ Highlight sticky sidebar link
+const currentTopic = document.body.dataset.topic;
 
-  document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-    if (link.dataset.page === currentPage) {
-      link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
-      link.style.textShadow = '0 0 10px #34d399';
-    }
-  });
+document.querySelectorAll('#u6Sidebar a, #l6Sidebar a').forEach(link => {
+  const href = link.getAttribute('href').replace('.html', '');
+  if (href === currentTopic) {
+    link.classList.add('sidebar-active');
+  }
+});
 </script>
 
 
