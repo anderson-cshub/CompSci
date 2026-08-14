@@ -281,6 +281,16 @@ if (toggles.length) {
       link.classList.add('text-emerald-400', 'font-semibold');
     }
   });
+
+    // ⭐ Highlight sticky sidebar link
+const currentTopic = document.body.dataset.topic;
+
+document.querySelectorAll('#u6Sidebar a, #l6Sidebar a, #progSidebar a').forEach(link => {
+  const href = link.getAttribute('href').replace('.html', '');
+  if (href === currentTopic) {
+    link.classList.add('sidebar-active');
+  }
+});
 </script>
 
 
