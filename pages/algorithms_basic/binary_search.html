@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/CompSci/css/site.css">
 </head>
 
-<body data-page="algorithms" data-topic="binary_search" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
+<body data-page="binary_search" data-topic="binary_search" class="bg-gradient-to-b from-emerald-50 to-gray-50 text-gray-800">
 
 <div id="navbar"></div>
 
@@ -219,14 +219,15 @@
 
 
   // ⭐ Highlight sticky sidebar link
-const currentTopic = document.body.dataset.topic;
+const currentPage = document.body.dataset.page;
 
-document.querySelectorAll('#u6Sidebar a, #l6Sidebar a').forEach(link => {
-  const href = link.getAttribute('href').replace('.html', '');
-  if (href === currentTopic) {
-    link.classList.add('sidebar-active');
+document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+  if (link.dataset.page === currentPage) {
+    link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
+    link.style.textShadow = '0 0 10px #34d399';
   }
 });
+
 </script>
 
 
