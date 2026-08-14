@@ -25,7 +25,7 @@
             hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
 <!-- MAIN CONTENT -->
-<section class="max-w-6xl mx-auto px-6 py-12 fade-up" id="content">
+<section class="max-w-7xl mx-auto px-6 py-12 fade-up" id="content">
 
   <h1 class="text-4xl font-bold text-center text-gray-900 mb-8">
     Upper 6th Curriculum Overview
@@ -39,16 +39,16 @@
   </p>
 
   <!-- PAPER 1 -->
-  <div class="bg-white rounded-xl shadow-md p-8 mb-10">
+  <div class="teaching-block-wide mb-10">
 
-    <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
+    <h2 class="text-3xl font-semibold teaching-header">
       Paper 1
     </h2>
 
     <div class="grid md:grid-cols-3 gap-6">
 
       <!-- Michaelmas -->
-      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
         <h3 class="text-xl font-bold text-emerald-700 mb-3">Michaelmas</h3>
         <ul class="space-y-2 text-gray-700">
           <li>• Databases</li>
@@ -58,7 +58,7 @@
       </div>
 
       <!-- Lent -->
-      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
         <h3 class="text-xl font-bold text-emerald-700 mb-3">Lent</h3>
         <ul class="space-y-2 text-gray-700">
           <li>• Computer Legislation</li>
@@ -68,7 +68,7 @@
       </div>
 
       <!-- Trinity -->
-      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
         <h3 class="text-xl font-bold text-emerald-700 mb-3">Trinity</h3>
         <ul class="space-y-2 text-gray-700">
           <li>• Data Structures Revision</li>
@@ -81,16 +81,16 @@
   </div>
 
   <!-- PAPER 2 -->
-  <div class="bg-white rounded-xl shadow-md p-8 mb-10">
+  <div class="teaching-block-wide mb-10">
 
-    <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
+    <h2 class="text-3xl font-semibold teaching-header">
       Paper 2
     </h2>
 
     <div class="grid md:grid-cols-3 gap-6">
 
       <!-- Michaelmas -->
-      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
         <h3 class="text-xl font-bold text-emerald-700 mb-3">Michaelmas</h3>
         <ul class="space-y-2 text-gray-700">
           <li>• Computational Thinking</li>
@@ -100,7 +100,7 @@
       </div>
 
       <!-- Lent -->
-      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
         <h3 class="text-xl font-bold text-emerald-700 mb-3">Lent</h3>
         <ul class="space-y-2 text-gray-700">
           <li>• Tree Traversal</li>
@@ -110,7 +110,7 @@
       </div>
 
       <!-- Trinity -->
-      <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-100">
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
         <h3 class="text-xl font-bold text-emerald-700 mb-3">Trinity</h3>
         <ul class="space-y-2 text-gray-700">
           <li>• Dijkstra's Algorithm</li>
@@ -123,31 +123,31 @@
   </div>
 
   <!-- NEA -->
-  <div class="bg-white rounded-xl shadow-md p-8">
+  <div class="teaching-block-wide">
 
-    <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
+    <h2 class="text-3xl font-semibold teaching-header">
       Non-Exam Assessment (NEA)
     </h2>
 
     <div class="grid md:grid-cols-5 gap-4 text-center">
 
-      <div class="bg-gray-50 p-4 rounded-lg">
+      <div class="bg-white p-4 rounded-lg border border-gray-200">
         <h3 class="font-semibold text-gray-900">Analysis</h3>
       </div>
 
-      <div class="bg-gray-50 p-4 rounded-lg">
+      <div class="bg-white p-4 rounded-lg border border-gray-200">
         <h3 class="font-semibold text-gray-900">Design</h3>
       </div>
 
-      <div class="bg-gray-50 p-4 rounded-lg">
+      <div class="bg-white p-4 rounded-lg border border-gray-200">
         <h3 class="font-semibold text-gray-900">Development</h3>
       </div>
 
-      <div class="bg-gray-50 p-4 rounded-lg">
+      <div class="bg-white p-4 rounded-lg border border-gray-200">
         <h3 class="font-semibold text-gray-900">Testing</h3>
       </div>
 
-      <div class="bg-gray-50 p-4 rounded-lg">
+      <div class="bg-white p-4 rounded-lg border border-gray-200">
         <h3 class="font-semibold text-gray-900">Evaluation</h3>
       </div>
 
@@ -197,7 +197,6 @@ fetch("/CompSci/components/navbar.html")
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
 
-    // Highlight active link
     document.querySelectorAll('#navbar a').forEach(link => {
       const page = link.dataset.page;
       if (page === currentPage) {
@@ -209,7 +208,6 @@ fetch("/CompSci/components/navbar.html")
       }
     });
 
-    // Hamburger toggle
     const burger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     if (burger && mobileMenu) {
@@ -218,7 +216,6 @@ fetch("/CompSci/components/navbar.html")
       });
     }
 
-    // Dark mode logic
     const themeToggleDesktop = document.getElementById('themeToggle');
     const themeToggleMobile  = document.getElementById('themeToggleMobile');
     const toggles = [themeToggleDesktop, themeToggleMobile].filter(Boolean);
