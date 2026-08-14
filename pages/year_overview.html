@@ -240,7 +240,7 @@
       </div>
     </div>
 
-    <!-- Network Security -->
+   <!-- Network Security -->
     <div class="teaching-block-wide">
       <h2 class="text-3xl font-semibold teaching-header">Network Security</h2>
 
@@ -252,9 +252,122 @@
           engineering, including phishing and people as a weak point, and understand the purpose of brute‑force
           attacks and how to recognise and prevent them. They learn how DoS attacks work and how to protect
           against them, the role of SQL injection in data theft and how to protect databases, and common network
-          security measures such as penetration testing
+          security measures such as penetration testing, anti‑malware, firewalls, encryption and physical
+          security. They also understand the importance of user access levels, passwords and two‑factor
+          authentication for system security.
+        </p>
       </div>
 
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Skills</h3>
+        <p class="text-gray-700">
+          Students identify different forms of cyberattack and explain how each one works, explain how social
+          engineering exploits human behaviour, and identify and prevent brute‑force attacks by implementing
+          password policies. They apply techniques such as firewalls and traffic filtering to prevent DoS attacks,
+          implement validation and security checks to prevent SQL injection, and explain and apply various
+          security measures to protect systems from attacks. They implement user access levels and strong password
+          policies, use different types of security software and hardware, and conduct penetration testing to
+          identify vulnerabilities and improve system security.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Key Terms</h3>
+        <p class="text-gray-700">
+          Malware, phishing, brute‑force attack, denial‑of‑service (DoS), SQL injection, encryption, firewall,
+          penetration testing, anti‑malware, physical security, user access levels, two‑factor authentication.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TERM 3: SYSTEMS SOFTWARE -->
+  <div id="y10Term3" class="hidden space-y-10">
+
+    <div class="teaching-block-wide">
+      <h2 class="text-3xl font-semibold teaching-header">Systems Software</h2>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Knowledge</h3>
+        <p class="text-gray-700">
+          Students understand the purpose and functionality of operating systems, including user interfaces,
+          memory management, peripheral management and file management. They know different types of user
+          interfaces (GUI, CLI, natural language, menu interfaces), how operating systems handle multitasking and
+          memory management, the role of drivers in peripheral management, and the importance of user management
+          (logins and permissions). They understand file management and how the OS organises, moves and edits
+          files, and the purpose and functionality of utility software, including encryption, defragmentation and
+          data compression.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Skills</h3>
+        <p class="text-gray-700">
+          Students describe how operating systems manage hardware and software resources efficiently, compare and
+          explain the features and uses of different types of user interfaces, and demonstrate how multitasking
+          works while explaining how the OS manages memory and processes. They explain how operating systems use
+          drivers to manage communication between software and peripherals, manage user access and permissions to
+          ensure security and efficiency, and use file management features to organise, edit and manage files and
+          folders. They use and explain utility software to maintain and optimise system performance, and apply
+          encryption, defragmentation and data compression techniques to improve system security and efficiency.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Key Terms</h3>
+        <p class="text-gray-700">
+          Operating system, user interface, GUI, CLI, multitasking, drivers, user management, file management,
+          utility software, encryption, defragmentation, data compression.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Summative Assessment</h3>
+        <p class="text-gray-700">
+          Written assessment — written exam assessed as part of the end‑of‑year exam.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  // Year 10 term tab logic
+  const y10TermButtons = {
+    term1: document.getElementById("y10Term1Btn"),
+    term2: document.getElementById("y10Term2Btn"),
+    term3: document.getElementById("y10Term3Btn")
+  };
+
+  const y10TermSections = {
+    term1: document.getElementById("y10Term1"),
+    term2: document.getElementById("y10Term2"),
+    term3: document.getElementById("y10Term3")
+  };
+
+  function showY10Term(term) {
+    Object.values(y10TermSections).forEach(sec => sec.classList.add("hidden"));
+    y10TermSections[term].classList.remove("hidden");
+
+    Object.values(y10TermButtons).forEach(btn => {
+      btn.classList.remove("bg-emerald-600", "text-white");
+      btn.classList.add("bg-gray-200", "text-gray-800");
+    });
+
+    y10TermButtons[term].classList.remove("bg-gray-200", "text-gray-800");
+    y10TermButtons[term].classList.add("bg-emerald-600", "text-white");
+  }
+
+  // Default: show Term 1
+  showY10Term("term1");
+
+  y10TermButtons.term1.addEventListener("click", () => showY10Term("term1"));
+  y10TermButtons.term2.addEventListener("click", () => showY10Term("term2"));
+  y10TermButtons.term3.addEventListener("click", () => showY10Term("term3"));
+</script>
       
 </section>
 
