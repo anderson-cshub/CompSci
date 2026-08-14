@@ -36,10 +36,225 @@
 </div>
 
 <!-- YEAR 10 -->
+<p class="text-gray-700">
 <section id="year10Content" class="hidden max-w-7xl mx-auto px-6 py-12 fade-up">
   <h1 class="text-4xl font-bold text-center mb-8">Year 10 Curriculum Overview</h1>
   <div class="teaching-block-wide">
-    <p class="text-gray-700">Year 10 content goes here.</p>
+<section id="year10Content" class="hidden max-w-7xl mx-auto px-6 py-12 fade-up">
+
+  <h1 class="text-4xl font-bold text-center mb-8">
+    Year 10 Curriculum Overview
+  </h1>
+
+  <!-- TERM TABS -->
+  <div class="mb-8 flex flex-wrap justify-center gap-4">
+    <button id="y10Term1Btn" class="px-5 py-2 rounded-md bg-emerald-600 text-white font-semibold">
+      Term 1
+    </button>
+    <button id="y10Term2Btn" class="px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
+      Term 2
+    </button>
+    <button id="y10Term3Btn" class="px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
+      Term 3
+    </button>
+  </div>
+
+  <!-- TERM 1: SYSTEMS ARCHITECTURE + MEMORY & STORAGE -->
+  <div id="y10Term1" class="space-y-10">
+
+    <!-- Systems Architecture -->
+    <div class="teaching-block-wide">
+      <h2 class="text-3xl font-semibold teaching-header">Systems Architecture</h2>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Knowledge</h3>
+        <p class="text-gray-700">
+          Students understand the purpose of the CPU and the fetch–execute cycle, and are familiar with the
+          components of the CPU (ALU, CU, cache, registers). They understand the Von Neumann architecture,
+          including the roles of the MAR, MDR, program counter and accumulator, and recognise the purpose and
+          characteristics of embedded systems. They know the impact of common CPU characteristics such as clock
+          speed, cache size and number of cores on performance, and the function and role of various registers
+          in the CPU.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Skills</h3>
+        <p class="text-gray-700">
+          Students describe and explain the stages of the fetch–execute cycle, identify and label CPU components
+          and explain their functions, and explain how the Von Neumann architecture stores and processes data.
+          They can code using assembly language, analyse how clock speed, cache size and number of cores affect
+          CPU performance, differentiate between the roles of various registers (such as the program counter and
+          accumulator), and identify examples of embedded systems, describing how they process data and produce
+          output. They apply knowledge to scenarios involving embedded systems and their components.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Key Terms</h3>
+        <p class="text-gray-700">
+          CPU (Central Processing Unit), ALU (Arithmetic Logic Unit), CU (Control Unit), cache, MAR (Memory
+          Address Register), MDR (Memory Data Register), program counter, accumulator, embedded systems.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Summative Assessment</h3>
+        <p class="text-gray-700">
+          Written assessment — end of topic test.
+        </p>
+      </div>
+    </div>
+
+    <!-- Memory and Storage – Part 1 -->
+    <div class="teaching-block-wide">
+      <h2 class="text-3xl font-semibold teaching-header">Memory and Storage — Part 1</h2>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Knowledge</h3>
+        <p class="text-gray-700">
+          Students understand the need for primary storage in computer systems and the difference between RAM
+          and ROM, including their characteristics (volatile and non‑volatile). They understand the purpose and
+          function of virtual memory, the need for secondary storage and the types of devices used (optical,
+          magnetic, solid‑state), and how common types of secondary storage store data (magnetism, semiconductor
+          chips, etc.). They know the advantages and disadvantages of different storage media and devices, and
+          the purpose of tertiary storage for backups and data archiving.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Skills</h3>
+        <p class="text-gray-700">
+          Students differentiate between RAM and ROM and explain their purposes, illustrate how virtual memory
+          functions and why it is needed, and explain scenarios where virtual memory is used and how it affects
+          system performance. They compare storage devices in terms of capacity, speed, portability, durability,
+          reliability and cost, evaluate storage devices for specific applications, and create visual comparisons
+          (e.g. flowcharts or Top Trump cards) based on device characteristics. They make recommendations for the
+          most suitable storage devices based on user needs and explain how secondary storage complements primary
+          storage in computer systems.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Key Terms</h3>
+        <p class="text-gray-700">
+          RAM (Random Access Memory), ROM (Read‑Only Memory), virtual memory, secondary storage, optical storage,
+          magnetic storage, solid‑state storage, tertiary storage.
+        </p>
+      </div>
+    </div>
+
+    <!-- Memory and Storage – Part 2 -->
+    <div class="teaching-block-wide">
+      <h2 class="text-3xl font-semibold teaching-header">Memory and Storage — Part 2</h2>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Knowledge</h3>
+        <p class="text-gray-700">
+          Students understand units of data storage (bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte,
+          petabyte) and the necessity of converting data into binary format for computer processing. They can
+          calculate data capacity requirements for storage, perform binary addition and understand overflow
+          errors, convert between binary and hexadecimal and between denary and hexadecimal, and understand how
+          character sets (ASCII, Unicode) are represented in binary. They understand how images are represented
+          in binary and the effect of colour depth and resolution, how sound is sampled and stored digitally, and
+          the importance of compression (lossy and lossless) for reducing file size.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Skills</h3>
+        <p class="text-gray-700">
+          Students convert between different units of data storage, perform binary–denary–hexadecimal conversions,
+          add binary integers and interpret overflow errors, and apply binary shifts to manipulate data. They
+          calculate file sizes for images and audio based on colour depth, resolution, bit depth and sample rate,
+          explain how sound is sampled and stored digitally, and compare lossy and lossless compression techniques
+          and their impact on quality and file size.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Key Terms</h3>
+        <p class="text-gray-700">
+          Bit, byte, nibble, binary, denary, hexadecimal, overflow error, character set, ASCII, Unicode, pixel,
+          metadata, compression, lossy, lossless.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Summative Assessment</h3>
+        <p class="text-gray-700">
+          Written assessment — end of topic test with multiple‑choice questions on Microsoft Forms.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TERM 2: NETWORKS + NETWORK SECURITY -->
+  <div id="y10Term2" class="hidden space-y-10">
+
+    <!-- Computer Networks -->
+    <div class="teaching-block-wide">
+      <h2 class="text-3xl font-semibold teaching-header">Computer Networks</h2>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Knowledge</h3>
+        <p class="text-gray-700">
+          Students understand different types of networks, including LAN (Local Area Network) and WAN (Wide Area
+          Network), and factors that affect network performance such as bandwidth, error rate and latency. They
+          know the role of hardware in connecting computers to a network (routers, switches, NICs), the difference
+          between client–server and peer‑to‑peer models, and common network topologies such as star and mesh.
+          They understand the internet as a global network, including DNS, hosting and cloud computing, and wired
+          (Ethernet) and wireless (Wi‑Fi, Bluetooth) modes of connection. They also learn about encryption, IP
+          addressing (IPv4, IPv6), MAC addressing, network protocols (TCP/IP, HTTP, HTTPS, FTP, POP, IMAP, SMTP)
+          and the concept of layering in networking.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Skills</h3>
+        <p class="text-gray-700">
+          Students describe and illustrate the differences between LAN and WAN, analyse how network performance
+          is impacted by different factors, and set up and configure network hardware such as routers and wireless
+          access points. They differentiate between client–server and peer‑to‑peer models and explain their use
+          cases, compare the advantages and disadvantages of star and mesh topologies, and explain how the
+          internet works, including the role of DNS, IP addresses and hosting. They recommend appropriate network
+          connection modes for different scenarios, configure network encryption, apply and explain common network
+          protocols, and illustrate how layering simplifies network design and maintenance.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Key Terms</h3>
+        <p class="text-gray-700">
+          LAN, WAN, bandwidth, latency, router, switch, IP address, MAC address, TCP/IP, HTTP, HTTPS, FTP, POP,
+          IMAP, SMTP, protocol, encryption, DNS, cloud computing.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Summative Assessment</h3>
+        <p class="text-gray-700">
+          Written assessment — end of topic test with multiple‑choice questions on Microsoft Forms.
+        </p>
+      </div>
+    </div>
+
+    <!-- Network Security -->
+    <div class="teaching-block-wide">
+      <h2 class="text-3xl font-semibold teaching-header">Network Security</h2>
+
+      <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+        <h3 class="text-xl font-bold text-emerald-700 mb-3">Knowledge</h3>
+        <p class="text-gray-700">
+          Students understand different forms of attack: malware, social engineering, brute‑force attacks,
+          denial‑of‑service (DoS), data interception and SQL injection. They recognise the risks posed by social
+          engineering, including phishing and people as a weak point, and understand the purpose of brute‑force
+          attacks and how to recognise and prevent them. They learn how DoS attacks work and how to protect
+          against them, the role of SQL injection in data theft and how to protect databases, and common network
+          security measures such as penetration testing
+    
+ </p>
   </div>
 </section>
 
