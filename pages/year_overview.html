@@ -24,8 +24,68 @@
             slide-up delay-2 drop-shadow-[0_0_12px_#34d399] 
             hover:drop-shadow-[0_0_18px_#10b981] transition-all duration-300" />
 
+
+  <!-- YEAR SELECTOR -->
+<div id="yearSelector" class="max-w-6xl mx-auto px-6 mt-10 mb-8">
+
+  <div class="flex flex-wrap justify-center gap-4">
+
+    <button id="btnY10"
+      class="year-btn px-5 py-2 rounded-md bg-emerald-600 text-white font-semibold">
+      Year 10
+    </button>
+
+    <button id="btnY11"
+      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
+      Year 11
+    </button>
+
+    <button id="btnGCSE"
+      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
+      GCSE Programming
+    </button>
+
+    <button id="btnY12"
+      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
+      Lower 6th
+    </button>
+
+    <button id="btnY13"
+      class="year-btn px-5 py-2 rounded-md bg-gray-200 text-gray-800 font-semibold">
+      Upper 6th
+    </button>
+
+  </div>
+
+</div>
+
+  <section id="year10Content" class="hidden max-w-7xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-bold text-center mb-8">
+    Year 10 Curriculum Overview
+  </h1>
+</section>
+
+<section id="year11Content" class="hidden max-w-7xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-bold text-center mb-8">
+    Year 11 Curriculum Overview
+  </h1>
+</section>
+
+<section id="gcseContent" class="hidden max-w-7xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-bold text-center mb-8">
+    GCSE Programming Overview
+  </h1>
+</section>
+
+<section id="year12Content" class="hidden max-w-7xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-bold text-center mb-8">
+    Lower 6th Curriculum Overview
+  </h1>
+</section>
+  
 <!-- MAIN CONTENT -->
-<section class="max-w-7xl mx-auto px-6 py-12 fade-up" id="content">
+<section id="year13Content" class="max-w-7xl mx-auto px-6 py-12 fade-up">
+`
 
   <h1 class="text-4xl font-bold text-center text-gray-900 mb-8">
     Upper 6th Curriculum Overview
@@ -181,6 +241,51 @@ window.addEventListener("DOMContentLoaded", () => {
   transform: translateY(0);
 }
 </style>
+
+  <script>
+
+const sections = {
+  y10: document.getElementById("year10Content"),
+  y11: document.getElementById("year11Content"),
+  gcse: document.getElementById("gcseContent"),
+  y12: document.getElementById("year12Content"),
+  y13: document.getElementById("year13Content")
+};
+
+const buttons = {
+  y10: document.getElementById("btnY10"),
+  y11: document.getElementById("btnY11"),
+  gcse: document.getElementById("btnGCSE"),
+  y12: document.getElementById("btnY12"),
+  y13: document.getElementById("btnY13")
+};
+
+function showYear(year) {
+
+  Object.values(sections).forEach(section => {
+    section.classList.add("hidden");
+  });
+
+  sections[year].classList.remove("hidden");
+
+  Object.values(buttons).forEach(button => {
+    button.classList.remove("bg-emerald-600", "text-white");
+    button.classList.add("bg-gray-200", "text-gray-800");
+  });
+
+  buttons[year].classList.remove("bg-gray-200", "text-gray-800");
+  buttons[year].classList.add("bg-emerald-600", "text-white");
+}
+
+showYear("y13");
+
+buttons.y10.addEventListener("click", () => showYear("y10"));
+buttons.y11.addEventListener("click", () => showYear("y11"));
+buttons.gcse.addEventListener("click", () => showYear("gcse"));
+buttons.y12.addEventListener("click", () => showYear("y12"));
+buttons.y13.addEventListener("click", () => showYear("y13"));
+
+</script>
 
 <!-- FOOTER -->
 <footer class="bg-white mt-20 py-10 shadow-inner">
