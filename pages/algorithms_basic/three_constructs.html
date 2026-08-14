@@ -64,58 +64,89 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
- <!-- CARD 1: Sequence -->
+<!-- CARD 1: Sequence -->
 <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg 
             transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-1">
 
   <h4 class="text-xl font-bold mb-2 text-emerald-700">Sequence</h4>
 
-  <p class="text-gray-700">
+  <p class="text-gray-700 mb-3">
     Instructions executed in a <span class="text-purple-400 font-semibold">specific order</span>, 
     one after another.  
     This is the foundation of all algorithms — the 
     <span class="text-emerald-600 font-semibold">flow of steps</span>.
   </p>
 
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-gray-400"># Runs line 1 → 2 → 3</span>
+<span class="text-purple-300">name</span> = <span class="text-blue-400">input</span>(<span class="text-orange-400">"Name: "</span>)
+<span class="text-purple-300">age</span> = <span class="text-blue-400">int</span>(<span class="text-blue-400">input</span>(<span class="text-orange-400">"Age: "</span>))
+<span class="text-blue-400">print</span>(<span class="text-purple-300">age</span>)
+  </pre>
+
+  <p class="text-gray-600 text-sm mt-2">
+    <span class="text-emerald-600 font-semibold">A Level:</span> Sequence also includes 
+    calling <span class="text-orange-400 font-semibold">subroutines</span> and returning to the main program.
+  </p>
+
 </div>
 
 
 
- <!-- CARD 2: Selection -->
+<!-- CARD 2: Selection -->
 <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg 
             transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-2">
 
   <h4 class="text-xl font-bold mb-2 text-emerald-700">Selection</h4>
 
-  <p class="text-gray-700">
+  <p class="text-gray-700 mb-3">
     Decision‑making in algorithms.  
     <span class="text-blue-500 font-semibold">IF</span>, 
     <span class="text-blue-500 font-semibold">ELSE</span>, 
-    <span class="text-blue-500 font-semibold">ELIF</span>, 
-    <span class="text-blue-500 font-semibold">SWITCH</span> — choosing different paths 
+    <span class="text-blue-500 font-semibold">ELIF</span> — choosing different paths 
     based on a <span class="text-purple-400 font-semibold">condition</span>.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-purple-300">age</span> = 17
+<span class="text-blue-400">if</span> <span class="text-purple-300">age</span> >= 18:
+    <span class="text-blue-400">print</span>(<span class="text-orange-400">"Adult"</span>)
+<span class="text-blue-400">else</span>:
+    <span class="text-blue-400">print</span>(<span class="text-orange-400">"Child"</span>)
+  </pre>
+
+  <p class="text-gray-600 text-sm mt-2">
+    OCR often calls this <span class="text-emerald-600 font-semibold">branching</span>.
   </p>
 
 </div>
 
 
-
-  <!-- CARD 3: Iteration -->
+<!-- CARD 3: Iteration -->
 <div class="bg-white p-10 min-h-[22rem] rounded-xl shadow-md hover:shadow-lg 
             transition-all transform hover:-translate-y-1 border border-gray-200 slide-up delay-3">
 
   <h4 class="text-xl font-bold mb-2 text-emerald-700">Iteration</h4>
 
-  <p class="text-gray-700">
+  <p class="text-gray-700 mb-3">
     Repetition of instructions.  
     <span class="text-blue-500 font-semibold">FOR</span> loops, 
-    <span class="text-blue-500 font-semibold">WHILE</span> loops, 
-    <span class="text-blue-500 font-semibold">DO‑WHILE</span> loops, 
-    <span class="text-orange-400 font-semibold">recursion</span> — repeating until a 
-    <span class="text-purple-400 font-semibold">condition is met</span>.
+    <span class="text-blue-500 font-semibold">WHILE</span> loops — repeating until a 
+    <span class="text-purple-400 font-semibold">condition</span> is met.
+  </p>
+
+  <pre class="bg-gray-900 text-gray-100 p-3 rounded-md text-sm">
+<span class="text-blue-400">for</span> <span class="text-purple-300">i</span> <span class="text-blue-400">in</span> <span class="text-blue-400">range</span>(1, 4):
+    <span class="text-blue-400">print</span>(<span class="text-purple-300">i</span>)
+  </pre>
+
+  <p class="text-gray-600 text-sm mt-2">
+    <span class="text-orange-400 font-semibold">Recursion</span> is 
+    <span class="text-emerald-600 font-semibold">A Level only</span> and is covered separately.
   </p>
 
 </div>
+
 </div>   <!-- CLOSE THE GRID -->
 
     
