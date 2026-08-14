@@ -204,38 +204,39 @@
     </div>
   </footer>
 
-<script>
-  const currentPage = document.body.dataset.page;
+ <!-- NAVBAR + DARK MODE SCRIPT -->
+  <script>
+    const currentPageKey = document.body.dataset.page;
 
-  fetch("/CompSci/components/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
+    fetch("/CompSci/components/navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
 
-      // Highlight active link
-      document.querySelectorAll('#navbar a').forEach(link => {
-        const page = link.dataset.page;
+        // Highlight active link
+        document.querySelectorAll('#navbar a').forEach(link => {
+          const page = link.dataset.page;
 
-        if (page === currentPage) {
-          link.classList.add('nav-link-active');
-          link.classList.remove('border-transparent', 'text-gray-700');
-        } else {
-          link.classList.remove('nav-link-active');
-          link.classList.add('border-transparent', 'text-gray-700');
-        }
-      });
-
-      // Hamburger toggle (AFTER navbar injection)
-      const burger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-
-      if (burger && mobileMenu) {
-        burger.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
+          if (page === currentPageKey) {
+            link.classList.add('nav-link-active');
+            link.classList.remove('border-transparent', 'text-gray-700');
+          } else {
+            link.classList.remove('nav-link-active');
+            link.classList.add('border-transparent', 'text-gray-700');
+          }
         });
-      }
 
-       // ⭐ DARK MODE LOGIC ⭐
+        // Hamburger toggle
+        const burger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (burger && mobileMenu) {
+          burger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+
+        // ⭐ DARK MODE LOGIC ⭐
 const themeToggleDesktop = document.getElementById('themeToggle');
 const themeToggleMobile  = document.getElementById('themeToggleMobile');
 
@@ -273,23 +274,25 @@ if (toggles.length) {
   });
 }
   });
-</script>
+  </script>
 
+   <!-- Programming sidebar script -->
   <script>
-  // Mobile menu toggle
-  const progMenuBtn = document.getElementById('progMenuBtn');
-  const progMenu = document.getElementById('progMenu');
-  progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
+    // Mobile programming menu toggle
+    const progMenuBtn = document.getElementById('progMenuBtn');
+    const progMenu = document.getElementById('progMenu');
+    progMenuBtn.addEventListener('click', () => progMenu.classList.toggle('hidden'));
 
-  // Active link highlighting
-  const currentPage = window.location.pathname.split('/').pop();
-  document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
-    if (link.getAttribute('href') === currentPage) {
-      link.classList.add('text-emerald-400', 'font-semibold');
-    }
-  });
+    // Active link highlighting in sidebar
+//    const currentPageFile = window.location.pathname.split('/').pop();
+ //   document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+  //    if (link.getAttribute('href') === currentPageFile) {
+  //      link.classList.add('text-emerald-400', 'font-semibold');
+ //     }
+//    });
 
-    // ⭐ Highlight sticky sidebar link
+
+  // ⭐ Highlight sticky sidebar link
 const currentTopic = document.body.dataset.topic;
 
 document.querySelectorAll('#u6Sidebar a, #l6Sidebar a, #progSidebar a').forEach(link => {
@@ -301,7 +304,7 @@ document.querySelectorAll('#u6Sidebar a, #l6Sidebar a, #progSidebar a').forEach(
 </script>
 
 
-  
+
 </body>
 </html>
 
