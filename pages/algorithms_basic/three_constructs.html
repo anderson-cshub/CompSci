@@ -355,10 +355,11 @@
    // ⭐ Highlight sticky sidebar link
 const currentTopic = document.body.dataset.topic;
 
-document.querySelectorAll('#u6Sidebar a, #l6Sidebar a').forEach(link => {
-  const href = link.getAttribute('href').replace('.html', '');
+document.querySelectorAll('#progSidebar a, #progMenu a').forEach(link => {
+  const href = link.getAttribute('href').replace('.html', '').replace('../', '');
   if (href === currentTopic) {
-    link.classList.add('sidebar-active');
+    link.classList.add('text-emerald-400', 'font-semibold', 'pulse-active');
+    link.style.textShadow = '0 0 10px #34d399';
   }
 });
 </script>
