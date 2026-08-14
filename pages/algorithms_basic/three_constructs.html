@@ -125,30 +125,39 @@
     
 <div class="teaching-block">
 
+<div class="teaching-block">
+
   <h3 class="teaching-header">The Three Constructs of Programming</h3>
   <div class="glow-divider"></div>
 
-  <p class="mb-4">
+  <p class="mb-4 text-gray-700">
     All algorithms — from simple GCSE pseudocode to full A Level programs — are built
-    from three fundamental constructs: <strong>Sequence</strong>, <strong>Selection</strong>,
-    and <strong>Iteration</strong>. Mastering these makes every other topic easier.
+    from three fundamental constructs: 
+    <span class="text-emerald-600 font-semibold">Sequence</span>, 
+    <span class="text-emerald-600 font-semibold">Selection</span>, 
+    and <span class="text-emerald-600 font-semibold">Iteration</span>. 
+    Mastering these makes every other topic easier.
   </p>
 
   <!-- SEQUENCE -->
   <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Sequence</h4>
   <p class="text-gray-700 mb-4">
-    Sequence means instructions run in a specific order, one after another.  
+    Sequence means instructions run in a 
+    <span class="text-purple-400 font-semibold">specific order</span>, 
+    one after another.  
     This is the simplest construct and forms the backbone of all algorithms.
   </p>
 
   <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-    <li>GCSE: Describe the order of steps.</li>
-    <li>A Level: Understand data flow and side effects.</li>
-    <li>Used everywhere — input, processing, output.</li>
+    <li><span class="text-blue-500 font-semibold">GCSE:</span> Describe the order of steps.</li>
+    <li><span class="text-blue-500 font-semibold">A Level:</span> Understand data flow and side effects.</li>
+    <li>Used everywhere — <span class="text-orange-400 font-semibold">input</span>, 
+        <span class="text-orange-400 font-semibold">processing</span>, 
+        <span class="text-orange-400 font-semibold">output</span>.</li>
   </ul>
 
   <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
-# Example (Python)
+<span class="text-gray-400"># Example (Python)</span>
 name = input("Name: ")
 age = int(input("Age: "))
 print(f"Hello {name}")
@@ -159,17 +168,21 @@ print(f"You are {age}")
   <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Selection</h4>
   <p class="text-gray-700 mb-4">
     Selection allows algorithms to make decisions.  
-    IF, ELSE, ELIF, SWITCH — choosing different paths based on conditions.
+    <span class="text-blue-500 font-semibold">IF</span>, 
+    <span class="text-blue-500 font-semibold">ELSE</span>, 
+    <span class="text-blue-500 font-semibold">ELIF</span>, 
+    <span class="text-blue-500 font-semibold">SWITCH</span> — choosing different paths 
+    based on a <span class="text-purple-400 font-semibold">condition</span>.
   </p>
 
   <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-    <li>GCSE: IF / ELSE statements.</li>
-    <li>A Level: Nested selection, boolean logic, switch/match.</li>
-    <li>Used for validation, branching logic, error handling.</li>
+    <li><span class="text-blue-500 font-semibold">GCSE:</span> IF / ELSE statements.</li>
+    <li><span class="text-blue-500 font-semibold">A Level:</span> Nested selection, boolean logic, switch/match.</li>
+    <li>Used for <span class="text-orange-400 font-semibold">validation</span>, branching logic, error handling.</li>
   </ul>
 
   <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
-# Example (Python)
+<span class="text-gray-400"># Example (Python)</span>
 if age >= 18 and has_id:
     print("Entry allowed")
 else:
@@ -179,18 +192,22 @@ else:
   <!-- ITERATION -->
   <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Iteration</h4>
   <p class="text-gray-700 mb-4">
-    Iteration repeats instructions until a condition is met.  
-    FOR loops, WHILE loops, DO‑WHILE loops, recursion.
+    Iteration repeats instructions until a 
+    <span class="text-purple-400 font-semibold">condition</span> is met.  
+    <span class="text-blue-500 font-semibold">FOR</span> loops, 
+    <span class="text-blue-500 font-semibold">WHILE</span> loops, 
+    <span class="text-blue-500 font-semibold">DO‑WHILE</span> loops, 
+    <span class="text-orange-400 font-semibold">recursion</span>.
   </p>
 
   <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-    <li>GCSE: Count‑controlled and condition‑controlled loops.</li>
-    <li>A Level: Loop invariants, recursion, termination conditions.</li>
+    <li><span class="text-blue-500 font-semibold">GCSE:</span> Count‑controlled and condition‑controlled loops.</li>
+    <li><span class="text-blue-500 font-semibold">A Level:</span> Loop invariants, recursion, termination conditions.</li>
     <li>Used for searching, sorting, processing lists, simulations.</li>
   </ul>
 
   <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
-# Example (Python)
+<span class="text-gray-400"># Example (Python)</span>
 for i in range(1, 6):
     print(i)
 
@@ -204,6 +221,7 @@ def countdown(n):
   </pre>
 
 </div>
+
 
     <!-- FOOTER -->
   <footer class="bg-white mt-20 py-10 shadow-inner">
