@@ -185,8 +185,7 @@
         <span class="text-orange-400 font-semibold">processing</span>, 
         <span class="text-orange-400 font-semibold">output</span>.</li>
   </ul>
-
-    <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4"><code>
+<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4"><code>
 <span class="text-gray-400"># Example (Python)</span>
 <span class="text-purple-300">name</span> = <span class="text-blue-400">input</span>(<span class="text-orange-400">"Name: "</span>)
 <span class="text-purple-300">age</span> = <span class="text-blue-400">int</span>(<span class="text-blue-400">input</span>(<span class="text-orange-400">"Age: "</span>))
@@ -213,13 +212,16 @@
     <li>Used for <span class="text-orange-400 font-semibold">validation</span>, branching logic, error handling.</li>
   </ul>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
+<pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4"><code>
 <span class="text-gray-400"># Example (Python)</span>
-if age >= 18 and has_id:
-    print("Entry allowed")
-else:
-    print("Entry denied")
-  </pre>
+<span class="text-purple-300">age</span> = 17
+
+<span class="text-blue-400">if</span> <span class="text-purple-300">age</span> >= 18 <span class="text-blue-400">and</span> <span class="text-purple-300">has_id</span>:
+    <span class="text-blue-400">print</span>(<span class="text-orange-400">"Entry allowed"</span>)
+<span class="text-blue-400">else</span>:
+    <span class="text-blue-400">print</span>(<span class="text-orange-400">"Entry denied"</span>)
+</code></pre>
+
 
   <!-- ITERATION -->
   <h4 class="text-xl font-semibold text-emerald-700 mt-6 mb-2">Iteration</h4>
@@ -238,19 +240,19 @@ else:
     <li>Used for searching, sorting, processing lists, simulations.</li>
   </ul>
 
-  <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4">
-<span class="text-gray-400"># Example (Python)</span>
-for i in range(1, 6):
-    print(i)
+ <pre class="bg-gray-900 text-gray-100 p-4 rounded-md text-sm mb-4"><code>
+<span class="text-gray-400"># Count-controlled loop</span>
+<span class="text-blue-400">for</span> <span class="text-purple-300">i</span> <span class="text-blue-400">in</span> <span class="text-blue-400">range</span>(1, 6):
+    <span class="text-blue-400">print</span>(<span class="text-purple-300">i</span>)
 
-# Recursive example
-def countdown(n):
-    if n == 0:
-        print("Go!")
-    else:
-        print(n)
-        countdown(n - 1)
-  </pre>
+<span class="text-gray-400"># Recursion (A Level only)</span>
+<span class="text-blue-400">def</span> <span class="text-purple-300">countdown</span>(<span class="text-purple-300">n</span>):
+    <span class="text-blue-400">if</span> <span class="text-purple-300">n</span> == 0:
+        <span class="text-blue-400">print</span>(<span class="text-orange-400">"Go!"</span>)
+    <span class="text-blue-400">else</span>:
+        <span class="text-blue-400">print</span>(<span class="text-purple-300">n</span>)
+        <span class="text-purple-300">countdown</span>(<span class="text-purple-300">n</span> - 1)
+</code></pre>
 
 </div>
 
